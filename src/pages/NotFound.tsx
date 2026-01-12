@@ -43,17 +43,17 @@ export default function NotFound() {
 
         {/* Message */}
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-komma-navy mb-6">
-          Oeps! Je bent voorbij
-          <span className="text-komma-fuchsia"> de komma</span> gegaan
+          Oeps! Hier zetten we even een
+          <span className="text-komma-fuchsia"> punt</span> 
         </h1>
         
         <p className="text-xl text-gray-600 mb-4 max-w-xl mx-auto">
-          Deze pagina bestaat niet of is verplaatst. 
-          Maar geen zorgen — er is altijd een weg terug.
+          Je bent de komma voorbijgeschoten.
+          Deze pagina is 'niet compliant' met onze websitestructuur. 
         </p>
         
         <p className="text-lg text-gray-500 mb-12">
-          Laten we samen ontdekken waar je wél wilt zijn.
+          Geen zorgen, wij adviseren je graag de weg terug naar de juiste informatie.
         </p>
 
         {/* Action buttons */}
@@ -75,7 +75,7 @@ export default function NotFound() {
 
         {/* Fun footer text */}
         <p className="mt-16 text-sm text-gray-400">
-          Error 404 • Pagina niet gevonden • Maar jij bent gevonden door ons 💜
+          Error 404 • Pagina niet gevonden • Maar samen lossen we het op! 💜
         </p>
       </div>
     </section>
