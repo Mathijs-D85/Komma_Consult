@@ -105,9 +105,15 @@ export default function Footer() {
           <p className="text-white/50 text-sm">
             © {new Date().getFullYear()} Komma Consult. Alle rechten voorbehouden.
           </p>
-          <p className="text-white/50 text-sm">
-            KVK: 89738306 | BTW: NL004757591B01
-          </p>
+          <div className="flex items-center gap-4 text-white/50 text-sm">
+            <Link to="/privacy" className="hover:text-komma-fuchsia transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <span className="hidden sm:inline">KVK: 89738306</span>
+            <span className="hidden sm:inline">|</span>
+            <span className="hidden sm:inline">BTW: NL004757591B01</span>
+          </div>
         </div>
       </div>
     </footer>
