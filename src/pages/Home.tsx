@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Target, Shield, Clock, Settings, Quote } from 'lucide-react'
+import { ArrowRight, Target, Shield, Clock, Settings } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import TestimonialCarousel from '@/components/TestimonialCarousel'
 
 const diensten = [
   {
@@ -154,41 +155,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial Section - More Dynamic */}
-      <section className="py-24 lg:py-32 bg-komma-navy relative overflow-hidden">
-        {/* Background decorations */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-komma-fuchsia/10 transform skew-x-12 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-        </div>
-        
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-start gap-12">
-            {/* Quote icon */}
-            <div className="flex-shrink-0">
-              <div className="w-20 h-20 rounded-2xl bg-komma-fuchsia flex items-center justify-center">
-                <Quote className="h-10 w-10 text-white" />
-              </div>
-            </div>
-            
-            <div>
-              <blockquote className="text-2xl sm:text-3xl lg:text-4xl text-white font-display font-semibold leading-snug">
-                "Komma Consult heeft een cruciale rol gespeeld in het vormgeven van onze visie op Vendor Management. 
-                <span className="text-komma-fuchsia"> Dankzij hun unieke inzichten</span> hebben we nu een robuuste 
-                en toekomstbestendige aanpak."
-              </blockquote>
-              
-              <div className="mt-10 flex items-center gap-4">
-                <div className="w-1 h-12 bg-komma-fuchsia rounded-full" />
-                <div>
-                  <p className="text-white font-semibold text-lg">Hays Enterprise Solutions</p>
-                  <p className="text-white/60">Vendor Management</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Testimonial Carousel */}
+      <TestimonialCarousel />
 
       {/* CTA Section - Bold */}
       <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
