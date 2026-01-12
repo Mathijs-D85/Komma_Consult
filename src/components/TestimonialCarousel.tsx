@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -19,30 +19,40 @@ export default function TestimonialCarousel() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
 
+  const goToNext = useCallback(() => {
+    setActiveIndex((current) => (current + 1) % testimonials.length)
+  }, [])
+
+  const goToPrevious = useCallback(() => {
+    setActiveIndex((current) => (current - 1 + testimonials.length) % testimonials.length)
+  }, [])
+
   useEffect(() => {
     if (!isAutoPlaying) return
     
     const interval = setInterval(() => {
-      setActiveIndex((current) => (current + 1) % testimonials.length)
-    }, 8000) // Switch every 8 seconds
+      goToNext()
+    }, 8000)
 
     return () => clearInterval(interval)
-  }, [isAutoPlaying])
+  }, [isAutoPlaying, goToNext])
 
-  const goToPrevious = () => {
+  const handlePrevious = () => {
     setIsAutoPlaying(false)
-    setActiveIndex((current) => (current - 1 + testimonials.length) % testimonials.length)
+    goToPrevious()
   }
 
-  const goToNext = () => {
+  const handleNext = () => {
     setIsAutoPlaying(false)
-    setActiveIndex((current) => (current + 1) % testimonials.length)
+    goToNext()
   }
 
-  const goToSlide = (index: number) => {
+  const handleDotClick = (index: number) => {
     setIsAutoPlaying(false)
     setActiveIndex(index)
   }
+
+  const activeTestimonial = testimonials[activeIndex]
 
   return (
     <section className="py-24 lg:py-32 bg-komma-navy relative overflow-hidden">
@@ -52,7 +62,7 @@ export default function TestimonialCarousel() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
       </div>
       
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
@@ -63,77 +73,66 @@ export default function TestimonialCarousel() {
           </h2>
         </div>
 
-        {/* Carousel */}
-        <div className="relative">
-          {/* Quote icon */}
-          <div className="flex justify-center mb-8">
-            <div className="w-16 h-16 rounded-2xl bg-komma-fuchsia flex items-center justify-center">
-              <Quote className="h-8 w-8 text-white" />
-            </div>
+        {/* Quote icon */}
+        <div className="flex justify-center mb-8">
+          <div className="w-16 h-16 rounded-2xl bg-komma-fuchsia flex items-center justify-center">
+            <Quote className="h-8 w-8 text-white" />
           </div>
+        </div>
 
-          {/* Testimonials */}
-          <div className="relative min-h-[300px] sm:min-h-[250px]">
-            {testimonials.map((testimonial, index) => (
-              <div
+        {/* Testimonial Content - Single testimonial at a time */}
+        <div className="text-center">
+          <blockquote 
+            key={activeIndex}
+            className="text-xl sm:text-2xl lg:text-2xl text-white font-display font-medium leading-relaxed max-w-4xl mx-auto animate-fade-in"
+          >
+            "{activeTestimonial?.quote}"
+          </blockquote>
+          
+          <div className="mt-10 flex flex-col items-center">
+            <div className="w-12 h-1 bg-komma-fuchsia rounded-full mb-4" />
+            <p className="text-white font-semibold text-lg">{activeTestimonial?.author}</p>
+            <p className="text-white/60">{activeTestimonial?.company}</p>
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <div className="flex justify-center items-center gap-6 mt-12">
+          <button
+            onClick={handlePrevious}
+            className="w-12 h-12 rounded-full bg-white/10 hover:bg-komma-fuchsia flex items-center justify-center transition-all duration-300 hover:scale-110"
+            aria-label="Vorige testimonial"
+            type="button"
+          >
+            <ChevronLeft className="h-6 w-6 text-white" />
+          </button>
+
+          {/* Dots */}
+          <div className="flex items-center gap-3">
+            {testimonials.map((_, index) => (
+              <button
                 key={index}
+                onClick={() => handleDotClick(index)}
+                type="button"
                 className={cn(
-                  "absolute inset-0 transition-all duration-700 ease-in-out",
+                  "transition-all duration-300 rounded-full",
                   index === activeIndex 
-                    ? "opacity-100 translate-x-0" 
-                    : index < activeIndex 
-                      ? "opacity-0 -translate-x-8" 
-                      : "opacity-0 translate-x-8"
+                    ? "w-8 h-3 bg-komma-fuchsia" 
+                    : "w-3 h-3 bg-white/30 hover:bg-white/50"
                 )}
-              >
-                <blockquote className="text-xl sm:text-2xl lg:text-3xl text-white font-display font-medium leading-relaxed text-center max-w-4xl mx-auto">
-                  "{testimonial.quote}"
-                </blockquote>
-                
-                <div className="mt-10 flex flex-col items-center">
-                  <div className="w-12 h-1 bg-komma-fuchsia rounded-full mb-4" />
-                  <p className="text-white font-semibold text-lg">{testimonial.author}</p>
-                  <p className="text-white/60">{testimonial.company}</p>
-                </div>
-              </div>
+                aria-label={`Ga naar testimonial ${index + 1}`}
+              />
             ))}
           </div>
 
-          {/* Navigation Arrows */}
-          <div className="flex justify-center items-center gap-4 mt-12">
-            <button
-              onClick={goToPrevious}
-              className="w-12 h-12 rounded-full bg-white/10 hover:bg-komma-fuchsia flex items-center justify-center transition-colors group"
-              aria-label="Vorige testimonial"
-            >
-              <ChevronLeft className="h-6 w-6 text-white/70 group-hover:text-white transition-colors" />
-            </button>
-
-            {/* Dots */}
-            <div className="flex items-center gap-3 px-4">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={cn(
-                    "transition-all duration-300",
-                    index === activeIndex 
-                      ? "w-8 h-3 bg-komma-fuchsia rounded-full" 
-                      : "w-3 h-3 bg-white/30 hover:bg-white/50 rounded-full"
-                  )}
-                  aria-label={`Ga naar testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={goToNext}
-              className="w-12 h-12 rounded-full bg-white/10 hover:bg-komma-fuchsia flex items-center justify-center transition-colors group"
-              aria-label="Volgende testimonial"
-            >
-              <ChevronRight className="h-6 w-6 text-white/70 group-hover:text-white transition-colors" />
-            </button>
-          </div>
+          <button
+            onClick={handleNext}
+            className="w-12 h-12 rounded-full bg-white/10 hover:bg-komma-fuchsia flex items-center justify-center transition-all duration-300 hover:scale-110"
+            aria-label="Volgende testimonial"
+            type="button"
+          >
+            <ChevronRight className="h-6 w-6 text-white" />
+          </button>
         </div>
       </div>
     </section>
