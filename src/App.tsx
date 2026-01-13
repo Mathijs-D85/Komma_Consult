@@ -7,6 +7,8 @@ import Diensten from './pages/Diensten'
 import Over from './pages/Over'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
+import Nieuws from './pages/Nieuws'
+import BlogPost from './pages/BlogPost'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="/over" element={<Over />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/nieuws" element={<Nieuws />} />
+          <Route path="/nieuws/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

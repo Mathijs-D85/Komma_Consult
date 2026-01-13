@@ -121,3 +121,129 @@ a {
   animation-delay: 500ms;
 }
 
+/* Blog prose styling */
+.prose-komma {
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #293266;
+  --tw-prose-links: #eb088d;
+  --tw-prose-bold: #293266;
+  --tw-prose-quotes: #293266;
+  --tw-prose-quote-borders: #eb088d;
+}
+
+.prose-komma h2 {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--komma-navy);
+}
+
+.prose-komma h3 {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--komma-navy);
+}
+
+.prose-komma p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.prose-komma p.lead {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.prose-komma a {
+  color: var(--komma-fuchsia);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.prose-komma a:hover {
+  color: var(--komma-fuchsia-dark);
+}
+
+.prose-komma ul,
+.prose-komma ol {
+  margin: 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prose-komma li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.prose-komma ul li::before {
+  content: "•";
+  color: var(--komma-fuchsia);
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 0;
+  top: -0.1rem;
+}
+
+.prose-komma ol {
+  counter-reset: item;
+}
+
+.prose-komma ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: var(--komma-navy);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+
+.prose-komma blockquote {
+  border-left: 4px solid var(--komma-fuchsia);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--komma-navy);
+  font-size: 1.125rem;
+}
+
+.prose-komma strong {
+  color: var(--komma-navy);
+  font-weight: 600;
+}
+
+.prose-komma img {
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.prose-komma hr {
+  border-color: #e5e7eb;
+  margin: 3rem 0;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
