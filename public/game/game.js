@@ -377,33 +377,53 @@ class Kommaatje {
     }
 
     draw(ctx) {
-        const glowSize = 5 + Math.sin(this.pulse) * 3;
+        const glowSize = 8 + Math.sin(this.pulse) * 4;
+        const centerX = this.x + this.width / 2;
+        const centerY = this.y + this.height / 2;
 
+        // Glow effect
         ctx.shadowBlur = glowSize * 2;
         ctx.shadowColor = CONFIG.colors.kommaMagenta;
 
-        const gradient = ctx.createRadialGradient(
-            this.x + this.width / 2, this.y + this.height / 2, 0,
-            this.x + this.width / 2, this.y + this.height / 2, this.width / 2
-        );
-        gradient.addColorStop(0, CONFIG.colors.kommaMagenta);
-        gradient.addColorStop(1, CONFIG.colors.neonPink);
-
-        ctx.fillStyle = gradient;
+        // Draw a large stylized comma shape (like Komma Consult logo)
+        ctx.fillStyle = CONFIG.colors.kommaMagenta;
         ctx.beginPath();
-        ctx.arc(this.x + this.width / 2, this.y + this.height / 2, this.width / 2, 0, Math.PI * 2);
+        
+        // Comma shape: rounded head with curved tail
+        const size = this.width * 0.9;
+        const headRadius = size * 0.35;
+        const headCenterY = centerY - size * 0.15;
+        
+        // Draw the round head of the comma
+        ctx.arc(centerX, headCenterY, headRadius, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Draw the curved tail
+        ctx.beginPath();
+        ctx.moveTo(centerX + headRadius * 0.3, headCenterY + headRadius * 0.5);
+        ctx.quadraticCurveTo(
+            centerX + headRadius * 0.5, centerY + size * 0.3,
+            centerX - headRadius * 0.3, centerY + size * 0.5
+        );
+        ctx.quadraticCurveTo(
+            centerX - headRadius * 0.8, centerY + size * 0.35,
+            centerX - headRadius * 0.3, headCenterY + headRadius * 0.3
+        );
+        ctx.fill();
+
+        // Inner highlight for 3D effect
+        ctx.fillStyle = CONFIG.colors.neonPink;
+        ctx.beginPath();
+        ctx.arc(centerX - headRadius * 0.2, headCenterY - headRadius * 0.2, headRadius * 0.3, 0, Math.PI * 2);
         ctx.fill();
 
         ctx.shadowBlur = 0;
-        ctx.fillStyle = '#FFFFFF';
-        ctx.font = 'bold 20px Arial';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(',', this.x + this.width / 2, this.y + this.height / 2);
 
-        ctx.font = 'bold 8px Arial';
+        // Points indicator
+        ctx.font = 'bold 10px Arial';
+        ctx.textAlign = 'center';
         ctx.fillStyle = CONFIG.colors.neonGreen;
-        ctx.fillText('+' + CONFIG.kommaatje.points, this.x + this.width / 2, this.y + this.height + 10);
+        ctx.fillText('+' + CONFIG.kommaatje.points, centerX, this.y + this.height + 12);
     }
 
     isOffScreen(canvasHeight) {
