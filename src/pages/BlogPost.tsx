@@ -1,5 +1,5 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Calendar, Clock, User, ArrowRight } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, ArrowRight } from 'lucide-react'
 import { getBlogPostBySlug, blogPosts } from '@/content/blogPosts'
 import { useEffect } from 'react'
 
