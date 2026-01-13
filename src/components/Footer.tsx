@@ -26,22 +26,24 @@ export default function Footer() {
               die ontstaan na "de komma". Laten we deze samen ontdekken.
             </p>
             
+            {/* CTA in footer */}
+            <div className="mt-8">
+              <Link 
+                to="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-komma-fuchsia text-white font-semibold rounded-lg hover:bg-komma-fuchsia-dark transition-colors"
+              >
+                Plan een gesprek
+                <ArrowUpRight className="h-4 w-4" />
+              </Link>
+            </div>
+            
             {/* Easter egg - Game link */}
             <a 
               href="/game/" 
-              className="inline-flex items-center gap-2 mt-4 text-sm text-white/40 hover:text-komma-fuchsia transition-colors"
+              className="inline-flex items-center gap-2 mt-6 text-sm text-white/40 hover:text-komma-fuchsia transition-colors"
             >
               🎮 Speel Komma Racing
             </a>
-            
-            {/* CTA in footer */}
-            <Link 
-              to="/contact"
-              className="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-komma-fuchsia text-white font-semibold rounded-lg hover:bg-komma-fuchsia-dark transition-colors"
-            >
-              Plan een gesprek
-              <ArrowUpRight className="h-4 w-4" />
-            </Link>
           </div>
 
           {/* Quick links */}
