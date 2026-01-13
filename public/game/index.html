@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Komma Consult Racing - Een retro jaren 80 racegame. Ontdek hoe wij bedrijven ontzorgen op het gebied van externe inhuur!">
+    <meta name="keywords" content="Komma Consult, externe inhuur, interim management, advies, game">
+    <title>Komma Consult Racing | Retro 80s Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="neon-text">KOMMA RACING</h1>
+            <p class="subtitle">Ontwijkt zakelijke obstakels!</p>
+        </header>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+
+            <div id="startScreen" class="screen">
+                <div class="screen-content">
+                    <h2>🏁 KOMMA RACING 🏁</h2>
+                    <p class="instructions">
+                        Gebruik <span class="key">←</span> en <span class="key">→</span> pijltjestoetsen<br>
+                        om obstakels te ontwijken
+                    </p>
+                    <div class="obstacles-preview">
+                        <p><strong>Ontwijkt:</strong></p>
+                        <p>🏛️ Nieuwe Wetgeving • 💸 Stijgende Kosten<br>
+                            📋 Administratie Chaos • ⚠️ Schijnzelfstandigheid</p>
+                    </div>
+                    <button id="startBtn" class="btn-primary">START GAME</button>
+                    <p class="high-score">High Score: <span id="highScoreDisplay">0</span></p>
+                </div>
+            </div>
+
+            <div id="gameOverScreen" class="screen hidden">
+                <div class="screen-content">
+                    <h2>GAME OVER</h2>
+                    <p class="final-score">Score: <span id="finalScore">0</span></p>
+                    <p class="high-score">High Score: <span id="gameOverHighScore">0</span></p>
+                    <div class="cta-box">
+                        <p class="cta-text">
+                            💼 Te veel obstakels op jouw pad?<br>
+                            <strong>Komma Consult</strong> ontzorgt bedrijven<br>
+                            op het gebied van externe inhuur!
+                        </p>
+                        <a href="/contact" class="btn-secondary">Plan een gesprek</a>
+                    </div>
+                    <button id="restartBtn" class="btn-primary">OPNIEUW SPELEN</button>
+                    <button id="viewScoresBtn" class="btn-secondary">HIGH SCORES</button>
+                </div>
+            </div>
+
+            <div id="highScoresScreen" class="screen hidden">
+                <div class="screen-content">
+                    <h2 class="neon-green-text">HIGH SCORES</h2>
+                    <div class="high-scores-table">
+                        <div id="scoresTable"></div>
+                    </div>
+                    <button id="backFromScoresBtn" class="btn-primary">TERUG</button>
+                </div>
+            </div>
+
+            <div id="nameEntryScreen" class="screen hidden">
+                <div class="screen-content">
+                    <h2 class="neon-yellow-text">NEW HIGH SCORE!</h2>
+                    <p class="final-score">Score: <span id="newHighScore">0</span></p>
+                    <p class="enter-name-text">Voer je naam in (3 letters):</p>
+                    <div class="name-entry">
+                        <input type="text" id="nameInput" maxlength="3" placeholder="AAA" autocomplete="off">
+                    </div>
+                    <button id="submitNameBtn" class="btn-primary">OPSLAAN</button>
+                </div>
+            </div>
+
+            <div id="pauseOverlay" class="screen hidden">
+                <div class="screen-content">
+                    <h2>PAUZE</h2>
+                    <p class="pause-text">Druk op SPATIE om door te gaan</p>
+                    <button id="resumeBtn" class="btn-primary">DOORGAAN</button>
+                    <button id="quitBtn" class="btn-secondary">STOPPEN</button>
+                </div>
+            </div>
+
+            <div id="tutorialOverlay" class="tutorial-overlay hidden">
+                <div class="tutorial-arrow left-arrow">←</div>
+                <div class="tutorial-text">Gebruik pijltjestoetsen!</div>
+                <div class="tutorial-arrow right-arrow">→</div>
+            </div>
+
+            <div id="comboDisplay" class="combo-display hidden">
+                <span id="comboText">2x COMBO!</span>
+            </div>
+
+            <div id="bossWarning" class="boss-warning hidden">
+                <div class="boss-warning-content">
+                    <h2>⚠️ UITDAGING ⚠️</h2>
+                    <p id="bossName">AUDIT BOSS</p>
+                </div>
+            </div>
+
+            <div class="game-ui">
+                <div class="score-display">
+                    Score: <span id="score">0</span>
+                </div>
+                <div class="combo-counter" id="comboCounter">Combo: <span id="comboValue">0</span>x</div>
+                <button id="muteBtn" class="mute-btn" title="Audio aan/uit">🔊</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Een productie van <strong>Komma Consult</strong> | Waar passies, ambities en mogelijkheden ontstaan</p>
+            <p style="margin-top: 10px;"><a href="/" style="color: var(--neon-cyan); text-decoration: none;">← Terug naar website</a></p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

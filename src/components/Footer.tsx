@@ -26,6 +26,14 @@ export default function Footer() {
               die ontstaan na "de komma". Laten we deze samen ontdekken.
             </p>
             
+            {/* Easter egg - Game link */}
+            <a 
+              href="/game/" 
+              className="inline-flex items-center gap-2 mt-4 text-sm text-white/40 hover:text-komma-fuchsia transition-colors"
+            >
+              🎮 Speel Komma Racing
+            </a>
+            
             {/* CTA in footer */}
             <Link 
               to="/contact"
