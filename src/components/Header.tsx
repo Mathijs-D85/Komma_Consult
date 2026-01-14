@@ -18,13 +18,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-32">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img 
                   src="/logo-komma-consult.png" 
                   alt="Komma Consult" 
-                  className="h-14 sm:h-16 md:h-20 w-auto max-w-[320px] object-contain transition-transform group-hover:scale-[1.02]" 
+                  className="h-20 sm:h-24 md:h-28 w-auto max-w-[520px] object-contain transition-transform group-hover:scale-[1.02]" 
             />
                 <span className="sr-only">Komma Consult</span>
           </Link>

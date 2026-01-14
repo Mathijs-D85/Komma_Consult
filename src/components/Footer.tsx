@@ -15,7 +15,7 @@ export default function Footer() {
               <img 
                     src="/logo-komma-consult-white.png" 
                     alt="Komma Consult" 
-                    className="h-16 sm:h-20 md:h-24 w-auto max-w-[360px] object-contain" 
+                    className="h-24 sm:h-28 md:h-32 w-auto max-w-[520px] object-contain" 
               />
                   <span className="sr-only">Komma Consult</span>
             </Link>
