@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/favicon.ico",
+      "destination": "/logo-komma-consult.png",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.kommaconsult.nl" }],
       "destination": "https://kommaconsult.nl/$1",
