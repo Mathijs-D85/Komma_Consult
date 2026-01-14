@@ -67,7 +67,6 @@ export default function Home() {
             </h1>
             
             <p className="mt-8 text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-2xl animate-fade-in-up animation-delay-100">
-              Waar passies, ambities en mogelijkheden ontstaan. 
               Komma Consult begeleidt, inspireert en ondersteunt bij 
               alle vraagstukken rondom externe inhuur.
             </p>

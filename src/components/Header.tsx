@@ -22,13 +22,11 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img 
-              src="/logo-icon.svg" 
-              alt="" 
-              className="h-10 w-10 transition-transform group-hover:scale-105" 
+                  src="/logo-komma-consult.png" 
+                  alt="Komma Consult" 
+                  className="h-10 sm:h-11 w-auto transition-transform group-hover:scale-[1.02]" 
             />
-            <span className="font-display text-xl font-bold text-komma-navy tracking-tight">
-              Komma Consult
-            </span>
+                <span className="sr-only">Komma Consult</span>
           </Link>
 
           {/* Desktop navigation */}

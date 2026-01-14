@@ -13,13 +13,11 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Link to="/" className="flex items-center gap-3 mb-6">
               <img 
-                src="/logo-icon-white.svg" 
-                alt="" 
-                className="h-12 w-12" 
+                    src="/logo-komma-consulte-white.png" 
+                    alt="Komma Consult" 
+                    className="h-12 sm:h-14 w-auto" 
               />
-              <span className="font-display text-2xl font-bold tracking-tight">
-                Komma Consult
-              </span>
+                  <span className="sr-only">Komma Consult</span>
             </Link>
             <p className="text-white/70 text-lg leading-relaxed max-w-md">
               Continuïteit, vernieuwing en de oneindige mogelijkheden 
