@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Link to="/" className="flex items-center gap-3 mb-6">
               <img 
-                    src="/logo-komma-consulte-white.png" 
+                    src="/logo-komma-consult-white.png" 
                     alt="Komma Consult" 
                     className="h-12 sm:h-14 w-auto" 
               />
