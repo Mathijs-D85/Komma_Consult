@@ -23,6 +23,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/nieuws" element={<Nieuws />} />
           <Route path="/nieuws/:slug" element={<BlogPost />} />
+          <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

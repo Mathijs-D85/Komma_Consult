@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Calendar, Lightbulb, Users, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import Seo from '@/seo/Seo'
 
 const waarden = [
   {
@@ -23,6 +24,11 @@ const waarden = [
 export default function Over() {
   return (
     <>
+      <Seo
+        path="/over"
+        title="Over"
+        description="Lees het verhaal achter Komma Consult en maak kennis met oprichter Mathijs Duisdecker."
+      />
       {/* Header - Bold Style */}
       <section className="relative py-20 lg:py-28 bg-white overflow-hidden">
         {/* Background decoration */}

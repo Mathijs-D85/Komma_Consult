@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Calendar, Clock, User } from 'lucide-react'
 import { blogPosts, getFeaturedPost, getAllCategories } from '@/content/blogPosts'
 import { useState } from 'react'
+import Seo from '@/seo/Seo'
 
 export default function Nieuws() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
@@ -22,6 +23,11 @@ export default function Nieuws() {
 
   return (
     <>
+      <Seo
+        path="/nieuws"
+        title="Nieuws & Inzichten"
+        description="De laatste trends, inzichten en nieuws over externe inhuur, compliance en strategisch HR-beleid."
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-white">
         {/* Background Elements */}

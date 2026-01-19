@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Target, Shield, Clock, Settings, CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import Seo from '@/seo/Seo'
 
 const diensten = [
   {
@@ -60,6 +61,11 @@ const diensten = [
 export default function Diensten() {
   return (
     <>
+      <Seo
+        path="/diensten"
+        title="Inhuuradvies & Total Talent Management"
+        description="Expertise op maat voor grote organisaties: strategisch inhuuradvies, compliant inhuren, interim ondersteuning en implementatie (VMS/MSP/broker)."
+      />
       {/* Header - Bold Style */}
       <section className="relative py-20 lg:py-28 bg-white overflow-hidden">
         {/* Background decoration */}

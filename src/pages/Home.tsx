@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Target, Shield, Clock, Settings } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
+import Seo from '@/seo/Seo'
 
 const diensten = [
   {
@@ -33,6 +34,11 @@ const diensten = [
 export default function Home() {
   return (
     <>
+      <Seo
+        path="/"
+        title="Externe inhuur & strategisch inhuuradvies"
+        description="Komma Consult helpt grote organisaties en overheden met externe inhuur: strategisch inhuuradvies, compliant inhuren en interim ondersteuning."
+      />
       {/* Hero Section - Bold & Dynamic */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-white">
         {/* Background Elements */}

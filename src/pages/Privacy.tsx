@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Shield } from 'lucide-react'
+import Seo from '@/seo/Seo'
 
 export default function Privacy() {
   return (
     <>
+      <Seo
+        path="/privacy"
+        title="Privacy Policy"
+        description="Privacyverklaring van Komma Consult."
+        noindex
+      />
       {/* Header */}
       <section className="relative py-16 lg:py-20 bg-white overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20" />

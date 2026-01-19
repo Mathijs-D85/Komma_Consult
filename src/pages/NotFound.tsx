@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Home } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import Seo from '@/seo/Seo'
 
 export default function NotFound() {
   return (
     <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden bg-white">
+      <Seo
+        path="/404"
+        title="Pagina niet gevonden"
+        description="Deze pagina bestaat niet (404)."
+        noindex
+      />
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-1/4" />

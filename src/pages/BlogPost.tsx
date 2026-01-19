@@ -2,6 +2,8 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock, ArrowRight } from 'lucide-react'
 import { getBlogPostBySlug, blogPosts } from '@/content/blogPosts'
 import { useEffect } from 'react'
+import Seo from '@/seo/Seo'
+import { SITE } from '@/seo/site'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -24,6 +26,29 @@ export default function BlogPost() {
     return null
   }
 
+  const path = `/nieuws/${post.slug}`
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE.name,
+      url: SITE.url,
+    },
+    datePublished: post.date,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${path}`,
+    },
+  }
+
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('nl-NL', {
       day: 'numeric',
@@ -44,6 +69,15 @@ export default function BlogPost() {
 
   return (
     <>
+      <Seo
+        path={path}
+        title={post.title}
+        description={post.excerpt}
+        type="article"
+        image={post.image}
+        publishedTime={post.date}
+        jsonLd={articleJsonLd}
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 overflow-hidden bg-white">
         {/* Background Elements */}

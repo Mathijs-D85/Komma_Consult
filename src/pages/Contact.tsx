@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import { Mail, Phone, MapPin, Calendar } from 'lucide-react'
+import Seo from '@/seo/Seo'
+import { SITE, absoluteUrl } from '@/seo/site'
 
 declare global {
   interface Window {
@@ -37,8 +39,37 @@ export default function Contact() {
     }
   }, []);
 
+  const contactPageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: `Contact | ${SITE.name}`,
+    url: `${SITE.url}/contact`,
+    mainEntity: {
+      '@type': 'Organization',
+      name: SITE.name,
+      url: SITE.url,
+      logo: absoluteUrl('/logo-icon.svg'),
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          contactType: 'sales',
+          email: 'kommaconsult@outlook.com',
+          telephone: '+31627307689',
+          areaServed: 'NL',
+          availableLanguage: ['nl'],
+        },
+      ],
+    },
+  }
+
   return (
     <>
+      <Seo
+        path="/contact"
+        title="Contact"
+        description="Plan een vrijblijvend gesprek met Komma Consult of neem direct contact op via e-mail of telefoon."
+        jsonLd={contactPageJsonLd}
+      />
       {/* Header */}
       <section className="relative py-20 lg:py-28 bg-white overflow-hidden">
         {/* Background decoration */}
