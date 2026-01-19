@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet-async'
 import { SITE, absoluteUrl } from '@/seo/site'
+import ScrollToTop from './ScrollToTop'
 
 interface LayoutProps {
   children: ReactNode
@@ -35,6 +36,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(organizationJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
