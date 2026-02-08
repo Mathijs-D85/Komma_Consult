@@ -16,194 +16,234 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "verantwoordelijkheidsvacuum-flexibele-schil",
-    title: "Het 'Verantwoordelijkheidsvacuüm': Waarom niemand echt eigenaar is van de flexibele schil",
-    excerpt: "Vraag vijf directieleden wie er eindverantwoordelijk is voor externe inhuur, en je krijgt zeven verschillende antwoorden. Die stilte? Dat is het geluid van het verantwoordelijkheidsvacuüm.",
+    slug: "verdienmodel-msp-deugt-waarschijnlijk-niet",
+    title: "Waarom het verdienmodel van je MSP waarschijnlijk niet deugt",
+    excerpt: "De meeste organisaties halen een MSP in huis om grip te krijgen op externe inhuur én om kosten te besparen. Maar het standaard verdienmodel is zo ingericht dat hoe minder jij uitgeeft, hoe minder de MSP verdient.",
     content: `
       <p class="lead">
-        Vraag vijf directieleden wie er binnen de organisatie eindverantwoordelijk is voor externe inhuur, en je krijgt zeven verschillende antwoorden plus één zenuwachtig lachje.
+        De meeste organisaties in Nederland halen een Managed Service Provider (MSP) in huis om grip te krijgen op de externe inhuur én om kosten te besparen.
       </p>
 
       <p>
-        Sommigen wijzen naar HR. Anderen zweren dat het bij Inkoop ligt. Een enkeling zwaait vaag richting Finance, Legal of "die MSP-partij die we hebben ingeschakeld".
+        Tegelijkertijd is het standaard verdienmodel in de markt zo ingericht, dat hoe minder jij als organisatie uitgeeft, hoe minder de MSP verdient.
       </p>
 
       <p>
-        Maar als je doorvraagt wie er <strong>écht</strong> verantwoordelijk is voor het totaalplaatje — de kosten, de compliance (zeker met de Wet DBA in het achterhoofd), de prestaties én de ervaring van de ingehuurde professional — dan valt de kamer stil.
+        Laten we dus de voor de hand liggende vraag stellen: Waarom zou een MSP agressief op zoek gaan naar kostenbesparingen als ze daarmee hun eigen omzet zien teruglopen?
+      </p>
+
+      <h2>Het standaardmodel: Simpel, maar gebrekkig</h2>
+
+      <p>
+        De meeste MSP's in Nederland werken op basis van een percentage van de beheerde inhuurwaarde (spend). Stel dat je inhuurprogramma €50 miljoen is, dan pakt de MSP daar bijvoorbeeld 1% of 2% van.
       </p>
 
       <p>
-        Die stilte? Dat is het geluid van het <em>verantwoordelijkheidsvacuüm</em>.
+        Op papier, in RFP's en aanbestedingen ziet dat er strak uit. Inkoop vindt het fijn omdat de kosten meebewegen met het volume. Finance vindt het fijn omdat het makkelijk rekent. En MSP's vinden het fijn, want: hoe groter het programma, hoe groter de taart.
       </p>
 
       <p>
-        Het is een van de duurste en meest onderschatte problemen in de hedendaagse bedrijfsvoering.
+        Maar hier wringt de schoen: dit model beloont geen kostenreductie. Het straft het zelfs af…
       </p>
 
-      <blockquote>
-        In Nederland bestaat gemiddeld zo'n 20% van het personeelsbestand uit externen (ZZP'ers, gedetacheerden, SOW). Als niemand die groep écht 'bezit', wie runt dan eigenlijk dat deel van je bedrijf?
-      </blockquote>
+      <h2>De 'Perverse Prikkel'</h2>
 
-      <h2>De illusie van eigenaarschap</h2>
+      <p>
+        Stel, je MSP onderhandelt lagere tarieven bij je leveranciers en drukt de totale inhuurkosten met 15%. Dat is winst voor jouw organisatie. Maar voor de MSP? Die ziet zijn fee óók met 15% dalen.
+      </p>
 
-      <p>Op papier lijkt het vaak prima geregeld:</p>
+      <p>
+        Zou jij een besparingsconsultant inhuren wiens tarief omlaag gaat bij elke euro die hij voor jou bespaart?
+      </p>
+
+      <p>
+        Dit is precies waarom veel MSP-programma's na verloop van tijd een plafond bereiken.
+      </p>
+
+      <p>
+        <strong>Jaar 1:</strong> De 'laaghangend fruit' besparingen door tariefharmonisatie en procescontrole.<br />
+        <strong>Jaar 2:</strong> Wat kleine aanpassingen, misschien wat leveranciersrationalisatie.<br />
+        <strong>Jaar 3:</strong> De boel stagneert. Innovatie blijft uit en de besparingen vlakken af.
+      </p>
+
+      <p>
+        Niet omdat de MSP niet wil. Maar omdat het commerciële model beide partijen gevangen houdt. De organisatie wilt besparingen. De MSP heeft volume nodig. Niemand krijgt wat hij écht wil…
+      </p>
+
+      <h2>Het gevaar van neutraliteit</h2>
+
+      <p>
+        Om het nog ingewikkelder te maken: veel Nederlandse klanten eisen strikte onafhankelijkheid. De MSP mag zelf geen kandidaten leveren om "belangenverstrengeling te voorkomen".
+      </p>
+
+      <p>
+        Dat klinkt logisch en zuiver en wordt door veel bedrijven als perfect model gezien. Maar in de praktijk ontneem je de MSP daarmee een van de weinige knoppen om hun model rendabel te houden. Je creëert een situatie waarin je besparingen bestraft én marge-kansen wegneemt.
+      </p>
+
+      <p>
+        Wat blijft er over? Een programma dat wel draait, maar niet vooruitkomt. Een beheerpartij in plaats van een strategische partner.
+      </p>
+
+      <h2>Meer dan alleen geld</h2>
+
+      <p>
+        Deze weeffout raakt niet alleen je portemonnee. Het ondermijnt je strategie op andere vlakken:
+      </p>
 
       <ul>
-        <li>HR "bezit" de talentstrategie en cultuur.</li>
-        <li>Inkoop "bezit" kostenbeheersing en contractmanagement.</li>
-        <li>Legal "bezit" de juridische risico's.</li>
-        <li>Finance "bezit" de budgetten.</li>
+        <li><strong>Innovatie:</strong> Waarom zou een MSP nieuwe technologie introduceren die het inhuurvolume (en dus hun fee) verlaagt?</li>
+        <li><strong>Kwaliteit van talent:</strong> Modellen die puur sturen op tariefreductie duwen je richting goedkope 'handjes' in plaats van de beste experts.</li>
+        <li><strong>Leveranciersdiversiteit:</strong> Zonder prikkel om nieuwe (vaak aanvankelijk "duurdere") partnerschappen aan te gaan, blijft de leveranciersmix vaak statisch.</li>
+      </ul>
+
+      <h2>Hoe het wél kan</h2>
+
+      <p>
+        Er zijn alternatieven. Modellen die de belangen wél gelijktrekken:
+      </p>
+
+      <ul>
+        <li><strong>Een vaste prijs:</strong> Betaal voor het programma zoals je voor software of consultancy betaalt - gebaseerd op de scope van de dienstverlening, niet op hoeveel jij toevallig inhuurt.</li>
+        <li><strong>Gebaseerd op resultaat:</strong> Koppel de fee aan meetbare resultaten: time-to-fill, tevredenheid van inhurende managers, compliance (verlagen van inhuurrisico!) of daadwerkelijke kostenbesparing.</li>
+        <li><strong>Prestatie beloning:</strong> De MSP krijgt een percentage van de daadwerkelijk gerealiseerde besparing. Besparen ze €1 miljoen voor jou? Dan krijgen zij een deel daarvan. Besparen ze niets? Dan krijgen ze niets extra's.</li>
       </ul>
 
       <p>
-        Maar in de praktijk? Niemand overziet het geheel. Iedere afdeling bewaakt zijn eigen partje van de taart, maar niemand is verantwoordelijk voor het bakken van de taart zelf.
+        Zo winnen (of verliezen) beide partijen samen.
+      </p>
+
+      <h2>De bril van de CFO</h2>
+
+      <p>
+        Voor directies is dit geen "inkoop-dingetje". Het is een kwestie van aandeelhouderswaarde. Als je MSP geen prikkel heeft om kosten te verlagen, heb je geen partner. Dan heb je een administrateur of procesbewaker. En dat beweegt de markt niet.
       </p>
 
       <p>
-        Het is de corporate versie van een estafetterace waarbij iedereen wel een stokje vastheeft, maar niemand aan het rennen is. HR denkt dat Inkoop let op de 'cultural fit'. Inkoop gaat ervan uit dat Legal de risico's rondom schijnzelfstandigheid afdekt. En Legal neemt aan dat HR toetst of iemand wel echt als ondernemer werkt.
+        De uitgaven aan externe inhuur zullen de komende jaren alleen maar stijgen. Als je vasthoudt aan het oude 'percentage-model', betaal je straks meer, bespaar je minder, en zie je de omzet van je MSP stijgen terwijl de innovatie stilvalt. Dat is niet houdbaar.
       </p>
 
-      <p>Helaas… dat gebeurt vaker niet dan wel.</p>
-
-      <h2>De symptomen van het vacuüm</h2>
+      <h2>Tijd voor een nieuw gesprek</h2>
 
       <p>
-        De signalen zijn in het begin subtiel. Een paar managers die 'buiten de lijntjes' inhuren (ook wel <em>maverick buying</em> of <em>rogue spend</em> genoemd). Tarieven die niet marktconform zijn. Maar al snel worden de scheuren zichtbaar:
+        MSP's gaan niet weg. En dat hoeft ook niet, want ze vervullen in toenemende mate een belangrijke rol. Maar leiders hoeven de commerciële status quo niet te accepteren.
       </p>
 
-      <ul>
-        <li>Compliance risico's die "niemand zag aankomen" (denk aan naheffingen of boetes in het kader van de Wet DBA/VBAR).</li>
-        <li>Besparingen die op papier mooi lijken, maar nooit terug te vinden zijn in de P&L.</li>
-        <li>Data chaos — gegevens versnipperd over tien systemen die niet met elkaar praten.</li>
-        <li>Hiring managers die het officiële proces omzeilen omdat het "te traag" is.</li>
-      </ul>
-
       <p>
-        Zo ontstaat er langzaam een schaduworganisatie. Onzichtbaar, ongemeten, maar cruciaal voor de dagelijkse operatie. Het is niet dat leiders het niet interesseert. Het probleem is dat ze een governance-model missen dat duidelijke bevoegdheden toewijst over de afdelingsgrenzen heen.
-      </p>
-
-      <h2>De verborgen kosten</h2>
-
-      <p>
-        Laten we het even over cijfers hebben. Gebrek aan eigenaarschap kost geld. Zonder duidelijke sturing krijg je:
+        Stel bij de volgende contractherziening eens de volgende vragen:
       </p>
 
       <ol>
-        <li><strong>Inefficiëntie:</strong> Dubbele processen en onsamenhangende onboarding.</li>
-        <li><strong>Werkgeverschap versus opdrachtgeverschap:</strong> Externen ervaren een totaal ander bedrijf dan vaste medewerkers.</li>
-        <li><strong>Inhuurrisico's:</strong> Schijnzelfstandigheid en ketenaansprakelijkheid vormen in de huidige Nederlandse markt een serieus risico.</li>
-        <li><strong>Verspilling van middelen:</strong> Hoofdprijzen betalen voor middelmatige kwaliteit.</li>
+        <li>Welke <strong>échte</strong> prikkel heeft mijn MSP om mijn kosten te verlagen?</li>
+        <li>Hoeveel innovatie brengen ze, als dat ten koste gaat van hun eigen marge?</li>
+        <li>Wat zou er veranderen als we ze zouden belonen voor resultaat in plaats van voor volume?</li>
       </ol>
 
       <p>
-        Elk van deze punten is pijnlijk. Samen vormen ze een stille belasting op je organisatie. Betaald in herstelwerk, vertraging en/of reputatieschade.
-      </p>
-
-      <h2>Hoe dit kan gebeuren (By Design)</h2>
-
-      <p>Dit vacuüm ontstaat niet door luiheid of incompetentie. Het is een ontwerpfout.</p>
-
-      <p>De meeste organisatiestructuren zijn simpelweg niet gebouwd voor een hybride wereld.</p>
-
-      <ul>
-        <li>HR is geoptimaliseerd voor vaste medewerkers (FTE's).</li>
-        <li>Inkoop is geoptimaliseerd voor goederen en contracten.</li>
-      </ul>
-
-      <p>
-        Geen van beide is ingericht om een samenhangend ecosysteem van uitzendkrachten, zzp'ers, gedetacheerden en 'Statement of Work' projecten integraal te managen. De flexibele schil wordt zo een speelbal die continu heen en weer wordt gekaatst tussen HR, Inkoop en de business.
-      </p>
-
-      <h2>Hoe ziet écht eigenaarschap eruit?</h2>
-
-      <p>Eigenaarschap gaat niet over macht grijpen, maar over duidelijkheid creëren.</p>
-
-      <p>
-        Stel je een model voor waarbij een regiefunctie (bijvoorbeeld een Contingent Workforce Manager of een multidisciplinair team) op het snijvlak van HR, Inkoop en Finance opereert.
-      </p>
-
-      <p>
-        Hun missie? Simpel: alle externe medewerkers en contracten managen met verantwoordelijkheid voor resultaat, kosten én compliance. Dit team concurreert niet met HR of Inkoop, maar verbindt ze.
-      </p>
-
-      <p>Zij zijn eigenaar van:</p>
-
-      <ul>
-        <li>Programmabesturing (Governance)</li>
-        <li>Leveranciersstrategie</li>
-        <li>Data-integriteit</li>
-        <li>Talentervaring (ook voor de externe)</li>
-        <li>Risicobeheersing</li>
-      </ul>
-
-      <h2>De Tech-Mythe</h2>
-
-      <p>Veel organisaties lopen tegen dezelfde muur: "We lossen het wel op met technologie."</p>
-
-      <p>
-        Dan wordt er een Vendor Management System (VMS) geïmplementeerd. En eerlijk is eerlijk: die systemen leveren waarde. Maar alleen als de governance erachter klopt. Zonder eigenaarschap automatiseer je slechts de chaos. Je krijgt mooiere dashboards, maar de data erachter klopt nog steeds niet.
-      </p>
-
-      <blockquote>
-        Pro tip: Technologie moet de strategie volgen, niet andersom.
-      </blockquote>
-
-      <h2>De blinde vlek van de CEO</h2>
-
-      <p>
-        Hier wordt het ongemakkelijk. De meeste CEO's kunnen je exact vertellen wat het verloop is onder vast personeel of wat de omzet per medewerker is.
-      </p>
-
-      <p>
-        Maar vraag ze hoeveel externe krachten er op dit moment rondlopen, wat ze precies kosten en hoe ze worden aangestuurd — en je krijgt vaak een beleefd schouderophalen.
-      </p>
-
-      <blockquote>
-        Als al je externe krachten morgen het werk neerleggen, hoeveel procent van je bedrijf staat dan stil? Als dat antwoord je onrustig maakt, gefeliciteerd! Dan heb je zojuist je volgende prioriteit gevonden.
-      </blockquote>
-
-      <h2>De toekomst: van 'Inhuur' naar 'Total Talent'</h2>
-
-      <p>
-        De toekomst van werk gaat niet over 'Vast vs. Flex'. Het gaat over hoe goed organisaties alle vormen van talent kunnen orkestreren richting één doel.
-      </p>
-
-      <p>Vooruitstrevende bedrijven bouwen nu al aan:</p>
-
-      <ul>
-        <li><strong>Unified data:</strong> HRIS en VMS-systemen die gekoppeld zijn.</li>
-        <li><strong>Cross-functionele stuurgroepen</strong> met gedeelde KPI's.</li>
-        <li><strong>Governance-modellen</strong> die flexibele arbeid zien als integraal onderdeel van Total Talent Management.</li>
-      </ul>
-
-      <h2>Conclusie: Het vacuüm is een keuze</h2>
-
-      <p>
-        Het verantwoordelijkheidsvacuüm bestaat alleen omdat niemand heeft besloten het op te vullen. Bedrijven die dit wel doen, winnen aan wendbaarheid en controle.
-      </p>
-
-      <p>Dus stel jezelf de volgende vragen:</p>
-
-      <ol>
-        <li>Als de Belastingdienst morgen aanklopt voor een controle, wie belt de CEO dan als eerste?</li>
-        <li>Als je inhuurprogramma vandaag verdwijnt, zou de business het merken?</li>
-      </ol>
-
-      <p>
-        De antwoorden op die vragen onthullen of je een echte workforce-strategie hebt gebouwd — of slechts een dure spreadsheet beheert.
+        <em>Laatste reflectie:</em> Als jouw MSP beloond zou worden voor het besparen van geld in plaats van gestraft, hoeveel meer waarde zou je programma dan opleveren?
       </p>
 
       <hr />
 
       <p>
-        <strong>Wil je sparren over hoe je dit eigenaarschap binnen jouw organisatie kunt inrichten?</strong> Bij Komma Consult helpen we je graag om de brug te slaan tussen HR, Inkoop en de Business.
+        <strong>Benieuwd of jouw huidige MSP-contract nog wel van deze tijd is?</strong> Bij Komma Consult kijken we graag met je mee naar de commerciële inrichting van je inhuurprogramma.
+      </p>
+    `,
+    author: "Mathijs Duisdecker",
+    date: "2026-02-08",
+    readTime: "7 min",
+    category: "Inhuurstrategie",
+    featured: true,
+  },
+  {
+    slug: "verantwoordelijkheidsvacuum-flexibele-schil",
+    title: "Het 'Verantwoordelijkheidsvacuüm': Waarom niemand écht eigenaar is van de flexibele schil",
+    excerpt: "Als ik aan directieleden vraag wie er eindverantwoordelijk is voor externe inhuur, krijg ik vaak een interessant schouwspel. Die stilte? Dat is het geluid van het verantwoordelijkheidsvacuüm.",
+    content: `
+      <p class="lead">
+        Als ik aan directieleden vraag wie er binnen hun organisatie eindverantwoordelijk is voor externe inhuur, krijg ik vaak een interessant schouwspel. Ik hoor zeven verschillende antwoorden voorbijvliegen, meestal gevolgd door een ongemakkelijk, zenuwachtig lachje.
+      </p>
+
+      <p>
+        De een wijst naar HR. De ander zweert bij Inkoop. En soms zwaait er iemand vaag richting Finance of "die MSP-partij die we toch hebben?"
+      </p>
+
+      <p>
+        Maar zodra ik doorvraag wie er <strong>écht</strong> eindverantwoordelijkheid draagt — voor de kosten, de compliance rondom de Wet DBA, maar ook de ervaring van het talent — dan valt de kamer stil.
+      </p>
+
+      <p>
+        Die stilte? Dat is het geluid van het <em>verantwoordelijkheidsvacuüm</em>... en het is een van de duurste 'onzichtbare' problemen van dit moment.
+      </p>
+
+      <h2>De illusie van eigenaarschap</h2>
+
+      <p>
+        In de praktijk zie ik vaak dat het op papier prima geregeld lijkt. Iedere afdeling bewaakt zijn eigen kleine partje van de taart: HR gaat over de strategie, Inkoop over de kosten en Legal over de contracten.
+      </p>
+
+      <p>
+        Maar hier gaat het vaak mis — niemand voelt zich verantwoordelijk voor het bakken van de taart zelf.
+      </p>
+
+      <p>
+        Het voelt een beetje als een estafetterace waarbij iedereen keurig zijn stokje vasthoudt, maar niemand daadwerkelijk aan het rennen is. HR gaat ervan uit dat Inkoop de 'cultural fit' wel checkt. Inkoop denkt dat Legal de risico's rondom schijnzelfstandigheid afdekt. En ondertussen valt het resultaat tussen wal en schip.
+      </p>
+
+      <h2>De symptomen (en de verborgen rekening)</h2>
+
+      <p>
+        Het begint vaak subtiel met wat 'maverick buying' — managers die buiten de lijntjes om inhuren — maar al snel zie je de echte scheuren:
+      </p>
+
+      <ul>
+        <li>Compliance-risico's die "ineens" opduiken (hallo Belastingdienst! 👋).</li>
+        <li>Data die versnipperd is over tien verschillende Excel-lijstjes.</li>
+        <li>Externen die zich totaal niet verbonden voelen met je organisatie.</li>
+      </ul>
+
+      <p>
+        Dit gebrek aan regie is in feite een stille belasting op je bedrijf. Je betaalt de hoofdprijs voor middelmatige kwaliteit, simpelweg omdat er geen centraal brein is dat het overzicht bewaart.
+      </p>
+
+      <h2>Hoe ziet écht eigenaarschap eruit?</h2>
+
+      <p>
+        Volgens mij gaat eigenaarschap niet over macht, maar over het creëren van rust en duidelijkheid.
+      </p>
+
+      <p>
+        Ik geloof sterk in een regiefunctie die precies op het snijvlak van HR, Inkoop en Finance opereert. Iemand (of een team) die de brug slaat. Zij concurreren niet met de andere afdelingen, maar verbinden ze. Zij zorgen dat de inhuurstrategie ook echt uitgevoerd wordt in de praktijk.
+      </p>
+
+      <h2>De blinde vlek</h2>
+
+      <p>
+        Ik stel bedrijven vaak deze vraag: "Als al je externe krachten morgen het werk neerleggen, hoeveel procent van je bedrijf staat dan stil?"
+      </p>
+
+      <p>
+        Als het antwoord je een beetje onrustig maakt: geen zorgen, je bent niet de enige! Maar het is wel een teken dat er werk aan de winkel is. De toekomst van werk gaat namelijk niet over 'Vast vs. Flex', maar over hoe goed je alle vormen van talent kunt orkestreren richting één doel.
+      </p>
+
+      <h2>Zullen we samen de brug slaan?</h2>
+
+      <p>
+        Het verantwoordelijkheidsvacuüm is een keuze. Je kunt de chaos automatiseren met tools, maar zonder de juiste governance blijft het... nou ja, geautomatiseerde chaos.
+      </p>
+
+      <p>
+        Ben jij benieuwd hoe je dit eigenaarschap binnen jouw organisatie slim kunt inrichten? Ik denk graag met je mee hoe we die brug kunnen slaan tussen HR, Inkoop en de rest van je organisatie.
+      </p>
+
+      <p>
+        Laten we snel een kop koffie drinken om de mogelijkheden te bespreken! ☕🚀
       </p>
     `,
     author: "Mathijs Duisdecker",
     date: "2026-01-13",
-    readTime: "8 min",
+    readTime: "4 min",
     category: "Inhuurstrategie",
-    featured: true,
+    featured: false,
   },
 
   // === TEMPLATE VOOR NIEUWE POST ===
