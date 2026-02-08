@@ -24,7 +24,7 @@ export default function Header() {
             <img 
                   src="/logo-komma-consult.png" 
                   alt="Komma Consult" 
-                  className="h-20 sm:h-24 md:h-28 w-auto max-w-[520px] object-contain transition-transform group-hover:scale-[1.02]" 
+                  className="h-28 sm:h-36 md:h-44 w-auto max-w-[520px] object-contain transition-transform group-hover:scale-[1.02] -my-6" 
             />
                 <span className="sr-only">Komma Consult</span>
           </Link>
