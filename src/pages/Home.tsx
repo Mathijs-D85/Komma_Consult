@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Target, Shield, Clock, Settings } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
+import ChatApp from '@/components/chat/ChatApp'
 import Seo from '@/seo/Seo'
 
 const diensten = [
@@ -39,76 +40,22 @@ export default function Home() {
         title="Externe inhuur & strategisch inhuuradvies"
         description="Komma Consult helpt grote organisaties en overheden met externe inhuur: strategisch inhuuradvies, compliant inhuren en interim ondersteuning."
       />
-      {/* Hero Section - Bold & Dynamic */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-white">
-        {/* Background Elements */}
-        <div className="absolute inset-0">
-          {/* Fuchsia accent shape */}
-          <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20" />
-          {/* Navy accent shape */}
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-komma-navy/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
-          {/* Decorative comma */}
-          <div className="absolute top-20 right-20 text-[20rem] font-display font-black text-komma-navy/[0.03] leading-none select-none hidden xl:block">
-            ,
-          </div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <div className="max-w-5xl">
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-komma-fuchsia/10 rounded-full mb-8 animate-fade-in">
-              <span className="w-2 h-2 bg-komma-fuchsia rounded-full animate-pulse" />
-              <span className="text-komma-fuchsia font-medium text-sm tracking-wide uppercase">
-                Strategisch Inhuuradvies
-              </span>
-            </div>
-            
-            {/* Main Headline */}
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-komma-navy leading-[0.95] tracking-tight animate-fade-in-up">
-              Ontdek wat er
-              <br />
-              schuilt achter
-              <br />
-              <span className="text-komma-fuchsia">de komma</span>
-            </h1>
-            
-            <p className="mt-8 text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-2xl animate-fade-in-up animation-delay-100">
-              Komma Consult begeleidt, inspireert en ondersteunt bij 
-              alle vraagstukken rondom externe inhuur.
-            </p>
-            
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-200">
-              <Link to="/contact">
-                <Button size="lg" className="w-full sm:w-auto text-lg px-8 py-4 bg-komma-fuchsia hover:bg-komma-fuchsia-dark">
-                  Plan een gesprek
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/diensten">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto text-lg px-8 py-4">
-                  Bekijk diensten
-                </Button>
-              </Link>
-            </div>
-            
-            {/* Founder tag */}
-            <div className="mt-16 flex items-center gap-4 animate-fade-in-up animation-delay-300">
-              <img 
-                src="/mathijs-duisdecker.jpg" 
-                alt="Mathijs Duisdecker"
-                className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-lg"
-              />
-              <div>
-                <p className="font-semibold text-komma-navy">Mathijs Duisdecker</p>
-                <p className="text-gray-500 text-sm">Oprichter Komma Consult</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Wrapper met doorlopende decoratieve fuchsia baan */}
+      <div className="relative overflow-hidden bg-white">
+        {/* Fuchsia accent shape - loopt door over chat + diensten */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20 pointer-events-none" />
+        {/* Navy accent shape */}
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-komma-navy/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
-      {/* Services Section - Bold Cards */}
-      <section className="py-24 lg:py-32 bg-gray-50">
+        {/* Chat als hero - vervangt de oude hero sectie */}
+        <ChatApp config={{
+          supabaseUrl: import.meta.env.VITE_SUPABASE_URL || "https://dhuppyaqprsjaquomqtp.supabase.co",
+          supabaseFunctionsUrl: import.meta.env.VITE_SUPABASE_FUNCTIONS_URL || "https://dhuppyaqprsjaquomqtp.supabase.co/functions/v1",
+          contactUrl: "/contact",
+        }} />
+
+        {/* Services Section - Bold Cards */}
+        <section className="relative py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
             <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
@@ -158,7 +105,8 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </div>
 
       {/* Testimonial Carousel */}
       <TestimonialCarousel />
