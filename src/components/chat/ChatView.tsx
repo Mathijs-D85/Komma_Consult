@@ -23,13 +23,16 @@ export function ChatView({
   onSendMessage,
   onDismissError,
 }: ChatViewProps) {
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   const [showLeadCapture, setShowLeadCapture] = useState(false);
   const [leadCaptured, setLeadCaptured] = useState(false);
 
-  // Auto-scroll naar beneden bij nieuwe berichten
+  // Auto-scroll naar beneden bij nieuwe berichten (binnen de container, niet de pagina)
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const container = messagesContainerRef.current;
+    if (container) {
+      container.scrollTop = container.scrollHeight;
+    }
   }, [messages]);
 
   // Toon lead capture na 2 volledige antwoorden (4 berichten: 2x user + 2x assistant)
@@ -47,7 +50,7 @@ export function ChatView({
   return (
     <div className="chat-view">
       {/* Berichten */}
-      <div className="chat-view__messages">
+      <div className="chat-view__messages" ref={messagesContainerRef}>
         <div className="chat-view__messages-inner">
           {messages.map((message) => (
             <MessageBubble
@@ -79,8 +82,6 @@ export function ChatView({
               onDismiss={() => setShowLeadCapture(false)}
             />
           )}
-
-          <div ref={messagesEndRef} />
         </div>
       </div>
 

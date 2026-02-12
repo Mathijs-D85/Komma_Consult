@@ -259,8 +259,8 @@
 .chat-view {
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
-  max-height: 95vh;
+  height: calc(100vh - 8rem);
+  overflow: hidden;
   background: var(--kc-bg-white);
 }
 
