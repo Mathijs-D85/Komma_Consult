@@ -74,6 +74,8 @@ export default function Privacy() {
                 <li>E-mailadres</li>
                 <li>Telefoonnummer</li>
                 <li>Bedrijfsnaam</li>
+                <li>Vragen die je stelt via onze kennisassistent (chatinterface)</li>
+                <li>E-mailadres, indien je dit vrijwillig verstrekt via de chatinterface</li>
                 <li>Gegevens over jouw activiteiten op onze website (via Vercel Analytics)</li>
               </ul>
 
@@ -87,8 +89,16 @@ export default function Privacy() {
                 <li>Het afhandelen van jouw betaling (indien van toepassing)</li>
                 <li>Je te kunnen bellen of e-mailen indien dit nodig is voor onze dienstverlening</li>
                 <li>Je te informeren over wijzigingen van onze diensten</li>
+                <li>Om je vraag te beantwoorden via onze AI-kennisassistent op de homepage</li>
+                <li>Om de kwaliteit van onze adviezen en dienstverlening te verbeteren</li>
                 <li>Om onze website te analyseren en verbeteren</li>
               </ul>
+              <p className="text-gray-600">
+                <strong>Grondslag:</strong> Het gebruik van de chatinterface valt onder 
+                "gerechtvaardigd belang" — je maakt actief gebruik van de dienst door een 
+                vraag te stellen. Het achterlaten van je e-mailadres via de chat is gebaseerd 
+                op "toestemming" — je verstrekt dit vrijwillig.
+              </p>
 
               <h2 className="font-display text-2xl font-bold text-komma-navy">
                 4. Hoe lang we gegevens bewaren
@@ -100,6 +110,7 @@ export default function Privacy() {
               </p>
               <ul className="text-gray-600">
                 <li>Contactgegevens: gedurende de samenwerking en 2 jaar daarna</li>
+                <li>Chatgesprekken: maximaal 12 maanden</li>
                 <li>Analytische gegevens: maximaal 26 maanden</li>
               </ul>
 
@@ -117,10 +128,12 @@ export default function Privacy() {
               <ul className="text-gray-600">
                 <li><strong>Vercel Analytics</strong> - voor websitestatistieken (privacy-vriendelijk, geen cookies)</li>
                 <li><strong>Cal.com</strong> - voor het inplannen van afspraken</li>
+                <li><strong>Supabase</strong> - voor het opslaan van chatgesprekken (servers binnen de EU)</li>
+                <li><strong>Google Gemini</strong> - voor het verwerken van vragen en het genereren van antwoorden via onze kennisassistent</li>
               </ul>
 
               <h2 className="font-display text-2xl font-bold text-komma-navy">
-                6. Cookies
+                6. Cookies en chatinterface
               </h2>
               <p className="text-gray-600">
                 Komma Consult gebruikt alleen technische en functionele cookies. Deze cookies 
@@ -129,6 +142,14 @@ export default function Privacy() {
               </p>
               <p className="text-gray-600">
                 Vercel Analytics werkt zonder cookies en respecteert de privacy van bezoekers.
+              </p>
+              <p className="text-gray-600">
+                Onze kennisassistent (chatinterface) plaatst geen cookies en slaat geen 
+                gegevens op in je browser. Wanneer je een vraag stelt, wordt deze verwerkt 
+                door Google Gemini en wordt het gesprek opgeslagen in onze database (Supabase) 
+                om de kwaliteit van onze dienstverlening te verbeteren. Chatgesprekken worden 
+                niet gekoppeld aan je identiteit, tenzij je vrijwillig je e-mailadres 
+                achterlaat.
               </p>
 
               <h2 className="font-display text-2xl font-bold text-komma-navy">
