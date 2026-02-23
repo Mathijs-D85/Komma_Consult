@@ -58,6 +58,19 @@ const diensten = [
   },
 ]
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: diensten.map((dienst) => ({
+    '@type': 'Question',
+    name: dienst.title,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `${dienst.description} ${dienst.details}`,
+    },
+  })),
+}
+
 export default function Diensten() {
   return (
     <>
@@ -65,6 +78,7 @@ export default function Diensten() {
         path="/diensten"
         title="Inhuuradvies & Total Talent Management"
         description="Expertise op maat voor grote organisaties: strategisch inhuuradvies, compliant inhuren, interim ondersteuning en implementatie (VMS/MSP/broker)."
+        jsonLd={faqJsonLd}
       />
       {/* Header - Bold Style */}
       <section className="relative py-20 lg:py-28 bg-white overflow-hidden">

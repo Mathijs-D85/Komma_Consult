@@ -66,8 +66,8 @@ export default function Contact() {
     <>
       <Seo
         path="/contact"
-        title="Contact"
-        description="Plan een vrijblijvend gesprek met Komma Consult of neem direct contact op via e-mail of telefoon."
+        title="Contact | Plan een Gratis Adviesgesprek"
+        description="Plan een vrijblijvend adviesgesprek met Mathijs Duisdecker van Komma Consult. Stel je vraag over externe inhuur, compliance of inhuurstrategie."
         jsonLd={contactPageJsonLd}
       />
       {/* Header */}

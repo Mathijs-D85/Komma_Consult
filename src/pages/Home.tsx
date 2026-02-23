@@ -3,6 +3,7 @@ import { ArrowRight, Target, Shield, Clock, Settings } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import ChatApp from '@/components/chat/ChatApp'
+import { ClientOnly } from 'vite-react-ssg'
 import Seo from '@/seo/Seo'
 
 const diensten = [
@@ -48,11 +49,26 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-komma-navy/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
         {/* Chat als hero - vervangt de oude hero sectie */}
-        <ChatApp config={{
-          supabaseUrl: import.meta.env.VITE_SUPABASE_URL || "https://dhuppyaqprsjaquomqtp.supabase.co",
-          supabaseFunctionsUrl: import.meta.env.VITE_SUPABASE_FUNCTIONS_URL || "https://dhuppyaqprsjaquomqtp.supabase.co/functions/v1",
-          contactUrl: "/contact",
-        }} />
+        <ClientOnly fallback={
+          <div className="min-h-[600px] flex items-center justify-center">
+            <div className="text-center max-w-2xl mx-auto px-4 py-24">
+              <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight mb-6">
+                Strategisch inhuuradvies voor grote organisaties
+              </h1>
+              <p className="text-xl text-gray-600">
+                Komma Consult helpt organisaties en overheden met externe inhuur: van strategie tot implementatie.
+              </p>
+            </div>
+          </div>
+        }>
+          {() => (
+            <ChatApp config={{
+              supabaseUrl: import.meta.env.VITE_SUPABASE_URL || "https://dhuppyaqprsjaquomqtp.supabase.co",
+              supabaseFunctionsUrl: import.meta.env.VITE_SUPABASE_FUNCTIONS_URL || "https://dhuppyaqprsjaquomqtp.supabase.co/functions/v1",
+              contactUrl: "/contact",
+            }} />
+          )}
+        </ClientOnly>
 
         {/* Services Section - Bold Cards */}
         <section className="relative py-24 lg:py-32">

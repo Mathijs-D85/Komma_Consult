@@ -26,8 +26,8 @@ export default function Over() {
     <>
       <Seo
         path="/over"
-        title="Over"
-        description="Lees het verhaal achter Komma Consult en maak kennis met oprichter Mathijs Duisdecker."
+        title="Over Komma Consult | Strategisch Inhuuradvies Amsterdam"
+        description="Lees het verhaal achter Komma Consult. Wij helpen grote organisaties en overheden met externe inhuur: strategisch inhuuradvies, compliant inhuren en interim ondersteuning."
       />
       {/* Header - Bold Style */}
       <section className="relative py-20 lg:py-28 bg-white overflow-hidden">
