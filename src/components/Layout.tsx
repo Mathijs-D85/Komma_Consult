@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { Helmet } from 'react-helmet-async'
+import { Head } from 'vite-react-ssg'
 import { SITE, absoluteUrl } from '@/seo/site'
 import ScrollToTop from './ScrollToTop'
 
@@ -37,10 +37,10 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
-      <Helmet>
+      <Head>
         <script type="application/ld+json">{JSON.stringify(organizationJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
-      </Helmet>
+      </Head>
       <Header />
       <main className="flex-1">
         {children}

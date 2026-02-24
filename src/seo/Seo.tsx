@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+import { Head } from 'vite-react-ssg'
 import { SITE, absoluteUrl, canonicalUrl } from './site'
 
 type JsonLd = Record<string, unknown> | Array<Record<string, unknown>>
@@ -33,7 +33,7 @@ export default function Seo({
   const ogImage = absoluteUrl(image ?? SITE.defaultOgImagePath)
 
   return (
-    <Helmet>
+    <Head>
       <html lang="nl" />
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
@@ -63,7 +63,7 @@ export default function Seo({
       {jsonLd ? (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       ) : null}
-    </Helmet>
+    </Head>
   )
 }
 
