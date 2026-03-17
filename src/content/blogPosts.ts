@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-17",
     readTime: "5 min",
     category: "Compliance",
-    featured: false,
+    featured: true,
   },
   {
     slug: "verdienmodel-msp-deugt-waarschijnlijk-niet",
@@ -227,7 +227,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-02-08",
     readTime: "7 min",
     category: "Inhuurstrategie",
-    featured: true,
+    featured: false,
   },
   {
     slug: "verantwoordelijkheidsvacuum-flexibele-schil",
