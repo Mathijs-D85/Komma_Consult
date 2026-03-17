@@ -12,10 +12,15 @@ export async function sendChatMessage(
   sessionId: string,
   onEvent: (event: StreamEvent) => void
 ): Promise<void> {
+  const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
   const response = await fetch(`${functionsUrl}/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      ...(anonKey && {
+        "apikey": anonKey,
+        "Authorization": `Bearer ${anonKey}`,
+      }),
     },
     body: JSON.stringify({
       message,
@@ -71,10 +76,15 @@ export async function captureLeadEmail(
   email: string
 ): Promise<boolean> {
   try {
+    const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
     const response = await fetch(`${functionsUrl}/lead-capture`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        ...(anonKey && {
+          "apikey": anonKey,
+          "Authorization": `Bearer ${anonKey}`,
+        }),
       },
       body: JSON.stringify({
         conversation_id: conversationId,
