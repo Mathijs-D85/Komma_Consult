@@ -17,7 +17,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "procurecon-total-talent-management-amsterdam",
-    title: "Van Visie naar Praktijk: De Realiteit van Total Talent Management",
+    title: "Van visie naar praktijk: De realiteit van Total Talent Management",
     excerpt: "Op uitnodiging van Net2Source was Komma Consult aanwezig bij ProcureCon Total Talent in Amsterdam. De conclusie? TTM is geen toekomstmuziek meer – koplopers als Unilever, Heineken en ING implementeren het actief.",
     content: `
       <p class="lead">
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-17",
     readTime: "6 min",
     category: "Inhuurstrategie",
-    featured: false,
+    featured: true,
   },
   {
     slug: "veilige-haven-toptalent-zzp",
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-17",
     readTime: "5 min",
     category: "Compliance",
-    featured: true,
+    featured: false,
   },
   {
     slug: "verdienmodel-msp-deugt-waarschijnlijk-niet",
