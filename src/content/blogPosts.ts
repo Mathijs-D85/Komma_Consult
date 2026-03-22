@@ -16,6 +16,85 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "procurecon-total-talent-management-amsterdam",
+    title: "Van Visie naar Praktijk: De Realiteit van Total Talent Management",
+    excerpt: "Op uitnodiging van Net2Source was Komma Consult aanwezig bij ProcureCon Total Talent in Amsterdam. De conclusie? TTM is geen toekomstmuziek meer – koplopers als Unilever, Heineken en ING implementeren het actief.",
+    content: `
+      <p class="lead">
+        "Stop met het maken van perfecte plannen. Het zit innovatie in de weg." Dit inzicht vormde de rode draad tijdens de afgelopen editie van ProcureCon Total Talent in Amsterdam. Op uitnodiging van Net2Source was Komma Consult aanwezig bij dit exclusieve congres. De belangrijkste conclusie? De integratie van vast en flexibel talent is allang geen toekomstmuziek meer; koplopers in de markt zijn het momenteel actief aan het implementeren.
+      </p>
+
+      <p>
+        Total Talent Management (TTM) staat al jaren op de agenda, maar de kloof tussen strategie en executie blijkt in de praktijk vaak hardnekkig. Tijdens ProcureCon lieten multinationals als Unilever, Sanofi, Heineken, GE, Schneider Electric en KPN echter zien hoe zij deze kloof dichten. Zij doorbreken de traditionele silo's en transformeren hun talentstrategie.
+      </p>
+
+      <p>
+        Op basis van de keynotes en paneldiscussies deel ik graag de drie belangrijkste pijlers die ten grondslag liggen aan een succesvolle Total Talent strategie.
+      </p>
+
+      <h2>1. Interne alignment: Data en mandaat boven 'politie spelen'</h2>
+
+      <p>
+        Een VMS of ATS is slechts een tool. De echte versnelling van een Total Talent strategie ontstaat pas bij naadloze interne samenwerking. Hoewel ProcureCon van oudsher de inkoopkant belicht, bleek uit vrijwel alle succesverhalen dat het eigenaarschap van Total Talent een gedeelde verantwoordelijkheid is tussen HR en Inkoop.
+      </p>
+
+      <p>
+        Hoe organiseer je die samenwerking? Tijdens een paneldiscussie met onder meer Heineken, Wella, ING en GE kwam sterk naar voren dat het inrichten van een multidisciplinaire stuurgroep essentieel is. Deze stuurgroep heeft een helder mandaat en aantoonbare buy-in nodig vanaf C-level om afdelingen als HR, Inkoop, Finance en Legal succesvol te verbinden.
+      </p>
+
+      <p>
+        Daarnaast gaf Schneider Electric een waardevol inzicht over de rol van inkoop binnen deze transitie: het heeft geen zin om 'politieagent' te spelen. De sleutel ligt in data. Door feitelijk te onderbouwen waarom een afwijking van de Total Talent strategie duurder is of niet het gewenste resultaat oplevert — wanneer inhurende managers bijvoorbeeld buiten het programma inhuren — creëer je eenvoudiger het nodige draagvlak en krijg je de neuzen dezelfde kant op.
+      </p>
+
+      <h2>2. Compliance als aanjager van urgentie</h2>
+
+      <p>
+        De wet- en regelgeving rondom talent wordt internationaal steeds complexer. Overheden introduceren continu nieuwe regels om grip te houden op de diversiteit aan contractvormen, van gig-werk en zzp'ers tot staffing, consultancy en inmiddels zelfs AI-agents.
+      </p>
+
+      <p>
+        Toch hoeft deze complexiteit geen rem op innovatie te zijn; het kan juist dienen als katalysator. Een treffend voorbeeld werd gedeeld door ING rondom de recente invoering van de nieuwe CAO voor uitzendkrachten in Nederland (gelijke beloning). Deze strikte lokale wetgeving resoneerde direct op directieniveau. Het creëerde het benodigde urgentiebesef en de ruimte om het volledige talentprogramma onder de loep te nemen. Plotseling zaten HR, Inkoop, Legal en de operatie gezamenlijk aan tafel om dit op te lossen. Compliance vormde zo de directe aanleiding om de silo's af te breken.
+      </p>
+
+      <h2>3. De praktijk: Start small, scale fast</h2>
+
+      <p>
+        Trap niet in de valkuil van ellenlange implementatieplannen. Bedrijven die nu de vruchten plukken van TTM, begonnen klein. Een uitstekend voorbeeld hiervan is de aanpak van Sanofi (gepresenteerd in samenwerking met Talent Solutions TAPFIN) rondom de implementatie van <em>skills-based hiring</em>.
+      </p>
+
+      <p>
+        In plaats van een wereldwijde 'big bang', startte Sanofi met een afgebakende pilot in één specifieke regio, gericht op één domein met een aantal kritische rollen. Binnen deze veilige omgeving konden zij sturen op de eerste successen en direct leren van gemaakte fouten. Pas nu deze pilot succesvol is afgerond, onderzoeken zij hoe ze deze methodiek gecontroleerd kunnen kopiëren en uitrollen naar andere regio's.
+      </p>
+
+      <h2>De technologische versneller: Skills-Based Organiseren</h2>
+
+      <p>
+        Wanneer de basis van samenwerking en compliance staat, vormt technologie de ultieme versneller. Hoewel specifieke tools minder de nadruk kregen, was de opmars van 'Skills-Based Organiseren' onmiskenbaar.
+      </p>
+
+      <p>
+        Het opzetten van een taxonomie van vaardigheden stelt organisaties in staat om veel sneller en nauwkeuriger te matchen met beschikbaar talent, zowel intern als extern. Met name de integratie van Artificial Intelligence biedt hierin ongekende mogelijkheden. AI kan moeiteloos complexe factoren zoals beschikbaarheid, tijd en specifieke skills met elkaar verbinden om tot de optimale talentmix voor een project te komen. Vanuit onze eigen marktkennis bij Komma Consult zien we dat leveranciers zoals Beeline (VMS) momenteel grote stappen zetten om deze AI-gedreven skills-matching te faciliteren.
+      </p>
+
+      <h2>Conclusie</h2>
+
+      <p>
+        Total Talent Management is geen theoretisch concept meer. Het vereist lef om klein te beginnen, de noodzaak om afdelingsgrenzen te doorbreken en de visie om technologie in te zetten als versneller, niet als doel op zich.
+      </p>
+
+      <hr />
+
+      <p>
+        <strong>Benieuwd hoe Komma Consult jouw organisatie kan helpen bij de stap van TTM-visie naar TTM-praktijk?</strong> Neem gerust contact op voor een vrijblijvend gesprek.
+      </p>
+    `,
+    author: "Mathijs Duisdecker",
+    date: "2026-03-17",
+    readTime: "6 min",
+    category: "Inhuurstrategie",
+    featured: false,
+  },
+  {
     slug: "veilige-haven-toptalent-zzp",
     title: "De veilige haven voor toptalent: Waarom de beste zzp'ers kiezen voor de strengste opdrachtgevers",
     excerpt: "De VBAR-criteria zijn gesneuveld, maar de vrijblijvendheid is definitief voorbij. Organisaties die hun zaken nú op orde brengen, winnen de strijd om schaars talent én bouwen aan een sterk employer brand voor zzp-inhuur.",
