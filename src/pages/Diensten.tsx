@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Target, Shield, Clock, Settings, CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { getBlogPostBySlug, getBlogPostUrl } from '@/content/blogPosts'
+import { getServiceLinkById } from '@/content/serviceLinks'
 import Seo from '@/seo/Seo'
 
 const diensten = [
@@ -165,74 +167,108 @@ export default function Diensten() {
       {/* Services */}
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-20 lg:space-y-32">
-            {diensten.map((dienst, index) => (
-              <div 
-                key={dienst.id}
-                id={dienst.id}
-                className="scroll-mt-24"
-              >
-                <div className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-start ${index % 2 === 1 ? '' : ''}`}>
-                  {/* Content */}
-                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <div className="flex items-start gap-6 mb-8">
-                      <div className="w-16 h-16 rounded-2xl bg-komma-fuchsia flex items-center justify-center flex-shrink-0">
-                        <dienst.icon className="h-8 w-8 text-white" />
-                      </div>
-                      <div>
-                        <span className="text-komma-fuchsia font-bold text-sm">0{index + 1}</span>
-                        <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-komma-navy tracking-tight">
-                          {dienst.title}
-                        </h2>
-                      </div>
-                    </div>
-                    
-                    <p className="text-gray-600 text-lg leading-relaxed">
-                      {dienst.description}
-                    </p>
-                    
-                    <p className="mt-4 text-gray-600 leading-relaxed">
-                      {dienst.details}
-                    </p>
+          <div className="space-y-16 lg:space-y-20">
+            {diensten.map((dienst, index) => {
+              const serviceLink = getServiceLinkById(dienst.id)
 
-                    <div className="mt-6 rounded-2xl bg-komma-navy/5 p-6">
-                      <h3 className="font-semibold text-komma-navy">
-                        Dit is voor jou als
-                      </h3>
-                      <p className="mt-3 text-gray-700 leading-relaxed">
-                        {dienst.when}
-                      </p>
-                    </div>
-                    
-                    <div className="mt-10">
-                      <Link to="/contact">
-                        <Button className="bg-komma-fuchsia hover:bg-komma-fuchsia-dark">
-                          Neem contact op
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                  
-                  {/* Benefits card */}
-                  <div className={`bg-white rounded-3xl p-8 lg:p-10 shadow-xl ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <h3 className="font-display text-xl font-bold text-komma-navy mb-8">
-                      Wat levert dit op?
-                    </h3>
-                    <ul className="space-y-5">
-                      {dienst.benefits.map((benefit) => (
-                        <li key={benefit} className="flex items-start gap-4">
-                          <div className="w-6 h-6 rounded-full bg-komma-fuchsia/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <CheckCircle className="h-4 w-4 text-komma-fuchsia" />
+              return (
+                <div
+                  key={dienst.id}
+                  id={dienst.id}
+                  className="scroll-mt-24 border-t border-gray-200 pt-16 first:border-t-0 first:pt-0"
+                >
+                  <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                    <div className="lg:col-span-7">
+                      <div className="flex items-start gap-5 mb-8">
+                        <div className="w-14 h-14 rounded-2xl bg-komma-fuchsia flex items-center justify-center flex-shrink-0 shadow-lg shadow-komma-fuchsia/15">
+                          <dienst.icon className="h-7 w-7 text-white" />
+                        </div>
+                        <div>
+                          <span className="text-komma-fuchsia font-bold text-sm">0{index + 1}</span>
+                          <h2 className="mt-2 font-display text-3xl sm:text-4xl font-extrabold text-komma-navy tracking-tight">
+                            {dienst.title}
+                          </h2>
+                        </div>
+                      </div>
+
+                      <div className="max-w-2xl space-y-5">
+                        <p className="text-gray-700 text-lg leading-relaxed max-w-[42rem]">
+                          {dienst.description}
+                        </p>
+
+                        <p className="text-gray-600 leading-relaxed max-w-[40rem]">
+                          {dienst.details}
+                        </p>
+                      </div>
+
+                      <div className="mt-8 border-l-2 border-komma-fuchsia/20 pl-5 max-w-[40rem]">
+                        <span className="text-komma-fuchsia font-semibold text-xs tracking-wide uppercase">
+                          Relevant als
+                        </span>
+                        <p className="mt-3 text-gray-600 leading-relaxed">
+                          {dienst.when}
+                        </p>
+                      </div>
+
+                      {serviceLink ? (
+                        <div className="mt-10 pt-6 border-t border-gray-200 max-w-[40rem]">
+                          <h3 className="font-semibold text-komma-navy">
+                            Verdiep je verder
+                          </h3>
+                          <div className="mt-4 flex flex-col gap-2.5">
+                            {serviceLink.knowledgeSlugs
+                              .map((slug) => getBlogPostBySlug(slug))
+                              .filter(Boolean)
+                              .map((post) => (
+                                <Link
+                                  key={post!.slug}
+                                  to={getBlogPostUrl(post!)}
+                                  className="group inline-flex items-center gap-3 text-sm text-gray-500 hover:text-komma-fuchsia transition-colors"
+                                >
+                                  <span className="h-1 w-1 rounded-full bg-komma-fuchsia/70 flex-shrink-0" />
+                                  <span className="font-medium">{post!.title}</span>
+                                  <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-komma-fuchsia transition-colors" />
+                                </Link>
+                              ))}
                           </div>
-                          <span className="text-gray-700 font-medium">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
+                        </div>
+                      ) : null}
+
+                      <div className="mt-10">
+                        <Link
+                          to="/contact"
+                          className="inline-flex items-center gap-2 text-komma-navy font-semibold hover:text-komma-fuchsia transition-colors"
+                        >
+                          Bespreek dit vraagstuk
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div className="lg:col-span-5">
+                      <div className="rounded-3xl bg-white/80 backdrop-blur-sm border border-white shadow-md p-7 lg:p-9 lg:sticky lg:top-28">
+                        <span className="text-komma-fuchsia font-semibold text-xs tracking-wide uppercase">
+                          Opbrengst
+                        </span>
+                        <h3 className="mt-3 font-display text-xl font-bold text-komma-navy mb-6">
+                          Wat levert dit op?
+                        </h3>
+                        <ul className="space-y-4">
+                          {dienst.benefits.map((benefit) => (
+                            <li key={benefit} className="flex items-start gap-4">
+                              <div className="w-6 h-6 rounded-full bg-komma-fuchsia/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <CheckCircle className="h-4 w-4 text-komma-fuchsia" />
+                              </div>
+                              <span className="text-gray-700 leading-relaxed">{benefit}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

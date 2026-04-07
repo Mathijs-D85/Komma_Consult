@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
 import Nieuws from './pages/Nieuws'
 import BlogPost from './pages/BlogPost'
+import LegacyNieuwsRedirect from './pages/LegacyNieuwsRedirect'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -21,8 +22,11 @@ function App() {
           <Route path="/over" element={<Over />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/nieuws" element={<Nieuws />} />
-          <Route path="/nieuws/:slug" element={<BlogPost />} />
+          <Route path="/kennis" element={<Nieuws />} />
+          <Route path="/kennis/artikelen/:slug" element={<BlogPost />} />
+          <Route path="/kennis/actueel/:slug" element={<BlogPost />} />
+          <Route path="/nieuws" element={<LegacyNieuwsRedirect />} />
+          <Route path="/nieuws/:slug" element={<LegacyNieuwsRedirect />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

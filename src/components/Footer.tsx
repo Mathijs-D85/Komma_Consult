@@ -64,8 +64,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/nieuws" className="text-white/70 hover:text-komma-fuchsia transition-colors font-medium">
-                  Nieuws
+                <Link to="/kennis" className="text-white/70 hover:text-komma-fuchsia transition-colors font-medium">
+                  Kennis
                 </Link>
               </li>
               <li>

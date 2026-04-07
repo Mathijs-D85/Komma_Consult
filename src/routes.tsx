@@ -11,6 +11,7 @@ import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
 import Nieuws from './pages/Nieuws'
 import BlogPost from './pages/BlogPost'
+import LegacyNieuwsRedirect from './pages/LegacyNieuwsRedirect'
 import NotFound from './pages/NotFound'
 import { blogPosts } from './content/blogPosts'
 
@@ -36,11 +37,31 @@ export const routes: RouteRecord[] = [
       { path: 'over', element: <Over /> },
       { path: 'contact', element: <Contact /> },
       { path: 'privacy', element: <Privacy /> },
-      { path: 'nieuws', element: <Nieuws /> },
+      { path: 'kennis', element: <Nieuws /> },
+      {
+        path: 'kennis/artikelen/:slug',
+        element: <BlogPost />,
+        getStaticPaths: () =>
+          blogPosts
+            .filter((post) => post.kind === 'kennis')
+            .map((post) => `/kennis/artikelen/${post.slug}`),
+      },
+      {
+        path: 'kennis/actueel/:slug',
+        element: <BlogPost />,
+        getStaticPaths: () =>
+          blogPosts
+            .filter((post) => post.kind === 'actueel')
+            .map((post) => `/kennis/actueel/${post.slug}`),
+      },
+      { path: 'nieuws', element: <LegacyNieuwsRedirect /> },
       {
         path: 'nieuws/:slug',
-        element: <BlogPost />,
-        getStaticPaths: () => blogPosts.map((post) => `/nieuws/${post.slug}`),
+        element: <LegacyNieuwsRedirect />,
+        getStaticPaths: () =>
+          blogPosts
+            .filter((post) => post.kind === 'actueel')
+            .map((post) => `/nieuws/${post.slug}`),
       },
       { path: '404', element: <NotFound /> },
       { path: '*', element: <NotFound /> },

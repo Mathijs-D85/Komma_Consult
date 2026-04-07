@@ -23,12 +23,17 @@ function getBlogRoutesFromSource(tsFileContent) {
   const withoutBlockComments = tsFileContent.replace(/\/\*[\s\S]*?\*\//g, '')
   const withoutLineComments = withoutBlockComments.replace(/^\s*\/\/.*$/gm, '')
 
-  // Match objects containing slug + date.
-  const matches = [...withoutLineComments.matchAll(/\{\s*slug:\s*"([^"]+)"[\s\S]*?date:\s*"(\d{4}-\d{2}-\d{2})"/g)]
+  // Match objects containing slug + kind + date.
+  const matches = [
+    ...withoutLineComments.matchAll(
+      /\{\s*slug:\s*'([^']+)'[\s\S]*?kind:\s*'([^']+)'[\s\S]*?date:\s*'(\d{4}-\d{2}-\d{2})'/g
+    ),
+  ]
 
   return matches.map((m) => ({
     slug: m[1],
-    date: m[2],
+    kind: m[2],
+    date: m[3],
   }))
 }
 
@@ -42,7 +47,7 @@ const staticPaths = [
   { path: '/diensten', changefreq: 'monthly', priority: '0.8' },
   { path: '/over', changefreq: 'monthly', priority: '0.7' },
   { path: '/contact', changefreq: 'monthly', priority: '0.9' },
-  { path: '/nieuws', changefreq: 'weekly', priority: '0.8' },
+  { path: '/kennis', changefreq: 'weekly', priority: '0.8' },
   { path: '/privacy', changefreq: 'yearly', priority: '0.3' },
   { path: '/game/', changefreq: 'monthly', priority: '0.4' },
 ]
@@ -59,10 +64,10 @@ const urls = [
     priority: p.priority,
   })),
   ...blogRoutes.map((b) => ({
-    loc: `${BASE_URL}/nieuws/${b.slug}`,
+    loc: `${BASE_URL}/kennis/${b.kind === 'kennis' ? 'artikelen' : 'actueel'}/${b.slug}`,
     lastmod: b.date,
-    changefreq: 'yearly',
-    priority: '0.6',
+    changefreq: b.kind === 'kennis' ? 'monthly' : 'yearly',
+    priority: b.kind === 'kennis' ? '0.7' : '0.6',
   })),
 ]
 

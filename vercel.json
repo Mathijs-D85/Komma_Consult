@@ -6,6 +6,16 @@
       "permanent": true
     },
     {
+      "source": "/nieuws",
+      "destination": "/kennis",
+      "permanent": true
+    },
+    {
+      "source": "/nieuws/:slug",
+      "destination": "/kennis/actueel/:slug",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.kommaconsult.nl" }],
       "destination": "https://kommaconsult.nl/$1",
