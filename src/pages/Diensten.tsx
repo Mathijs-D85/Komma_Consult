@@ -8,53 +8,80 @@ const diensten = [
     id: 'strategisch-inhuuradvies',
     icon: Target,
     title: 'Strategisch inhuuradvies',
-    description: `Wij begrijpen dat het succes van je organisatie afhankelijk is van het effectief inzetten van talent. Onze dienstverlening op het gebied van strategisch inhuuradvies is gericht op het optimaliseren van je inhuurstrategie.`,
-    details: `In welke fase je ook zit als organisatie, wij bieden grondige analyses en strategieën die zijn ontworpen om je organisatie te helpen bij het efficiënt beheren van je inhuur en het maximaliseren van de ROI op je inhuurinvesteringen.`,
+    description: `Externe inhuur wordt vaak pas een thema als kosten oplopen, verantwoordelijkheden versnipperd raken of niemand precies weet waar de grootste risico's zitten. Strategisch inhuuradvies helpt om eerst scherp te krijgen wat er speelt, waar het wringt en welke keuzes nodig zijn om weer regie te krijgen.`,
+    details: `Dat kan gaan over governance, leveranciers, procesinrichting, de verhouding tussen vast en flex of de vraag of een MSP, broker of VMS past bij jouw organisatie. Geen advies om het advies, maar richting waarmee je verder kunt.`,
+    when: `Dit is relevant als je meer grip wilt op externe inhuur, een verandering overweegt of eerst goed wilt begrijpen welk probleem je eigenlijk oplost.`,
     benefits: [
-      'Optimalisatie van je externe inhuurstrategie',
-      'Grondige analyses van de huidige situatie',
-      'Strategieën voor efficiënt beheer van je inhuur',
-      'Kostenmanagement strategie voor maximalisatie en optimalisatie van je inhuurinvestering',
+      'Meer overzicht in rollen, processen en verantwoordelijkheden',
+      'Heldere keuzes over inrichting, sturing en governance',
+      'Betere onderbouwing voor beleid, verandering of aanbesteding',
+      'Een aanpak die inhoud en uitvoering met elkaar verbindt',
     ],
   },
   {
     id: 'compliant-inhuren',
     icon: Shield,
     title: 'Compliant inhuren',
-    description: `In de soms complexe wereld van externe inhuur, zorgt Komma Consult ervoor dat je inhuurprocessen volledig voldoen aan de geldende wet- en regelgeving.`,
-    details: `Onze specialisten op het gebied van compliant inhuren bieden deskundig advies en ondersteuning om te zorgen dat je organisatie risico's minimaliseert en zodoende voldoet aan alle juridische en wettelijke vereisten.`,
+    description: `Compliant inhuren vraagt om meer dan een checklist of modelovereenkomst. Wet- en regelgeving raakt processen, rollen, gedrag op de werkvloer en de manier waarop je met leveranciers samenwerkt.`,
+    details: `Komma Consult helpt om compliance praktisch te maken: zonder ad-hoc maatregelen, maar ook zonder onderschatting van de risico's. We kijken naar wat er op papier staat en vooral naar wat er in de praktijk gebeurt.`,
+    when: `Dit is relevant als regelgeving druk zet op je organisatie, als je risico's beter wilt beheersen of als je wilt voorkomen dat compliance een los project naast de business wordt.`,
     benefits: [
-      'Volledig compliant met wet- en regelgeving',
-      'Minimalisatie van juridische risico\'s',
-      'Deskundig advies van specialisten',
-      'Continue ondersteuning bij veranderingen in wetgeving',
+      'Meer grip op risico\'s en verantwoordelijkheden',
+      'Een werkbare aanpak die past bij de dagelijkse praktijk',
+      'Minder afhankelijkheid van aannames of schijnzekerheid op papier',
+      'Beter inzicht in waar bijsturing echt nodig is',
     ],
   },
   {
     id: 'interim-ondersteuning',
     icon: Clock,
     title: 'Interim ondersteuning',
-    description: `Heb je dringend behoefte aan tijdelijke managementondersteuning of specifieke vaardigheden voor een korte termijn? Kies voor actie met Komma Consult!`,
-    details: `Wij staan klaar om je uitdagingen om te zetten in een succesvolle oplossing. Tijdens een vrijblijvend adviesgesprek verkennen we de mogelijkheden of zoeken we alternatieve ondersteuningswegen, zoals het inzetten van ons uitgebreide netwerk. Op deze manier voorzien wij je altijd van een oplossing.`,
+    description: `Soms is het vraagstuk helder, maar ontbreekt tijd, capaciteit of specifieke expertise om het goed op te pakken. Dan is tijdelijke ondersteuning nodig van iemand die snel overzicht heeft en direct waarde toevoegt.`,
+    details: `Komma Consult kan tijdelijk regie, inhoudelijke scherpte of extra slagkracht brengen in lopende trajecten. Bijvoorbeeld bij implementaties, governancevraagstukken, leveranciersmanagement of dossiers die blijven liggen.`,
+    when: `Dit is relevant als er intern te weinig capaciteit is, als een belangrijk traject niet kan wachten of als je tijdelijk een ervaren sparringpartner en uitvoerder nodig hebt.`,
     benefits: [
-      'Snelle beschikbaarheid van expertise',
-      'Flexibele inzet voor korte of lange termijn',
-      'Toegang tot ons uitgebreide netwerk',
-      'Altijd een passende oplossing',
+      'Snel extra regie en voortgang in complexe dossiers',
+      'Direct inzetbare expertise zonder lange inwerktijd',
+      'Flexibele ondersteuning waar de druk het hoogst is',
+      'Tijdelijke versterking die inhoud en uitvoering verbindt',
     ],
   },
   {
     id: 'implementatie',
     icon: Settings,
     title: 'Implementeren van een inhuuroplossing',
-    description: `De implementatie van een nieuw inhuursysteem of -proces kan een uitdaging zijn. Komma Consult biedt uitgebreide ondersteuning bij de implementatie van inhuuroplossingen.`,
-    details: `Wij begeleiden je bij elke stap van het proces. Van het geven van advies, het ontwerpen van het systeem tot de daadwerkelijke implementatie en training van je personeel. Wij zorgen ervoor dat de overgang soepel en succesvol verloopt.`,
+    description: `Een MSP, broker, VMS of nieuwe werkwijze implementeren is niet alleen een systeem- of inkoopvraagstuk. Het raakt processen, stakeholders, leveranciers en de dagelijkse praktijk van managers en recruiters.`,
+    details: `Komma Consult helpt om implementaties bestuurbaar te maken. Van het aanscherpen van de uitgangspunten tot begeleiding tijdens inrichting, besluitvorming en adoptie. Zodat de oplossing niet alleen live gaat, maar ook echt gaat werken.`,
+    when: `Dit is relevant als je een nieuwe inhuuroplossing invoert, een bestaand model wilt verbeteren of meer samenhang wilt tussen beleid, proces en uitvoering.`,
     benefits: [
-      'End-to-end begeleiding bij implementatie',
-      'Advies en systeemontwerp op maat',
-      'Training van personeel',
-      'Soepele en succesvolle overgang',
+      'Meer samenhang tussen ontwerp, besluitvorming en uitvoering',
+      'Minder ruis tussen business, leveranciers en projectteam',
+      'Betere adoptie doordat de praktijk vanaf het begin wordt meegenomen',
+      'Een implementatie die niet alleen technisch, maar ook organisatorisch klopt',
     ],
+  },
+]
+
+const aanpak = [
+  {
+    title: 'Verkennen',
+    description:
+      'We brengen scherp in kaart wat er speelt, waar het wringt en welke aanleiding er is om nu in beweging te komen.',
+  },
+  {
+    title: 'Analyseren',
+    description:
+      'We kijken naar processen, rollen, risico\'s, leveranciers, data en sturing, zodat duidelijk wordt wat er echt aan de hand is.',
+  },
+  {
+    title: 'Realiseren',
+    description:
+      'Afhankelijk van de vraag vertalen we dit naar advies, een plan van aanpak, begeleiding bij keuzes of directe ondersteuning in de uitvoering.',
+  },
+  {
+    title: 'Bijsturen',
+    description:
+      'Tijdens het traject blijven we volgen, aanscherpen en verbeteren op basis van wat er in de praktijk gebeurt.',
   },
 ]
 
@@ -76,8 +103,8 @@ export default function Diensten() {
     <>
       <Seo
         path="/diensten"
-        title="Inhuuradvies & Total Talent Management"
-        description="Expertise op maat voor grote organisaties: strategisch inhuuradvies, compliant inhuren, interim ondersteuning en implementatie (VMS/MSP/broker)."
+        title="Regie op externe inhuur"
+        description="Komma Consult helpt organisaties met grip, regie en bestuurbaarheid in externe inhuur: strategisch advies, compliant inhuren, implementatie en tijdelijke ondersteuning."
         jsonLd={faqJsonLd}
       />
       {/* Header - Bold Style */}
@@ -91,15 +118,46 @@ export default function Diensten() {
               Wat wij doen
             </span>
             <h1 className="mt-4 font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-komma-navy tracking-tight">
-              Expertise
+              Regie op
               <br />
-              <span className="text-komma-fuchsia">op maat</span>
+              <span className="text-komma-fuchsia">externe inhuur</span>
             </h1>
             <p className="mt-8 text-xl text-gray-600 leading-relaxed max-w-2xl">
-              Van strategisch advies tot implementatie - wij staan klaar om je 
-              organisatie te helpen groeien en floreren met alle vraagstukken 
-              rondom inhuur.
+              Externe inhuur wordt al snel een vraagstuk van HR, inkoop, finance,
+              legal en de business tegelijk. Komma Consult helpt organisaties om
+              daar overzicht, richting en bestuurbaarheid in aan te brengen.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mb-16">
+            <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+              Onze aanpak
+            </span>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight">
+              Van vraagstuk naar werkbare oplossing
+            </h2>
+            <p className="mt-6 text-xl text-gray-600">
+              Geen zwaar consultantentraject, maar een aanpak die helpt om snel
+              scherpte te krijgen en onderweg bij te sturen waar nodig.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {aanpak.map((stap, index) => (
+              <div key={stap.title} className="bg-gray-50 rounded-3xl p-8 border border-gray-100">
+                <span className="text-komma-fuchsia font-bold text-sm">0{index + 1}</span>
+                <h3 className="mt-4 font-display text-2xl font-bold text-komma-navy">
+                  {stap.title}
+                </h3>
+                <p className="mt-4 text-gray-600 leading-relaxed">
+                  {stap.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -136,6 +194,15 @@ export default function Diensten() {
                     <p className="mt-4 text-gray-600 leading-relaxed">
                       {dienst.details}
                     </p>
+
+                    <div className="mt-6 rounded-2xl bg-komma-navy/5 p-6">
+                      <h3 className="font-semibold text-komma-navy">
+                        Dit is voor jou als
+                      </h3>
+                      <p className="mt-3 text-gray-700 leading-relaxed">
+                        {dienst.when}
+                      </p>
+                    </div>
                     
                     <div className="mt-10">
                       <Link to="/contact">

@@ -7,17 +7,17 @@ const waarden = [
   {
     icon: Lightbulb,
     title: 'Vernieuwend',
-    description: 'We zoeken altijd naar innovatieve oplossingen die passen bij de specifieke situatie van onze klanten.',
+    description: 'We kijken niet alleen naar hoe het altijd is gedaan, maar vooral naar wat in jouw situatie werkt. Dat betekent frisse analyse, scherpe vragen en oplossingen die passen bij de praktijk van nu.',
   },
   {
     icon: Users,
     title: 'Persoonlijk',
-    description: 'Elke klant is uniek. Wij nemen de tijd om te begrijpen wat jouw organisatie nodig heeft.',
+    description: 'Geen wisselende contactpersonen of afstandelijke adviestaal. Je werkt direct samen met iemand die jouw vraagstuk begrijpt, meedenkt en betrokken blijft van eerste gesprek tot uitvoering.',
   },
   {
     icon: TrendingUp,
     title: 'Vooruit',
-    description: 'Net als een komma in een zin, staat Komma Consult voor voortgang en doorlopende ontwikkeling.',
+    description: 'Een goed advies is geen eindpunt. We helpen je om keuzes om te zetten in beweging, en blijven onderweg aanscherpen waar de praktijk daarom vraagt.',
   },
 ]
 
@@ -27,7 +27,7 @@ export default function Over() {
       <Seo
         path="/over"
         title="Over Komma Consult | Strategisch Inhuuradvies Amsterdam"
-        description="Lees het verhaal achter Komma Consult. Wij helpen grote organisaties en overheden met externe inhuur: strategisch inhuuradvies, compliant inhuren en interim ondersteuning."
+        description="Lees hoe Komma Consult organisaties helpt om externe inhuur bestuurbaar te maken, met inhoudelijke scherpte, directe betrokkenheid en oog voor de praktijk."
       />
       {/* Header - Bold Style */}
       <section className="relative py-20 lg:py-28 bg-white overflow-hidden">
@@ -45,8 +45,9 @@ export default function Over() {
               <span className="text-komma-fuchsia">de komma</span>
             </h1>
             <p className="mt-8 text-xl text-gray-600 leading-relaxed">
-              De naam weerspiegelt onze filosofie: Komma Consult staat voor continuïteit, 
-              vernieuwing en de oneindige mogelijkheden die ontstaan na "de komma".
+              Komma Consult helpt organisaties om grip, regie en rust te brengen in
+              externe inhuur. Niet met abstracte modellen, maar door
+              complexe vraagstukken terug te brengen tot heldere keuzes en werkbare oplossingen.
             </p>
           </div>
         </div>
@@ -83,17 +84,18 @@ export default function Over() {
               
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Met jarenlange ervaring en een goed ontwikkeld inzicht in het vakgebied, 
-                  zag ik een groeiende vraag naar deskundigheid binnen externe inhuur.
+                  In externe inhuur komen veel werelden samen: HR, inkoop, finance,
+                  legal, leveranciers en de business. Juist daardoor ontstaan er in
+                  de praktijk vaak onduidelijkheid, versnipperde verantwoordelijkheid en gebrek aan sturing.
                 </p>
                 <p>
-                  Komma Consult is opgericht met de doelstelling om deze behoefte aan expertise 
-                  te adresseren, door bedrijven te ondersteunen in het begrijpen van de 
-                  complexiteiten binnen de wereld van externe inhuur.
+                  Ik heb Komma Consult opgericht om organisaties te helpen die
+                  complexiteit terug te brengen tot overzicht en regie. Niet vanaf
+                  de zijlijn, maar dicht op de inhoud en dicht op de praktijk.
                 </p>
                 <p className="text-komma-navy font-semibold">
-                  "Laten we samen ontdekken wat er schuilt achter de komma! 
-                  Wat mij betreft is dat waar passies, ambities en mogelijkheden ontstaan."
+                  "Ik geloof dat externe inhuur pas echt bestuurbaar wordt als
+                  inhoud, uitvoering en eigenaarschap weer met elkaar verbonden zijn."
                 </p>
               </div>
               
@@ -118,8 +120,12 @@ export default function Over() {
               Kernwaarden
             </span>
             <h2 className="mt-4 font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight">
-              Waar wij voor staan
+              Hoe wij werken
             </h2>
+            <p className="mt-6 text-xl text-gray-600 leading-relaxed">
+              Wat Komma Consult onderscheidt, zit niet in grotere woorden of meer lagen,
+              maar in de manier van kijken en samenwerken: inhoudelijk scherp, direct betrokken en altijd gericht op beweging in de praktijk.
+            </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -160,15 +166,15 @@ export default function Over() {
           </span>
           
           <h2 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
-            Organisaties helpen
+            Externe inhuur
             <br />
-            <span className="text-komma-fuchsia">groeien en floreren</span>
+            <span className="text-komma-fuchsia">bestuurbaar maken</span>
           </h2>
           
           <p className="mt-8 text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Komma Consult biedt strategische adviezen en oplossingen, gericht op het 
-            optimaliseren van inhuurprocessen en het verbeteren van bedrijfsresultaten 
-            in een steeds veranderende wereld.
+            Komma Consult helpt organisaties om externe inhuur terug te brengen tot
+            overzicht, eigenaarschap en werkbare keuzes. Zodat beleid, processen en
+            uitvoering weer op elkaar aansluiten.
           </p>
         </div>
       </section>
@@ -182,7 +188,8 @@ export default function Over() {
             <span className="text-komma-fuchsia">jou kan betekenen?</span>
           </h2>
           <p className="mt-6 text-xl text-gray-600">
-            Ik maak graag kennis met je om te bespreken hoe ik je kan helpen.
+            Ik maak graag kennis om te verkennen waar jouw organisatie meer grip,
+            regie of scherpte nodig heeft.
           </p>
           <div className="mt-10">
             <Link to="/contact">

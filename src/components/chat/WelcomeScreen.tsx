@@ -17,9 +17,9 @@ export function WelcomeScreen({ onSendMessage, isLoading }: WelcomeScreenProps) 
           <span className="welcome-title-accent">de komma</span>
         </h1>
         <p className="welcome-subtitle">
-          Wil je weten hoe wij je kunnen helpen op het gebied van inhuuradvies?
+          Heb je een vraag over grip, regie of keuzes binnen externe inhuur?
           <br />
-          <span className="welcome-highlight">Stel hier direct je vraag.</span>
+          <span className="welcome-highlight">Stel hem hier direct.</span>
         </p>
 
         {/* Invoerveld */}
@@ -27,7 +27,7 @@ export function WelcomeScreen({ onSendMessage, isLoading }: WelcomeScreenProps) 
           <ChatInput
             onSend={onSendMessage}
             isLoading={isLoading}
-            placeholder="Stel je vraag over externe inhuur..."
+            placeholder="Stel je vraag over externe inhuur, compliance of MSP/VMS..."
             autoFocus={true}
             large={true}
           />

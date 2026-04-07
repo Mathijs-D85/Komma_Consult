@@ -10,26 +10,49 @@ const diensten = [
   {
     icon: Target,
     title: 'Strategisch inhuuradvies',
-    description: 'Optimaliseer je externe inhuurstrategie en maximaliseer ROI.',
+    description: 'Van versnippering naar overzicht, keuzes en regie.',
     href: '/diensten#strategisch-inhuuradvies',
   },
   {
     icon: Shield,
     title: 'Compliant inhuren',
-    description: 'Volledig voldoen aan wet- en regelgeving, risico\'s minimaliseren.',
+    description: 'Meer grip op risico\'s, rollen en wet- en regelgeving.',
     href: '/diensten#compliant-inhuren',
   },
   {
     icon: Clock,
     title: 'Interim ondersteuning',
-    description: 'Tijdelijke managementondersteuning wanneer je het nodig hebt.',
+    description: 'Tijdelijke regie voor vraagstukken die niet kunnen wachten.',
     href: '/diensten#interim-ondersteuning',
   },
   {
     icon: Settings,
     title: 'Implementatie',
-    description: 'Van ontwerp tot training - soepele implementatie gegarandeerd.',
+    description: 'Begeleiding bij keuzes, inrichting en invoering van je oplossing.',
     href: '/diensten#implementatie',
+  },
+]
+
+const situaties = [
+  {
+    title: 'Je mist grip op externe inhuur',
+    description:
+      'Er wordt veel ingehuurd, maar overzicht ontbreekt. Wie huurt in, tegen welke voorwaarden, via welke leveranciers en met welke risico\'s? Als dat niet helder is, wordt sturen lastig.',
+  },
+  {
+    title: 'Je wilt compliant inhuren met een aanpak die werkt',
+    description:
+      'Wet- en regelgeving vraagt om aandacht, maar losse maatregelen of extra controles lossen het onderliggende probleem niet op. Je zoekt een aanpak die inhoudelijk klopt en werkbaar blijft in de praktijk.',
+  },
+  {
+    title: 'Je inhuurproces draait, maar voelt niet bestuurbaar',
+    description:
+      'Aanvragen lopen, leveranciers leveren en facturen worden betaald, maar in de inrichting ontstaan knelpunten. Rollen zijn onduidelijk, belangen lopen door elkaar en sturen gebeurt te weinig op basis van data.',
+  },
+  {
+    title: 'Je staat voor een keuze of verandering',
+    description:
+      'Je overweegt een MSP, broker, VMS of een andere inrichting van externe inhuur. Dan wil je eerst scherp krijgen welk probleem je oplost, welke route past en hoe je de organisatie meeneemt.',
   },
 ]
 
@@ -38,8 +61,8 @@ export default function Home() {
     <>
       <Seo
         path="/"
-        title="Externe inhuur & strategisch inhuuradvies"
-        description="Komma Consult helpt grote organisaties en overheden met externe inhuur: strategisch inhuuradvies, compliant inhuren en interim ondersteuning."
+        title="Grip op externe inhuur"
+        description="Komma Consult helpt organisaties grip, regie en overzicht te krijgen in externe inhuur: van strategie en compliance tot implementatie en tijdelijke ondersteuning."
       />
       {/* Wrapper met doorlopende decoratieve fuchsia baan */}
       <div className="relative overflow-hidden bg-white">
@@ -53,10 +76,10 @@ export default function Home() {
           <div className="min-h-[600px] flex items-center justify-center">
             <div className="text-center max-w-2xl mx-auto px-4 py-24">
               <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight mb-6">
-                Strategisch inhuuradvies voor grote organisaties
+                Grip op externe inhuur
               </h1>
               <p className="text-xl text-gray-600">
-                Komma Consult helpt organisaties en overheden met externe inhuur: van strategie tot implementatie.
+                Komma Consult helpt organisaties met overzicht, regie en bestuurbaarheid in externe inhuur.
               </p>
             </div>
           </div>
@@ -78,11 +101,11 @@ export default function Home() {
               Dienstverlening
             </span>
             <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-komma-navy tracking-tight">
-              Expertise op maat
+              Van inzicht naar regie
             </h2>
             <p className="mt-6 text-xl text-gray-600">
-              Van strategisch advies tot hands-on implementatie. 
-              Altijd afgestemd op jouw specifieke situatie.
+              Externe inhuur raakt HR, inkoop, finance, legal en de business.
+              Komma Consult helpt om daar overzicht, structuur en bestuurbaarheid in aan te brengen.
             </p>
           </div>
           
@@ -122,6 +145,39 @@ export default function Home() {
           </div>
         </div>
         </section>
+
+        <section className="relative pb-24 lg:pb-32">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mb-16">
+              <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+                Wie wij helpen
+              </span>
+              <h2 className="mt-4 font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight">
+                Herkenbare situaties
+              </h2>
+              <p className="mt-6 text-xl text-gray-600">
+                Komma Consult helpt organisaties die voelen dat externe inhuur belangrijk is,
+                maar merken dat overzicht, eigenaarschap en sturing onder druk staan.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+              {situaties.map((situatie) => (
+                <div
+                  key={situatie.title}
+                  className="bg-gray-50 rounded-3xl p-8 lg:p-10 border border-gray-100"
+                >
+                  <h3 className="font-display text-2xl font-bold text-komma-navy">
+                    {situatie.title}
+                  </h3>
+                  <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+                    {situatie.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Testimonial Carousel */}
@@ -144,8 +200,8 @@ export default function Home() {
           </h2>
           
           <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
-            Plan een vrijblijvend adviesgesprek en ontdek hoe Komma Consult 
-            jouw organisatie kan helpen met externe inhuur vraagstukken.
+            Plan een vrijblijvend gesprek en verken waar jouw organisatie meer
+            grip, overzicht of bijsturing nodig heeft in externe inhuur.
           </p>
           
           <div className="mt-12">

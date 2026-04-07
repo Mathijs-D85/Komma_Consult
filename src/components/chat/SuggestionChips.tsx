@@ -3,10 +3,10 @@ interface SuggestionChipsProps {
 }
 
 const SUGGESTIONS = [
-  "Moet ik mijn inhuur uitbesteden?",
-  "Wat is een MSP en wat levert het op?",
-  "Hoe word ik compliant met de Wet DBA?",
-  "Hoe kan ik besparen op externe inhuur?",
+  "Hoe krijg ik meer grip op externe inhuur?",
+  "Wanneer past een MSP, broker of VMS?",
+  "Hoe zorg ik dat compliant inhuren werkbaar blijft in de praktijk?",
+  "Hoe helpt duidelijk eigenaarschap bij beter beheer van inhuur?",
 ];
 
 export function SuggestionChips({ onSelect }: SuggestionChipsProps) {
