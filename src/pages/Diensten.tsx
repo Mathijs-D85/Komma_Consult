@@ -106,7 +106,7 @@ export default function Diensten() {
       <Seo
         path="/diensten"
         title="Regie op externe inhuur"
-        description="Komma Consult helpt organisaties met grip, regie en bestuurbaarheid in externe inhuur: strategisch advies, compliant inhuren, implementatie en tijdelijke ondersteuning."
+        description="Komma Consult helpt met strategisch inhuuradvies, compliant inhuren, implementatie en tijdelijke ondersteuning."
         jsonLd={faqJsonLd}
       />
       {/* Header - Bold Style */}

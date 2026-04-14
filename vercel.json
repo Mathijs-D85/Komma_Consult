@@ -32,11 +32,5 @@
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/((?!assets/|game/|sitemap\\.xml|robots\\.txt).*)",
-      "destination": "/index.html"
-    }
   ]
 }

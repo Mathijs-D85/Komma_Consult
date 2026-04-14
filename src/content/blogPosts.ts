@@ -353,7 +353,7 @@ export const blogPosts: BlogPost[] = [
     kind: 'kennis',
     title: 'Wanneer is zzp-inhuur verantwoord?',
     excerpt:
-      'Zzp-inhuur is verantwoord als de opdracht, werkpraktijk en ondernemerspositie logisch op elkaar aansluiten en je niet probeert structureel werk te verpakken als flexibiliteit.',
+      'Zzp-inhuur is verantwoord als opdracht, werkpraktijk en ondernemerschap op elkaar aansluiten en niet op regulier werk gaan lijken.',
     content: `
       <p class="lead">
         Zzp-inhuur is niet per definitie problematisch. Het wordt pas risicovol als de feitelijke situatie niet meer past bij ondernemerschap, maar nog wel als zelfstandige constructie wordt ingericht.
@@ -511,7 +511,7 @@ export const blogPosts: BlogPost[] = [
     kind: 'kennis',
     title: 'Leveranciersmanagement bij externe inhuur: waar stuur je echt op?',
     excerpt:
-      'Goed leveranciersmanagement draait niet alleen om contracten, maar om prestaties, transparantie, feedbackloops en een leveranciersbestand dat past bij je strategie.',
+      'Goed leveranciersmanagement draait om prestaties, transparantie en een leveranciersbestand dat past bij je strategie.',
     content: `
       <p class="lead">
         Leveranciersmanagement wordt nog vaak verward met contractmanagement. Maar een getekend contract is geen garantie op goede levering, marktwerking of toegang tot de beste kandidaten.
@@ -667,7 +667,7 @@ export const blogPosts: BlogPost[] = [
     kind: 'actueel',
     title: 'Van visie naar praktijk: de realiteit van Total Talent Management',
     excerpt:
-      'Tijdens ProcureCon Total Talent in Amsterdam werd opnieuw duidelijk dat Total Talent Management geen toekomstmuziek meer is, maar een vraagstuk van executie.',
+      'Op ProcureCon in Amsterdam bleek dat Total Talent Management niet meer om visie draait, maar om executie en samenwerking.',
     content: `
       <p class="lead">
         Tijdens ProcureCon Total Talent in Amsterdam werd opnieuw duidelijk dat de integratie van vast en flexibel talent geen theoretisch model meer is. De echte vraag is inmiddels hoe organisaties de stap maken van visie naar werkbare uitvoering.
@@ -720,7 +720,7 @@ export const blogPosts: BlogPost[] = [
     kind: 'actueel',
     title: 'De veilige haven voor toptalent: waarom de beste zzp\'ers kiezen voor de strengste opdrachtgevers',
     excerpt:
-      'Strakkere handhaving hoeft geen rem te zijn. Organisaties die hun samenwerking met zelfstandigen zuiver inrichten, worden aantrekkelijker voor schaars talent.',
+      'Organisaties die zzp-samenwerking zuiver inrichten, worden juist aantrekkelijker voor schaars toptalent.',
     content: `
       <p class="lead">
         Nu de vrijblijvendheid rond zzp-inhuur verder afneemt, ontstaat een interessante verschuiving. Organisaties die hun processen op orde brengen, worden niet minder aantrekkelijk, maar juist geloofwaardiger voor echte ondernemers.

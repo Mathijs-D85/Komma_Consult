@@ -62,7 +62,7 @@ export default function Home() {
       <Seo
         path="/"
         title="Grip op externe inhuur"
-        description="Komma Consult helpt organisaties grip, regie en overzicht te krijgen in externe inhuur: van strategie en compliance tot implementatie en tijdelijke ondersteuning."
+        description="Komma Consult helpt organisaties grip en regie te krijgen in externe inhuur, van strategie en compliance tot implementatie."
       />
       {/* Wrapper met doorlopende decoratieve fuchsia baan */}
       <div className="relative overflow-hidden bg-white">
