@@ -23,6 +23,253 @@ const postBasePaths: Record<BlogPostKind, string> = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'wtta-waarom-2028-nu-al-op-je-agenda',
+    kind: 'kennis',
+    title: 'De Wtta: waarom 1 januari 2028 nú al op je agenda hoort',
+    excerpt:
+      'Vanaf 1 januari 2028 mag je alleen nog personeel inhuren bij uitleners met een geldige toelating. Juist daarom is de Wtta een onderwerp voor 2026, niet voor 2027.',
+    content: `
+      <p class="lead">
+        Er komt een wet aan die verandert hoe organisaties flexibele arbeid inhuren. De <strong>Wet toelating terbeschikkingstelling van arbeidskrachten (Wtta)</strong> klinkt als weer een compliance-klus voor de juridische afdeling. Dat is het niet. Deze wet raakt je leveranciersbestand, je inhuurprocessen en uiteindelijk het vermogen van je organisatie om snel de juiste mensen te vinden.
+      </p>
+
+      <p>
+        De harde deadline ligt op <strong>1 januari 2028</strong>. Dat lijkt ver weg, maar de keuzes die je leveranciers nú maken &mdash; certificeren, fuseren of stoppen &mdash; bepalen straks of je zonder vertraging kunt blijven inhuren. Wie nu begint, handelt rustig en doordacht. Wie wacht, komt voor verrassingen te staan.
+      </p>
+
+      <div class="callout">
+        <p class="callout-title">In één zin</p>
+        <p>
+          Vanaf 1 januari 2028 mag je alleen nog personeel inhuren bij uitleners met een geldige toelating &mdash; en juist daarom is dit een onderwerp voor 2026, niet voor 2027.
+        </p>
+      </div>
+
+      <h2>Wat verandert er precies?</h2>
+
+      <p>
+        Tot nu toe was certificering voor uitzendbureaus en detacheerders vrijwillig. Bureaus konden het SNA-keurmerk halen &mdash; het keurmerk van de Stichting Normering Arbeid, gebaseerd op de <strong>NEN 4400-norm</strong> &mdash; of niet. Onder de Wtta wordt dat anders: zonder een officiële <strong>toelating van de Nederlandse Autoriteit Uitleenmarkt (NAU)</strong> is het simpelweg verboden om personeel ter beschikking te stellen. Geen toelating, geen mensen leveren.
+      </p>
+
+      <p>
+        Voor opdrachtgevers betekent dit een eigen verantwoordelijkheid. Samenwerken met een bureau zonder geldige toelating brengt straks niet alleen dat bureau in gevaar, maar ook je eigen organisatie.
+      </p>
+
+      <h2>Wat betekent dit concreet voor jou als inlener?</h2>
+
+      <p>
+        Vanaf de toelatingsplicht rusten er drie verplichtingen op de inlener:
+      </p>
+
+      <ul>
+        <li><strong>Inleenverbod</strong> &mdash; je mag geen arbeidskrachten meer inlenen van een uitlener zonder geldige toelating.</li>
+        <li><strong>Controleplicht</strong> &mdash; je moet vóór inhuur controleren of de uitlener in het openbare register van de NAU staat.</li>
+        <li><strong>Administratie- en bewaarplicht</strong> &mdash; je legt vast dat een arbeidskracht ter beschikking is gesteld (uiterlijk op de eerste werkdag) en bewaart die gegevens zeven jaar.</li>
+      </ul>
+
+      <p>
+        De controle en administratie kun je operationeel beleggen bij een inhuurregisseur, zoals een broker of MSP. Let op: dat ontslaat je niet van je eigen verantwoordelijkheid. Als inlener blijf je zelf aanspreekbaar, dus leg goede afspraken vast en blijf steekproefsgewijs zelf controleren.
+      </p>
+
+      <p>
+        De Nederlandse Arbeidsinspectie handhaaft hierop en kan boetes opleggen aan zowel uitleners die zonder toelating leveren als aan inleners die met hen blijven samenwerken.
+      </p>
+
+      <h2>De tijdlijn in één oogopslag</h2>
+
+      <p>
+        De Wtta wordt gefaseerd ingevoerd. Let goed op het verschil tussen <em>het stelsel treedt in werking</em> (2027) en <em>de plicht en handhaving gaan in</em> (2028).
+      </p>
+
+      <p>
+        In de tijdlijn nemen we ook drie aanpalende wetten mee, omdat ze samen het speelveld voor inhuur bepalen: de <strong>Wet DBA</strong> (handhaving op schijnzelfstandigheid), de <strong>Wet meer zekerheid flexwerkers (WMZF)</strong> en de aankomende <strong>Zelfstandigenwet</strong>. Verderop in &ldquo;Vooruitblik&rdquo; lichten we ze toe &mdash; hier gaat het er vooral om dat je ziet hoe de planning samenloopt.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Wat gebeurt er</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 jan 2025</td>
+            <td>Handhaving Wet DBA op schijnzelfstandigheid hervat</td>
+            <td>Definitief ingegaan</td>
+          </tr>
+          <tr>
+            <td>1 jan 2026</td>
+            <td>Gelijkwaardige arbeidsvoorwaarden voor uitzendkrachten via de cao (ABU/NBBU) &mdash; vervangt de inlenersbeloning</td>
+            <td>Al van kracht (cao)</td>
+          </tr>
+          <tr>
+            <td>medio 2026</td>
+            <td>Wet rechtsvermoeden werknemerschap bij uurtarief &lt; &euro;38 (publicatie Staatsblad)</td>
+            <td>Aangenomen Tweede Kamer</td>
+          </tr>
+          <tr>
+            <td>2e helft 2026</td>
+            <td>Wtta-aanmeldportaal opent; aanmelding overgangsrecht (nov&ndash;dec 2026)</td>
+            <td>Definitief</td>
+          </tr>
+          <tr>
+            <td><strong>1 jan 2027</strong></td>
+            <td><strong>Wtta-toelatingsstelsel treedt in werking; uitleners kunnen toelating aanvragen</strong></td>
+            <td>Definitief</td>
+          </tr>
+          <tr>
+            <td>1 jan 2027</td>
+            <td>WMZF verankert gelijkwaardige arbeidsvoorwaarden uitzendkrachten wettelijk (op zijn vroegst)</td>
+            <td>Beoogd (Eerste Kamer nog)</td>
+          </tr>
+          <tr>
+            <td>1 jul 2027</td>
+            <td>NAU beoordeelt aanvragen (volledige aanvraag uiterlijk 30 juni 2027)</td>
+            <td>Definitief</td>
+          </tr>
+          <tr>
+            <td><strong>1 jan 2028</strong></td>
+            <td><strong>Wtta-toelatingsplicht + handhaving: inhuur alleen nog bij toegelaten uitleners</strong></td>
+            <td>Definitief</td>
+          </tr>
+          <tr>
+            <td>1 jan 2028</td>
+            <td>WMZF: bandbreedtecontract, aangescherpte ketenregeling, uitzendfasen</td>
+            <td>Beoogd (Eerste Kamer nog)</td>
+          </tr>
+          <tr>
+            <td>1 jan 2028</td>
+            <td>Zelfstandigenwet (vervanger ingetrokken VBAR-deel)</td>
+            <td>Concept</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-warning">
+        <p class="callout-title">Veelgemaakte denkfout</p>
+        <p>
+          &ldquo;De wet gaat pas in 2028 echt in, dus we hebben nog tijd.&rdquo; Klopt &mdash; maar je leveranciers moeten hun toelating al in 2027 aanvragen. Of een vertrouwd bureau straks nog mag leveren, wordt dus in 2026 en 2027 beslist, niet in 2028.
+        </p>
+      </div>
+
+      <h2>Marktdynamiek: consolidatie en de valkuil van de overname</h2>
+
+      <p>
+        De toelatingseisen zijn pittig. Uitleners moeten onder meer een <strong>waarborgsom van &euro;100.000</strong> storten (&euro;50.000 voor starters, in termijnen), Verklaringen Omtrent het Gedrag (VOG) aanleveren, voldoen aan een normenkader en zich periodiek laten inspecteren. Voor grote, professionele spelers is dat te doen. Voor veel kleine nichebureaus &mdash; vaak de vertrouwde huisleveranciers waar je hiring managers al jaren graag mee werken &mdash; is dit een enorme horde.
+      </p>
+
+      <p>
+        Verwacht daarom een consolidatiegolf: grote partijen nemen kleinere over. En juist daar schuilt een risico dat weinig mensen zien aankomen: <strong>een Wtta-toelating is gebonden aan een specifiek KVK-nummer en straalt niet automatisch af op een overgenomen entiteit.</strong>
+      </p>
+
+      <ul>
+        <li>Bij een <strong>aandelentransactie</strong> blijft de overgenomen bv als zelfstandige entiteit bestaan. Heeft die bv geen eigen toelating, dan mag je er niet via inhuren &mdash; ook al is de moederorganisatie wél toegelaten.</li>
+        <li>Bij een <strong>juridische fusie of activa/passiva-transactie</strong> gaan de contracten over naar de (toegelaten) overnemende partij. Op papier is het probleem dan opgelost.</li>
+      </ul>
+
+      <p>
+        Maar zelfs in dat laatste geval blijft het gevaar van de <strong>achterblijvende administratie</strong> reëel. Onvolledige dossiers of een onjuist toegepaste inlenersbeloning verdwijnen niet bij een fusie. Komen die bij een periodieke inspectie aan het licht, dan kan de toelating van de gehele overnemende partij geschorst worden &mdash; en zie je van de ene op de andere dag een hofleverancier stilvallen.
+      </p>
+
+      <p>
+        <strong>Wat je nu kunt doen:</strong> ga het gesprek aan met je kleinere leveranciers. Gaan zij certificeren, laten zij zich overnemen, of stoppen zij? Hoe eerder dat duidelijk is, hoe beter je kunt anticiperen.
+      </p>
+
+      <h2>Vluchtroutes om te herkennen</h2>
+
+      <p>
+        Bureaus die niet kunnen of willen voldoen, worden creatief. De wet kijkt echter niet naar het etiket op het contract, maar naar de praktijk. Drie constructies om alert op te zijn:
+      </p>
+
+      <ul>
+        <li><strong>Aanneming van werk / BPO.</strong> De dienst wordt omgezet van &ldquo;capaciteit&rdquo; naar &ldquo;resultaatverplichting&rdquo;. Legitiem &mdash; zolang de sturing daadwerkelijk bij de leverancier ligt. Geeft je eigen organisatie feitelijk leiding aan de professional, dan is het alsnog inhuur en valt het onder de Wtta.</li>
+        <li><strong>ZZP-bemiddeling.</strong> Het bureau stoot het loondienstmodel af en bemiddelt enkel zelfstandigen. Je ruilt dan een Wtta-risico in voor een risico onder de Wet DBA (schijnzelfstandigheid), waarop nu al actief wordt gehandhaafd.</li>
+        <li><strong>Werving &amp; selectie + payrolling.</strong> Het bureau vindt nog steeds de kandidaat, maar brengt die onder bij een wél toegelaten payrollorganisatie en factureert een bemiddelingsfee. De keten is dan schoon, mits de payrollpartij daadwerkelijk is toegelaten.</li>
+      </ul>
+
+      <p>
+        Een wijziging van de constructie verdient daarom altijd een toets &mdash; niet alleen juridisch, maar ook door iemand met praktijkkennis van de inhuurmarkt.
+      </p>
+
+      <h2>Grip op de keten</h2>
+
+      <p>
+        Een complexiteit die snel wordt onderschat: veel bureaus lenen zelf óók in bij andere bureaus. Onder de Wtta moet <strong>elke schakel in die keten</strong> een geldige toelating hebben. Zit er ergens in schakel drie of vier een niet-toegelaten (of buitenlandse) partij, dan loop je als eindopdrachtgever financieel en reputationeel risico &mdash; ook als je daar geen weet van had.
+      </p>
+
+      <p>
+        Let op: ook <strong>buitenlandse uitleners</strong> die in Nederland arbeidskrachten ter beschikking stellen, vallen onder de toelatingsplicht. Bij internationale inhuur (denk aan schaarse IT-profielen) levert dat extra vragen op rond buitenlandse bewijsstukken en de controle op de inlenersbeloning.
+      </p>
+
+      <p>
+        Ketentransparantie is daarmee geen luxe meer, maar een harde eis: bevraag leveranciers actief over hun eigen inleenketen en leg die informatie vast.
+      </p>
+
+      <h2>Wat kost dit, en wie betaalt?</h2>
+
+      <p>
+        Eerlijk is eerlijk: de Wtta drijft de kostprijs van flexibele arbeid omhoog. Waarborgsommen, administratieve lasten en inspectiekosten worden doorberekend in de B2B-tarieven. Dat is niet onredelijk, maar het vraagt om intern verwachtingsmanagement &mdash; richting zowel inkoop als de business.
+      </p>
+
+      <p>
+        Draai daarbij de inkoopreflex om: <strong>een extreem scherp tarief is straks geen onderhandelingssucces meer, maar een potentieel compliance-risico.</strong> Een tarief dat onder de reële kostprijs van loon, sociale lasten en reserveringen duikt, maakt onderbetaling statistisch waarschijnlijk &mdash; en daarmee een rode vlag. Een hogere factuurprijs voor een aantoonbaar compliant bureau weegt ruimschoots op tegen de financiële en reputatieschade van een niet-toegelaten leverancier.
+      </p>
+
+      <h2>Vooruitblik: de Wtta staat niet op zichzelf</h2>
+
+      <p>
+        De Wtta is de meest urgente en concrete verandering, maar het is de eerste van meerdere ingrepen in de flexmarkt. Benader het dossier daarom niet als iets dat op zichzelf staat.
+      </p>
+
+      <ul>
+        <li>De <strong>Wet meer zekerheid flexwerkers (WMZF)</strong> is op 12 mei 2026 aangenomen door de Tweede Kamer en wacht op de Eerste Kamer. Die wet vervangt het nulurencontract door een bandbreedtecontract en scherpt de ketenregeling aan. Belangrijk voor inleners: het recht op <strong>gelijkwaardige arbeidsvoorwaarden voor uitzendkrachten</strong> geldt feitelijk al sinds 1 januari 2026 via de CAO voor Uitzendkrachten (ABU/NBBU) &mdash; dit verving de oude inlenersbeloning. De WMZF verankert datzelfde recht wettelijk (op zijn vroegst per 1 januari 2027). Het raakt direct de beloningsnorm waar ook de Wtta op toetst.</li>
+        <li>Voor zelfstandigen is het verduidelijkingsdeel van de VBAR ingetrokken; er wordt gewerkt aan een aparte <strong>Zelfstandigenwet</strong> (beoogd 2028). Het losse <strong>rechtsvermoeden van werknemerschap bij een uurtarief onder circa &euro;38</strong> is wél aangenomen.</li>
+      </ul>
+
+      <p>
+        De strategische les: het Wtta-normenkader toetst simpelweg of uitleners zich aan de geldende wet- en regelgeving houden. Verzwaart wetgeving als de WMZF die spelregels, dan verschuift de meetlat van de Wtta-inspecteur automatisch mee. Richt processen, systemen en leveranciersafspraken voor de Wtta daarom nu al zó wendbaar in dat ze niet opnieuw op de schop hoeven.
+      </p>
+
+      <h2>Waar te beginnen? De vlootschouw</h2>
+
+      <p>
+        De succesvolle implementatie van de Wtta begint met een grondige <strong>vlootschouw</strong> van je huidige leveranciersbestand. Concreet:
+      </p>
+
+      <ol>
+        <li><strong>Breng in kaart</strong> welke bureaus al het SNA-keurmerk hebben &mdash; zij staan er naar verwachting beter voor in het overgangsrecht.</li>
+        <li><strong>Identificeer de risicopartijen</strong> &mdash; vooral kleine nichespelers voor wie de eisen een hoge drempel vormen.</li>
+        <li><strong>Start het gesprek</strong> met die partijen over hun plannen (certificeren, fuseren of uitfaseren) én bereid je organisatie erop voor dat sommige vertrouwde leveranciers mogelijk afvallen.</li>
+      </ol>
+
+      <p>
+        Dat hoeft niet in één week. Maar het moet wel beginnen. Organisaties die nu vooruitlopen, bouwen een stabieler, transparanter en uiteindelijk robuuster inkoopproces op dan organisaties die afwachten.
+      </p>
+
+      <p>
+        De Wtta is geen bedreiging voor wie hem vóór is. Het is een kans om de kwaliteit van je leveranciersbestand structureel te verbeteren &mdash; en meteen een heldere norm te stellen voor de partners waarmee je werkt.
+      </p>
+
+      <hr />
+
+      <p>
+        <strong>Wil je weten hoe Wtta-proof jouw leveranciersbestand nu is?</strong> We helpen je graag met een vlootschouw en een concreet stappenplan richting 2028.
+      </p>
+    `,
+    author: 'Mathijs Duisdecker',
+    date: '2026-05-30',
+    readTime: '8 min',
+    category: 'Compliance',
+    primaryServiceId: 'compliant-inhuren',
+    relatedSlugs: [
+      'wat-is-compliant-inhuren',
+      'wet-dba-deliveroo-en-zelfstandigenwet',
+      'wanneer-is-zzp-inhuur-verantwoord',
+    ],
+    featured: true,
+  },
+  {
     slug: 'wat-is-grip-op-externe-inhuur',
     kind: 'kennis',
     title: 'Wat is grip op externe inhuur?',
@@ -98,7 +345,7 @@ export const blogPosts: BlogPost[] = [
       'leveranciersmanagement-bij-externe-inhuur',
       'kostenmanagement-bij-externe-inhuur',
     ],
-    featured: true,
+    featured: false,
   },
   {
     slug: 'msp-broker-master-vendor-of-decentraal-model',

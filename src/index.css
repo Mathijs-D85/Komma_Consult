@@ -233,6 +233,57 @@ a {
   margin: 3rem 0;
 }
 
+.prose-komma table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+
+.prose-komma thead th {
+  background-color: var(--komma-navy);
+  color: #ffffff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.prose-komma tbody td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.prose-komma tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.prose-komma .callout {
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--komma-fuchsia);
+  background-color: #fdf2f8;
+}
+
+.prose-komma .callout-title {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 700;
+  color: var(--komma-navy);
+  margin-bottom: 0.5rem;
+}
+
+.prose-komma .callout p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-komma .callout-warning {
+  border-left-color: #f59e0b;
+  background-color: #fffbeb;
+}
+
 /* Line clamp utilities */
 .line-clamp-2 {
   display: -webkit-box;
