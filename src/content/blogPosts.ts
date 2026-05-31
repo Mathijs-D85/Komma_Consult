@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <p>
-        De controle en administratie kun je operationeel beleggen bij een inhuurregisseur, zoals een broker of MSP. Let op: dat ontslaat je niet van je eigen verantwoordelijkheid. Als inlener blijf je zelf aanspreekbaar, dus leg goede afspraken vast en blijf steekproefsgewijs zelf controleren.
+        De controle en administratie kun je operationeel beleggen bij een inhuurregisseur, zoals een broker of MSP. Let op: dat ontslaat je niet van je eigen verantwoordelijkheid. Als inlener blijf je zelf eindverantwoordelijk, dus leg goede afspraken vast en blijf steekproefsgewijs zelf controleren.
       </p>
 
       <p>
@@ -209,7 +209,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Wat kost dit, en wie betaalt?</h2>
 
       <p>
-        Eerlijk is eerlijk: de Wtta drijft de kostprijs van flexibele arbeid omhoog. Waarborgsommen, administratieve lasten en inspectiekosten worden doorberekend in de B2B-tarieven. Dat is niet onredelijk, maar het vraagt om intern verwachtingsmanagement &mdash; richting zowel inkoop als de business.
+        Eerlijk is eerlijk: de Wtta drijft de kostprijs van inhuur omhoog. Waarborgsommen, administratieve lasten en inspectiekosten worden doorberekend in de B2B-tarieven. Dat is niet onredelijk, maar het vraagt om intern verwachtingsmanagement &mdash; richting zowel inkoop als de business.
       </p>
 
       <p>
