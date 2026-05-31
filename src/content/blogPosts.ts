@@ -209,11 +209,11 @@ export const blogPosts: BlogPost[] = [
       <h2>Wat kost dit, en wie betaalt?</h2>
 
       <p>
-        Eerlijk is eerlijk: de Wtta drijft de kostprijs van inhuur omhoog. Waarborgsommen, administratieve lasten en inspectiekosten worden doorberekend in de B2B-tarieven. Dat is niet onredelijk, maar het vraagt om intern verwachtingsmanagement &mdash; richting zowel inkoop als de business.
+        Eerlijk is eerlijk: de Wtta drijft de kostprijs van inhuur omhoog. Waarborgsommen, administratieve lasten en inspectiekosten worden doorberekend in de inhuurtarieven. Dat is niet onredelijk, maar het vraagt om intern verwachtingsmanagement &mdash; richting zowel inkoop als de business.
       </p>
 
       <p>
-        Draai daarbij de inkoopreflex om: <strong>een extreem scherp tarief is straks geen onderhandelingssucces meer, maar een potentieel compliance-risico.</strong> Een tarief dat onder de reële kostprijs van loon, sociale lasten en reserveringen duikt, maakt onderbetaling statistisch waarschijnlijk &mdash; en daarmee een rode vlag. Een hogere factuurprijs voor een aantoonbaar compliant bureau weegt ruimschoots op tegen de financiële en reputatieschade van een niet-toegelaten leverancier.
+        Draai daarbij de inkoopreflex om: <strong>een extreem scherp tarief is straks geen onderhandelingssucces meer, maar een potentieel compliance-risico.</strong> Een tarief dat onder de reële kostprijs van loon, sociale lasten en reserveringen duikt, maakt onderbetaling statistisch waarschijnlijk &mdash; en daarmee een rode vlag. Een hogere factuurprijs voor een aantoonbaar compliant bureau weegt op tegen de financiële en reputatieschade van een niet-toegelaten leverancier.
       </p>
 
       <h2>Vooruitblik: de Wtta staat niet op zichzelf</h2>
