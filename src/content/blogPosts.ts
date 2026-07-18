@@ -270,6 +270,191 @@ export const blogPosts: BlogPost[] = [
     featured: true,
   },
   {
+    slug: 'wmzf-flexibele-schil-onder-vuur',
+    kind: 'kennis',
+    title: 'De Wet meer zekerheid flexwerkers (WMZF): de flexibele schil onder vuur',
+    excerpt:
+      'De WMZF schaft oproepcontracten af, verlengt de tussenperiode van de ketenregeling naar drie jaar en verankert de gelijkwaardige beloning van uitzendkrachten wettelijk.',
+    content: `
+      <p class="lead">
+        Het kabinet hanteert een duidelijk uitgangspunt: bij structureel werk hoort een vast contract. Met de aanname van de <strong>Wet meer zekerheid flexwerkers (WMZF)</strong> door de Eerste Kamer gaat de flexibele schil van organisaties fundamenteel op de schop. Nulurencontracten verdwijnen, de ketenregeling wordt drastisch aangescherpt en uitzendkrachten krijgen recht op exact dezelfde arbeidsvoorwaarden als vaste medewerkers.
+      </p>
+
+      <p>
+        Laat ik direct met de deur in huis vallen: deze wet is een streep door de rekening van organisaties die gewend zijn om pieken en dalen volledig op te vangen met oproepkrachten. Flexibiliteit wordt schaarser en duurder. Organisaties die veelvuldig gebruikmaken van dit type flex doen er goed aan nu in actie te komen om te voorkomen dat de bedrijfsvoering straks spaak loopt.
+      </p>
+
+      <div class="callout">
+        <p class="callout-title">In één zin</p>
+        <p>
+          De WMZF schaft oproepcontracten af ten gunste van basiscontracten, verlengt de tussenperiode van de ketenregeling naar drie jaar en verankert de reeds ingevoerde cao-gelijkwaardigheid van uitzendkrachten wettelijk.
+        </p>
+      </div>
+
+      <h2>De tijdlijn: wanneer verandert wat?</h2>
+
+      <p>
+        Het speelveld rondom flexwerk verandert in fasen. Cruciaal is de wisselwerking tussen cao-afspraken (ABU/NBBU) en de wetgeving (WMZF).
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Verandering &amp; wetgeving</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1 jan 2026</strong></td>
+            <td>Gelijkwaardige beloning via de cao (ABU/NBBU): het principe van gelijkwaardige beloning (totaalpakket) gaat in voor alle uitzendkrachten onder de ABU- en NBBU-cao</td>
+            <td>Reeds van kracht</td>
+          </tr>
+          <tr>
+            <td>31 dec 2026</td>
+            <td>Wettelijke verankering (WMZF): de gelijke arbeidsvoorwaarden (uitbreiding van secundaire voorwaarden zoals bonus en pensioen) worden wettelijk verankerd in de Waadi</td>
+            <td>Definitief aangenomen</td>
+          </tr>
+          <tr>
+            <td><strong>1 jan 2028</strong></td>
+            <td>Invoering basiscontract &amp; ketenregeling: afschaffing oproepcontracten, verkorting uitzendfasen (max. 3 jaar flex) en verlenging tussenperiode ketenregeling naar 3 jaar</td>
+            <td>Definitief aangenomen</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>1. Het basiscontract: einde van het nulurencontract</h2>
+
+      <p>
+        Een van de meest ingrijpende maatregelen is het verbod op traditionele oproepcontracten zoals <strong>nulurencontracten</strong> en <strong>min/max-contracten</strong> per 1 januari 2028. In plaats daarvan introduceert de wet het <strong>basiscontract</strong>.
+      </p>
+
+      <ul>
+        <li><strong>Minimale arbeidsomvang:</strong> als werkgever spreek je een vast minimumaantal uren af per week, maand of jaar. Deze uren moet je gegarandeerd uitbetalen, of er nu werk is of niet. Sluit je dit contract af voor onbepaalde tijd? Dan profiteer je wel van een lage WW-premie.</li>
+        <li><strong>De 130%-bandbreedte:</strong> bovenop het minimumaantal uren mag je de werknemer oproepen, maar met een strikte grens. De maximale arbeidsomvang mag <strong>nooit groter zijn dan 130%</strong> van het minimum. <em>Voorbeeld:</em> spreek je een basiscontract af van minimaal 20 uur? Dan mag je de medewerker voor maximaal 26 uur (20 uur &times; 1,3) inroosteren.</li>
+        <li><strong>Weigeringsrecht &amp; opschaling:</strong> werknemers hebben het recht om diensten te weigeren die deze 130%-grens overschrijden. Werkt iemand bovendien structureel meer uren dan het minimum? Dan ben je verplicht een nieuw contract aan te bieden met een passend, hoger aantal uren.</li>
+      </ul>
+
+      <div class="callout callout-warning">
+        <p class="callout-title">Veelgemaakte denkfout</p>
+        <p>
+          &ldquo;We passen gewoon een jaarurennorm toe om de flexibiliteit te behouden.&rdquo; Dat kan, maar onder de WMZF moet je dan wel per kwartaal een vaste mate van roosterzekerheid én specifieke niet-beschikbaarheidsdagen met je werknemer afstemmen. De vrijblijvendheid is er echt af.
+        </p>
+      </div>
+
+      <h2>2. Ketenregeling: draaideuren definitief op slot</h2>
+
+      <p>
+        De huidige ketenregeling telt opeenvolgende tijdelijke contracten bij elkaar op, tenzij er een tussenperiode van minimaal 6 maanden tussen zit. Dit leidde in de praktijk tot de beruchte &lsquo;draaideurconstructie&rsquo;: een werknemer werd na twee jaar 6 maanden naar huis gestuurd, om vervolgens weer op een tijdelijk contract te starten.
+      </p>
+
+      <p>
+        De WMZF maakt hier per 1 januari 2028 korte metten mee:
+      </p>
+
+      <ul>
+        <li><strong>Tussenperiode naar 3 jaar:</strong> de tussenperiode waarin de keten wordt doorbroken, wordt verruimd van 6 maanden naar <strong>3 jaar</strong>.</li>
+        <li><strong>Geen cao-afwijkingen:</strong> het is onder de nieuwe wet niet meer mogelijk om bij cao af te wijken van het maximaal aantal toegestane tijdelijke contracten (3) of de totale maximale duur (3 jaar).</li>
+      </ul>
+
+      <p>
+        <strong>Gevolg:</strong> HR kan een medewerker die uit dienst treedt pas na 3 jaar weer een tijdelijk contract aanbieden. Dit dwingt organisaties om bij structureel werk veel sneller over te gaan tot een contract voor onbepaalde tijd.
+      </p>
+
+      <h2>3. Nieuwe spelregels voor uitzendkrachten</h2>
+
+      <p>
+        Uitzendkrachten worden door de wetgever beter beschermd om oneerlijke concurrentie op arbeidsvoorwaarden te voorkomen.
+      </p>
+
+      <h3>De nuance: gelijkwaardige beloning per 1 januari 2026</h3>
+
+      <p>
+        Hoewel de WMZF de gelijke arbeidsvoorwaarden wettelijk verankert per 31 december 2026, is de praktijk al veranderd. De grote uitzendkoepels (ABU en NBBU) hebben namelijk al voorgesorteerd op de wetgeving. Sinds <strong>1 januari 2026</strong> is het principe van <strong>gelijkwaardige beloning</strong> al van kracht via de cao voor uitzendkrachten.
+      </p>
+
+      <p>
+        Dit betekent een fundamentele verschuiving ten opzichte van de oude &lsquo;inlenersbeloning&rsquo;:
+      </p>
+
+      <ul>
+        <li><strong>Van elementen naar totaalpakket:</strong> waar voorheen enkel naar specifieke losse loonelementen werd gekeken, wordt nu gekeken naar de <strong>totale waarde van het arbeidsvoorwaardenpakket</strong> onder de streep.</li>
+        <li><strong>Essentiële vs. niet-essentiële voorwaarden:</strong> er wordt onderscheid gemaakt tussen essentiële voorwaarden (zoals loon, vakantiedagen, toeslagen en doorbetaling bij ziekte) en niet-essentiële voorwaarden (zoals pensioen).</li>
+        <li><strong>Uitruilbaarheid:</strong> binnen strikte kaders mogen essentiële voorwaarden onderling worden uitgeruild (bijvoorbeeld een lagere toeslag compenseren met een hoger basisloon), mits de totale waarde minimaal gelijkwaardig blijft.</li>
+        <li><strong>Informatieplicht voor inleners:</strong> als opdrachtgever ben je verplicht alle benodigde arbeidsvoorwaardeninformatie transparant te delen met het uitzendbureau. Het berekenen en toepassen hiervan wordt ondersteund via het landelijke platform <strong>Wijzerbelonen.nl</strong>.</li>
+      </ul>
+
+      <p>
+        De wettelijke verankering in de <strong>Waadi</strong> (Wet allocatie arbeidskrachten door intermediairs) per eind 2026 vormt hiermee het sluitstuk van een praktijk die op de werkvloer al sinds begin 2026 verplicht is.
+      </p>
+
+      <h3>Verkorting van het fasensysteem (1 januari 2028)</h3>
+
+      <p>
+        Het fasensysteem voor uitzendkrachten wordt aanzienlijk ingekort en cao&rsquo;s mogen hier niet meer van afwijken:
+      </p>
+
+      <ul>
+        <li><strong>Fase A (uitzendbeding):</strong> wordt verkort van 78 weken naar maximaal <strong>52 weken</strong>.</li>
+        <li><strong>Fase B (bepaalde tijd):</strong> wordt verkort van 3 jaar (max. 6 contracten) naar maximaal <strong>2 jaar</strong> (max. 6 contracten).</li>
+      </ul>
+
+      <p>
+        <strong>Gevolg:</strong> de totale flexibele periode (fase A + B) bedraagt nog maar maximaal <strong>3 jaar</strong>. Daarna is de uitzendonderneming verplicht de uitzendkracht een vast contract aan te bieden.
+      </p>
+
+      <h3>Meer bescherming bij ziekte &amp; overnamekosten</h3>
+
+      <ul>
+        <li><strong>Loondoorbetaling bij ziekte:</strong> uitzendkrachten met een uitzendbeding behouden bij ziekte recht op loondoorbetaling, ook als dit niet expliciet in de uitzend-cao is geregeld.</li>
+        <li><strong>Capping overnamevergoeding:</strong> de fee die je als inlener aan een uitzendbureau moet betalen om een uitzendkracht rechtstreeks over te nemen, wordt wettelijk aan een maximum gebonden om de drempel naar vast werk te verlagen.</li>
+      </ul>
+
+      <h2>4. Uitzonderingen: wie de dans ontspringen?</h2>
+
+      <p>
+        De wetgever erkent dat specifieke groepen een andere dynamiek kennen. Er gelden uitzonderingen voor:
+      </p>
+
+      <ul>
+        <li><strong>Seizoenswerkers:</strong> voor functies die vanwege klimatologische of natuurlijke omstandigheden maximaal 9 maanden per jaar kunnen worden uitgeoefend, blijft een oproepovereenkomst mogelijk.</li>
+        <li><strong>AOW-gerechtigden:</strong> zij mogen op basis van een nulurencontract blijven werken.</li>
+        <li><strong>Scholieren en studenten:</strong> zij mogen op basis van een oproepcontract blijven werken mits ze <strong>maximaal 16 uur per week</strong> werken. Werken ze meer? Dan gelden de reguliere regels. De bewijslast voor hun studentenstatus is bovendien versoepeld: naast een inschrijvingsbewijs volstaat bijvoorbeeld ook een studentenkaart of bewijs van studiefinanciering.</li>
+      </ul>
+
+      <h2>5. Wat betekent dit voor HR? Strategisch actieplan</h2>
+
+      <p>
+        De WMZF staat niet op zichzelf, maar vormt samen met de hernieuwde handhaving van de <strong>Wet DBA</strong> en de toekomstige Zelfstandigenwet het nieuwe compliance-klimaat. Wacht niet af tot 2028, maar kom nu al in actie:
+      </p>
+
+      <ol>
+        <li><strong>Vlootschouw op contracten:</strong> inventariseer per direct alle lopende nuluren-, min/max- en uitzendcontracten binnen de organisatie. Breng in kaart hoeveel fte er momenteel in de ultieme flexschil zit.</li>
+        <li><strong>Audit op gelijkwaardige beloning:</strong> omdat de ABU/NBBU-cao al per 1 januari 2026 is aangepast, moet je controleren of de inleenkosten van uitzendkrachten al correct zijn gecorrigeerd via Wijzerbelonen.nl. Zorg dat alle vereiste arbeidsvoorwaardeninformatie correct is gedeeld met je uitzendpartners om naheffingen of cao-claims te voorkomen.</li>
+        <li><strong>Impactanalyse op de business:</strong> met name in sectoren zoals de zorg, horeca en logistiek zal de flexibiliteit afnemen en zullen de loonkosten stijgen. Bereken de impact van de 130%-bandbreedte op de roosterplanning en budgetten.</li>
+        <li><strong>Heroverweeg de inhuurstrategie:</strong> bied voor structureel werk sneller een (basis)contract aan en maak voor specialistische projecten gebruik van gerichte oplossingen zoals een Statement of Work in plaats van doorlopende uitzendarbeid.</li>
+      </ol>
+
+      <hr />
+
+      <p>
+        <strong>Wil je weten hoe WMZF-proof jouw flexibele schil nu is?</strong> We helpen je graag met een vlootschouw en een concreet stappenplan richting 2028.
+      </p>
+    `,
+    author: 'Mathijs Duisdecker',
+    date: '2026-07-18',
+    readTime: '7 min',
+    category: 'Compliance',
+    primaryServiceId: 'compliant-inhuren',
+    relatedSlugs: [
+      'wtta-waarom-2028-nu-al-op-je-agenda',
+      'wet-dba-deliveroo-en-zelfstandigenwet',
+      'wanneer-is-zzp-inhuur-verantwoord',
+    ],
+    featured: false,
+  },
+  {
     slug: 'wat-is-grip-op-externe-inhuur',
     kind: 'kennis',
     title: 'Wat is grip op externe inhuur?',
