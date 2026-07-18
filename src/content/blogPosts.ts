@@ -267,7 +267,7 @@ export const blogPosts: BlogPost[] = [
       'wet-dba-deliveroo-en-zelfstandigenwet',
       'wanneer-is-zzp-inhuur-verantwoord',
     ],
-    featured: true,
+    featured: false,
   },
   {
     slug: 'wmzf-flexibele-schil-onder-vuur',
@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
       'wet-dba-deliveroo-en-zelfstandigenwet',
       'wanneer-is-zzp-inhuur-verantwoord',
     ],
-    featured: false,
+    featured: true,
   },
   {
     slug: 'wat-is-grip-op-externe-inhuur',
@@ -1326,7 +1326,9 @@ export function getPostsBySlugs(slugs: string[]): BlogPost[] {
 }
 
 export function getPostsByKind(kind: BlogPostKind): BlogPost[] {
-  return blogPosts.filter((post) => post.kind === kind)
+  return blogPosts
+    .filter((post) => post.kind === kind)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export function getFeaturedPostByKind(kind: BlogPostKind): BlogPost | undefined {
