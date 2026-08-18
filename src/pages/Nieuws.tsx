@@ -29,39 +29,31 @@ export default function Kennis() {
         description="Kennisartikelen en actuele inzichten over externe inhuur, compliant inhuren, leveranciersmanagement en regie op inhuur."
       />
 
-      <section className="relative pt-32 pb-20 overflow-hidden bg-white">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20" />
-          <div className="absolute top-20 right-20 text-[15rem] font-display font-black text-komma-navy/[0.03] leading-none select-none hidden xl:block">
-            ,
-          </div>
-        </div>
-
+      <section className="relative overflow-hidden py-16 lg:py-20 bg-[#fdf2f8]">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/10 transform skew-x-12 translate-x-16 pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
               Kennis
-            </span>
-            <h1 className="mt-4 font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-komma-navy tracking-tight">
-              Snel naar het
-              <br />
-              <span className="text-komma-fuchsia">juiste antwoord</span>
+            </p>
+            <h1 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-komma-navy tracking-tight">
+              Snel naar het juiste antwoord
             </h1>
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed">
+            <p className="mt-5 text-lg text-gray-600 leading-relaxed">
               Vind hier verdiepende kennisartikelen en actuele inzichten over externe
               inhuur, compliance, leveranciersmanagement en bestuurbaarheid.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#kennisartikelen"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-komma-navy text-white font-semibold rounded-xl hover:bg-komma-navy/90 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-komma-navy text-white font-semibold rounded-lg hover:bg-komma-navy-dark transition-colors"
               >
                 Bekijk kennisartikelen
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
                 href="#actueel"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-komma-navy font-semibold rounded-xl hover:bg-gray-200 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-komma-navy font-semibold rounded-lg hover:bg-gray-200 transition-colors"
               >
                 Bekijk actueel
               </a>
@@ -73,10 +65,10 @@ export default function Kennis() {
       <section id="kennisartikelen" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
               Kennisartikelen
-            </span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl font-bold text-komma-navy">
+            </p>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-komma-navy">
               Heldere uitleg bij de belangrijkste vragen over externe inhuur
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -87,13 +79,8 @@ export default function Kennis() {
 
           {featuredKnowledgePost ? (
             <Link to={getBlogPostUrl(featuredKnowledgePost)} className="group block mb-10">
-              <div className="relative bg-komma-navy rounded-3xl overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-komma-fuchsia/10 transform skew-x-12 translate-x-1/4" />
-                <div className="absolute bottom-10 right-10 text-[12rem] font-display font-black text-white/5 leading-none select-none hidden lg:block">
-                  ,
-                </div>
-
-                <div className="relative p-8 lg:p-12 lg:pr-1/3">
+              <div className="relative bg-komma-navy rounded-2xl overflow-hidden">
+                <div className="relative p-8 lg:p-12">
                   <div className="flex flex-wrap items-center gap-4 mb-6">
                     <span className="px-4 py-1.5 bg-komma-fuchsia text-white text-sm font-semibold rounded-full">
                       Uitgelicht
@@ -106,7 +93,7 @@ export default function Kennis() {
                     </span>
                   </div>
 
-                  <h3 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 group-hover:text-komma-fuchsia transition-colors">
+                  <h3 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4 group-hover:text-white/90 transition-colors">
                     {featuredKnowledgePost.title}
                   </h3>
 
@@ -141,7 +128,7 @@ export default function Kennis() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {knowledgePosts.map((post) => (
               <Link key={post.slug} to={getBlogPostUrl(post)} className="group">
-                <article className="h-full bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-komma-fuchsia/30 hover:shadow-xl hover:shadow-komma-fuchsia/5 transition-all duration-300">
+                <article className="h-full bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-komma-navy/20 transition-colors">
                   <div className="h-2 bg-komma-navy group-hover:bg-komma-fuchsia transition-colors" />
 
                   <div className="p-6 lg:p-8">
@@ -180,10 +167,10 @@ export default function Kennis() {
       <section id="actueel" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
               Actueel
-            </span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl font-bold text-komma-navy">
+            </p>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-komma-navy">
               Recente observaties, ontwikkelingen en marktupdates
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -195,7 +182,7 @@ export default function Kennis() {
           {featuredActueelPost ? (
             <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start">
               <Link to={getBlogPostUrl(featuredActueelPost)} className="group block">
-                <article className="h-full bg-gray-50 rounded-3xl border border-gray-100 p-8 lg:p-10 hover:border-komma-fuchsia/30 hover:shadow-xl transition-all">
+                <article className="h-full bg-gray-50 rounded-2xl border border-gray-100 p-8 lg:p-10 hover:border-komma-navy/20 transition-colors">
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <span className="px-4 py-1.5 bg-komma-fuchsia/10 text-komma-fuchsia text-sm font-semibold rounded-full">
                       Uitgelicht
@@ -234,7 +221,7 @@ export default function Kennis() {
                   .filter((post) => post.slug !== featuredActueelPost.slug)
                   .map((post) => (
                     <Link key={post.slug} to={getBlogPostUrl(post)} className="group">
-                      <article className="bg-white rounded-2xl border border-gray-100 p-6 hover:border-komma-fuchsia/30 hover:shadow-lg transition-all">
+                      <article className="bg-white rounded-2xl border border-gray-100 p-6 hover:border-komma-navy/20 transition-colors">
                         <div className="flex items-center gap-3 mb-4">
                           <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full group-hover:bg-komma-fuchsia/10 group-hover:text-komma-fuchsia transition-colors">
                             {post.category}
@@ -258,12 +245,12 @@ export default function Kennis() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#fdf2f8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+          <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
             Samen verkennen
-          </span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-komma-navy">
+          </p>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-komma-navy">
             Heb je een vraagstuk dat je verder wilt aanscherpen?
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -272,7 +259,7 @@ export default function Kennis() {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-komma-fuchsia text-white font-semibold rounded-xl hover:bg-komma-fuchsia-dark transition-colors shadow-lg shadow-komma-fuchsia/25"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-komma-fuchsia text-white font-semibold rounded-lg hover:bg-komma-fuchsia-dark transition-colors"
           >
             Bespreek jouw vraagstuk
             <ArrowRight className="h-5 w-5" />

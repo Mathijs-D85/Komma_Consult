@@ -92,7 +92,6 @@ export function ChatView({
             onSend={onSendMessage}
             isLoading={isLoading}
             placeholder="Stel een vervolgvraag..."
-            autoFocus={true}
           />
         </div>
       </div>

@@ -8,6 +8,7 @@ export interface BlogPost {
   content: string
   author: string
   date: string
+  updated?: string
   readTime: string
   category: string
   primaryServiceId?: string
@@ -44,7 +45,7 @@ export const blogPosts: BlogPost[] = [
         </p>
       </div>
 
-      <h2>Wat verandert er precies?</h2>
+      <h2>Wat verandert de Wtta precies?</h2>
 
       <p>
         Tot nu toe was certificering voor uitzendbureaus en detacheerders vrijwillig. Bureaus konden het SNA-keurmerk halen &mdash; het keurmerk van de Stichting Normering Arbeid, gebaseerd op de <strong>NEN 4400-norm</strong> &mdash; of niet. Onder de Wtta wordt dat anders: zonder een officiële <strong>toelating van de Nederlandse Autoriteit Uitleenmarkt (NAU)</strong> is het simpelweg verboden om personeel ter beschikking te stellen. Geen toelating, geen mensen leveren.
@@ -74,7 +75,7 @@ export const blogPosts: BlogPost[] = [
         De Nederlandse Arbeidsinspectie handhaaft hierop en kan boetes opleggen aan zowel uitleners die zonder toelating leveren als aan inleners die met hen blijven samenwerken.
       </p>
 
-      <h2>De tijdlijn in één oogopslag</h2>
+      <h2>Hoe ziet de Wtta-tijdlijn eruit?</h2>
 
       <p>
         De Wtta wordt gefaseerd ingevoerd. Let goed op het verschil tussen <em>het stelsel treedt in werking</em> (2027) en <em>de plicht en handhaving gaan in</em> (2028).
@@ -153,7 +154,7 @@ export const blogPosts: BlogPost[] = [
         </p>
       </div>
 
-      <h2>Marktdynamiek: consolidatie en de valkuil van de overname</h2>
+      <h2>Wat betekent consolidatie voor inleners?</h2>
 
       <p>
         De toelatingseisen zijn pittig. Uitleners moeten onder meer een <strong>waarborgsom van &euro;100.000</strong> storten (&euro;50.000 voor starters, in termijnen), Verklaringen Omtrent het Gedrag (VOG) aanleveren, voldoen aan een normenkader en zich periodiek laten inspecteren. Voor grote, professionele spelers is dat te doen. Voor veel kleine nichebureaus &mdash; vaak de vertrouwde huisleveranciers waar je hiring managers al jaren graag mee werken &mdash; is dit een enorme horde.
@@ -176,7 +177,7 @@ export const blogPosts: BlogPost[] = [
         <strong>Wat je nu kunt doen:</strong> ga het gesprek aan met je kleinere leveranciers. Gaan zij certificeren, laten zij zich overnemen, of stoppen zij? Hoe eerder dat duidelijk is, hoe beter je kunt anticiperen.
       </p>
 
-      <h2>Vluchtroutes om te herkennen</h2>
+      <h2>Welke vluchtroutes moet je herkennen?</h2>
 
       <p>
         Bureaus die niet kunnen of willen voldoen, worden creatief. De wet kijkt echter niet naar het etiket op het contract, maar naar de praktijk. Drie constructies om alert op te zijn:
@@ -192,7 +193,7 @@ export const blogPosts: BlogPost[] = [
         Een wijziging van de constructie verdient daarom altijd een toets &mdash; niet alleen juridisch, maar ook door iemand met praktijkkennis van de inhuurmarkt.
       </p>
 
-      <h2>Grip op de keten</h2>
+      <h2>Hoe houd je grip op de inleenketen?</h2>
 
       <p>
         Een complexiteit die snel wordt onderschat: veel bureaus lenen zelf óók in bij andere bureaus. Onder de Wtta moet <strong>elke schakel in die keten</strong> een geldige toelating hebben. Zit er ergens in schakel drie of vier een niet-toegelaten (of buitenlandse) partij, dan loop je als eindopdrachtgever financieel en reputationeel risico &mdash; ook als je daar geen weet van had.
@@ -216,7 +217,7 @@ export const blogPosts: BlogPost[] = [
         Draai daarbij de inkoopreflex om: <strong>een extreem scherp tarief is straks geen onderhandelingssucces meer, maar een potentieel compliance-risico.</strong> Een tarief dat onder de reële kostprijs van loon, sociale lasten en reserveringen duikt, maakt onderbetaling statistisch waarschijnlijk &mdash; en daarmee een rode vlag. Een hogere factuurprijs voor een aantoonbaar compliant bureau weegt op tegen de financiële en reputatieschade van een niet-toegelaten leverancier.
       </p>
 
-      <h2>Vooruitblik: de Wtta staat niet op zichzelf</h2>
+      <h2>Waarom staat de Wtta niet op zichzelf?</h2>
 
       <p>
         De Wtta is de meest urgente en concrete verandering, maar het is de eerste van meerdere ingrepen in de flexmarkt. Benader het dossier daarom niet als iets dat op zichzelf staat.
@@ -231,7 +232,7 @@ export const blogPosts: BlogPost[] = [
         De strategische les: het Wtta-normenkader toetst simpelweg of uitleners zich aan de geldende wet- en regelgeving houden. Verzwaart wetgeving als de WMZF die spelregels, dan verschuift de meetlat van de Wtta-inspecteur automatisch mee. Richt processen, systemen en leveranciersafspraken voor de Wtta daarom nu al zó wendbaar in dat ze niet opnieuw op de schop hoeven.
       </p>
 
-      <h2>Waar te beginnen? De vlootschouw</h2>
+      <h2>Waar begin je: de vlootschouw?</h2>
 
       <p>
         De succesvolle implementatie van de Wtta begint met een grondige <strong>vlootschouw</strong> van je huidige leveranciersbestand. Concreet:
@@ -251,6 +252,15 @@ export const blogPosts: BlogPost[] = [
         De Wtta is geen bedreiging voor wie hem vóór is. Het is een kans om de kwaliteit van je leveranciersbestand structureel te verbeteren &mdash; en meteen een heldere norm te stellen voor de partners waarmee je werkt.
       </p>
 
+      <h2>Welke bronnen kun je zelf raadplegen?</h2>
+
+      <ul>
+        <li><a href="https://www.nau.nl/" target="_blank" rel="noopener noreferrer">Nederlandse Autoriteit Uitleenmarkt (NAU)</a></li>
+        <li><a href="https://www.toelatinguitleenmarkt.nl/" target="_blank" rel="noopener noreferrer">Toelating uitleenmarkt</a></li>
+        <li><a href="https://www.nlarbeidsinspectie.nl/onderwerpen/wet-toelating-terbeschikkingstelling-van-arbeidskrachten/wet-toelating-terbeschikkingstelling-van-arbeidskrachten1" target="_blank" rel="noopener noreferrer">Nederlandse Arbeidsinspectie over de Wtta</a></li>
+        <li><a href="https://www.rijksoverheid.nl/actueel/nieuws/2025/11/11/eerste-kamer-stemt-in-met-strengere-regels-voor-de-uitleenmarkt" target="_blank" rel="noopener noreferrer">Rijksoverheid: Eerste Kamer stemt in met strengere regels voor de uitleenmarkt</a></li>
+      </ul>
+
       <hr />
 
       <p>
@@ -259,6 +269,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-05-30',
+    updated: '2026-08-18',
     readTime: '8 min',
     category: 'Compliance',
     primaryServiceId: 'compliant-inhuren',
@@ -469,7 +480,7 @@ export const blogPosts: BlogPost[] = [
         Zodra externe inhuur meerdere afdelingen raakt, verandert het vraagstuk. Dan wil je niet alleen weten wie er werkt en tegen welk tarief, maar ook hoe je stuurt op risico's, leveranciers, compliance en marktwerking.
       </p>
 
-      <h2>Wat grip in de praktijk betekent</h2>
+      <h2>Wat betekent grip op externe inhuur in de praktijk?</h2>
 
       <p>
         Grip begint met inzicht, maar eindigt daar niet. Een organisatie heeft pas echt grip als ze op basis van data, heldere rollen en vaste werkafspraken kan bijsturen.
@@ -481,7 +492,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Bestuurbaarheid:</strong> Rollen, processen en eigenaarschap zijn duidelijk belegd.</li>
       </ul>
 
-      <h2>Signalen dat grip ontbreekt</h2>
+      <h2>Hoe merk je dat grip op inhuur ontbreekt?</h2>
 
       <p>
         Veel organisaties merken pas laat dat de inrichting niet meer past bij de werkelijkheid. Typische signalen zijn:
@@ -495,7 +506,7 @@ export const blogPosts: BlogPost[] = [
         <li>Er is onzekerheid over Wet DBA, tarieven of contractvormen.</li>
       </ul>
 
-      <h2>Van overzicht naar regie</h2>
+      <h2>Wanneer groeit overzicht uit tot regie?</h2>
 
       <p>
         In organisaties met een laag inhuurvolume kan een decentraal model prima werken. Naarmate de schaal toeneemt, groeit de behoefte aan centrale regie. Dan ontstaat vaak de afweging tussen bijvoorbeeld broker, master vendor of MSP.
@@ -505,7 +516,7 @@ export const blogPosts: BlogPost[] = [
         Er is dus geen universeel beste model. Het juiste model hangt af van je volume, volwassenheid, risicoprofiel en de mate waarin je strategisch wilt sturen.
       </p>
 
-      <h2>Waar je op wilt sturen</h2>
+      <h2>Waar stuur je op als je grip wilt?</h2>
 
       <ul>
         <li><strong>Kosten:</strong> tarief, ketenopbouw, facturatie en total cost of ownership.</li>
@@ -522,6 +533,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
+    updated: '2026-08-18',
     readTime: '5 min',
     category: 'Inhuurstrategie',
     primaryServiceId: 'strategisch-inhuuradvies',
@@ -547,7 +559,7 @@ export const blogPosts: BlogPost[] = [
         Waar de ene organisatie vooral snelheid en eenvoud nodig heeft, zoekt de andere juist centrale regie, marktwerking of risicobeheersing. Het model moet daarop aansluiten.
       </p>
 
-      <h2>1. Decentraal model</h2>
+      <h2>Wanneer past een decentraal inhuurmodel?</h2>
 
       <p>
         In een decentraal model huren managers zelf in via een beperkt netwerk van bekende leveranciers. Dit werkt vaak prima bij lage volumes of wanneer snelheid belangrijker is dan centrale sturing.
@@ -558,7 +570,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Nadeel:</strong> weinig centraal overzicht en beperkte grip op risico's en kosten.</li>
       </ul>
 
-      <h2>2. Broker</h2>
+      <h2>Wanneer past een broker?</h2>
 
       <p>
         De broker neemt vooral de administratieve en contractuele afhandeling over. Je organisatie blijft zelf vaak verantwoordelijk voor het vinden of selecteren van kandidaten.
@@ -569,7 +581,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Nadeel:</strong> het lost je sourcing- of selectieprobleem niet op.</li>
       </ul>
 
-      <h2>3. Master vendor</h2>
+      <h2>Wanneer past een master vendor?</h2>
 
       <p>
         Een master vendor werkt goed in omgevingen met grote volumes en repeterende profielen. Een hoofdleverancier vult aanvragen zelf in of schakelt andere bureaus onder zich in.
@@ -580,7 +592,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Nadeel:</strong> afhankelijkheid en mogelijke beperking van markttoegang.</li>
       </ul>
 
-      <h2>4. Managed Service Provider</h2>
+      <h2>Wanneer past een MSP?</h2>
 
       <p>
         Een MSP is de meest volwassen vorm van centrale regie. In het zuivere model draait het niet om zelf leveren, maar om het managen van proces, leveranciers, data, compliance en marktwerking.
@@ -596,6 +608,49 @@ export const blogPosts: BlogPost[] = [
       <p>
         Kijk niet alleen naar volume, maar ook naar de vraag die je probeert op te lossen:
       </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Past wanneer?</th>
+            <th>Sterkte</th>
+            <th>Beperking</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Decentraal</td>
+            <td>Laag volume, snelheid belangrijker dan centrale sturing</td>
+            <td>Korte lijnen, veel invloed voor de manager</td>
+            <td>Weinig overzicht, beperkte grip op risico's en kosten</td>
+          </tr>
+          <tr>
+            <td>Broker</td>
+            <td>Administratieve ontzorging en dossiervorming</td>
+            <td>Minder administratieve last, beter compliance-dossier</td>
+            <td>Lost sourcing of selectie niet op</td>
+          </tr>
+          <tr>
+            <td>Master vendor</td>
+            <td>Grote volumes en repeterende, generieke profielen</td>
+            <td>Leverzekerheid en één aanspreekpunt</td>
+            <td>Afhankelijkheid en mogelijke beperking van markttoegang</td>
+          </tr>
+          <tr>
+            <td>MSP</td>
+            <td>Centrale regie op keten, compliance en marktwerking</td>
+            <td>Transparantie, stuurinformatie en ketenregie</td>
+            <td>Vraagt investering, veranderkracht en voldoende schaal</td>
+          </tr>
+          <tr>
+            <td>VMS</td>
+            <td>Proces, data en dossiervorming (systeem, geen inhuurmodel)</td>
+            <td>Overzicht, uniforme workflow en rapportage</td>
+            <td>Vervangt geen governance, juridische toets of verandermanagement</td>
+          </tr>
+        </tbody>
+      </table>
 
       <ul>
         <li>Zoek je vooral administratieve ontzorging? Dan kan een broker logisch zijn.</li>
@@ -615,6 +670,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
+    updated: '2026-08-18',
     readTime: '6 min',
     category: 'Inhuurstrategie',
     primaryServiceId: 'strategisch-inhuuradvies',
@@ -640,7 +696,7 @@ export const blogPosts: BlogPost[] = [
         Een goed contract helpt, maar is nooit genoeg. Toezichthouders en rechters kijken uiteindelijk naar de feitelijke samenwerking.
       </p>
 
-      <h2>Wat compliant inhuren wel is</h2>
+      <h2>Wat is compliant inhuren wel?</h2>
 
       <ul>
         <li><strong>Een passende contractvorm:</strong> de gekozen vorm sluit aan op het type opdracht en de praktijk.</li>
@@ -649,7 +705,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Naleving in de praktijk:</strong> wat op papier staat, gebeurt ook echt zo op de werkvloer.</li>
       </ul>
 
-      <h2>Waar het vaak misgaat</h2>
+      <h2>Waar gaat compliant inhuren vaak mis?</h2>
 
       <p>
         Veel organisaties nemen losse maatregelen, maar pakken het onderliggende proces niet aan. Dan ontstaat schijnveiligheid.
@@ -662,7 +718,7 @@ export const blogPosts: BlogPost[] = [
         <li>Niemand voelt zich eigenaar van het geheel.</li>
       </ul>
 
-      <h2>Compliance is ook een governance-vraagstuk</h2>
+      <h2>Waarom is compliant inhuren ook een governance-vraagstuk?</h2>
 
       <p>
         Externe inhuur raakt HR, Inkoop, Legal, Finance en de business. Als die functies ieder hun eigen stukje managen zonder centrale regie, ontstaan gaten in het proces.
@@ -672,7 +728,7 @@ export const blogPosts: BlogPost[] = [
         Daarom vraagt compliant inhuren niet alleen om juridische kennis, maar ook om bestuurbaarheid: wie besluit, wie toetst, wie signaleert en wie grijpt in als de praktijk afwijkt?
       </p>
 
-      <h2>Wat een werkbare aanpak kenmerkt</h2>
+      <h2>Wat kenmerkt een werkbare compliance-aanpak?</h2>
 
       <ul>
         <li>Je maakt onderscheid tussen groene, oranje en rode situaties.</li>
@@ -689,6 +745,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
+    updated: '2026-08-18',
     readTime: '5 min',
     category: 'Compliance',
     primaryServiceId: 'compliant-inhuren',
@@ -714,20 +771,20 @@ export const blogPosts: BlogPost[] = [
         De combinatie van de Wet DBA, het Deliveroo-arrest en de ontwikkeling richting Zelfstandigenwet maakt een zuivere beoordeling belangrijker dan ooit.
       </p>
 
-      <h2>Wet DBA: waarom papier alleen niet genoeg is</h2>
+      <h2>Waarom is papier onder de Wet DBA niet genoeg?</h2>
 
       <p>
-        Onder de Wet DBA werd lang veel waarde gehecht aan modelovereenkomsten. Inmiddels is duidelijk dat die maar beperkt beschermen. De praktijk is leidend.
+        Onder de <a href="https://wetten.overheid.nl/BWBR0037602" target="_blank" rel="noopener noreferrer">Wet deregulering beoordeling arbeidsrelaties (Wet DBA)</a> werd lang veel waarde gehecht aan modelovereenkomsten. Inmiddels is duidelijk dat die maar beperkt beschermen. De praktijk is leidend.
       </p>
 
       <p>
         Als een zelfstandige op de werkvloer wordt aangestuurd als werknemer, biedt een goed contract geen echte veiligheid.
       </p>
 
-      <h2>Deliveroo: het totaalplaatje is doorslaggevend</h2>
+      <h2>Waarom is het Deliveroo-arrest doorslaggevend?</h2>
 
       <p>
-        Het Deliveroo-arrest heeft nog eens bevestigd dat er niet naar een enkel criterium wordt gekeken. Rechters en toezichthouders wegen alle omstandigheden samen.
+        Het <a href="https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:HR:2023:443" target="_blank" rel="noopener noreferrer">Deliveroo-arrest van de Hoge Raad (ECLI:NL:HR:2023:443)</a> heeft nog eens bevestigd dat er niet naar een enkel criterium wordt gekeken. Rechters en toezichthouders wegen alle omstandigheden samen.
       </p>
 
       <ul>
@@ -737,7 +794,7 @@ export const blogPosts: BlogPost[] = [
         <li>Hoe afhankelijk is iemand economisch van de opdrachtgever?</li>
       </ul>
 
-      <h2>Van VBAR naar Zelfstandigenwet</h2>
+      <h2>Wat verandert er van VBAR naar Zelfstandigenwet?</h2>
 
       <p>
         De politieke lijn is verschoven. Waar eerder sterk werd gekeken naar inbedding en aansturing, komt in het nieuwe denken ondernemerschap prominenter naar voren.
@@ -747,7 +804,7 @@ export const blogPosts: BlogPost[] = [
         Tegelijk blijft het rechtsvermoeden relevant voor lagere tarieven en blijft de praktijktoets doorslaggevend. Dat betekent dat opdrachtgevers niet achterover kunnen leunen.
       </p>
 
-      <h2>Wat dit concreet betekent voor opdrachtgevers</h2>
+      <h2>Wat betekent dit concreet voor opdrachtgevers?</h2>
 
       <ul>
         <li>Je moet beter onderbouwen waarom iemand als zelfstandige wordt ingezet.</li>
@@ -756,11 +813,18 @@ export const blogPosts: BlogPost[] = [
         <li>Je moet kunnen aantonen dat je actief stuurt op herstel en verbetering.</li>
       </ul>
 
-      <h2>De fout die je wilt vermijden</h2>
+      <h2>Welke fout wil je als opdrachtgever vermijden?</h2>
 
       <p>
         De grootste fout is wachten op volledige politieke duidelijkheid. Handhaving vindt plaats op basis van bestaande wetgeving en jurisprudentie. Afwachten is dus geen strategie.
       </p>
+
+      <h2>Welke bronnen kun je zelf raadplegen?</h2>
+
+      <ul>
+        <li><a href="https://wetten.overheid.nl/BWBR0037602" target="_blank" rel="noopener noreferrer">Wet DBA op wetten.overheid.nl</a></li>
+        <li><a href="https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:HR:2023:443" target="_blank" rel="noopener noreferrer">Hoge Raad 24 maart 2023, ECLI:NL:HR:2023:443 (Deliveroo)</a></li>
+      </ul>
 
       <hr />
 
@@ -770,6 +834,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
+    updated: '2026-08-18',
     readTime: '6 min',
     category: 'Compliance',
     primaryServiceId: 'compliant-inhuren',
@@ -795,7 +860,7 @@ export const blogPosts: BlogPost[] = [
         De vraag is dus niet of zzp-inhuur nog kan, maar onder welke voorwaarden deze zuiver en verdedigbaar is.
       </p>
 
-      <h2>Groene signalen</h2>
+      <h2>Wanneer is zzp-inhuur groen (verantwoord)?</h2>
 
       <p>
         Zzp-inhuur is het best verdedigbaar wanneer de inzet duidelijk projectmatig of specialistisch is en je kunt sturen op resultaat.
@@ -808,7 +873,7 @@ export const blogPosts: BlogPost[] = [
         <li>Er is voldoende afstand in de aansturing.</li>
       </ul>
 
-      <h2>Oranje signalen</h2>
+      <h2>Wanneer is zzp-inhuur oranje (twijfel)?</h2>
 
       <p>
         Twijfelgevallen vragen om extra beoordeling en vaak ook om aanpassing van contract of werkwijze.
@@ -821,7 +886,7 @@ export const blogPosts: BlogPost[] = [
         <li>De manager wil sturen alsof het om een medewerker gaat.</li>
       </ul>
 
-      <h2>Rode signalen</h2>
+      <h2>Wanneer is zzp-inhuur rood (niet verantwoord)?</h2>
 
       <ul>
         <li>Structureel werk dat gelijk is aan dat van werknemers.</li>
@@ -830,7 +895,7 @@ export const blogPosts: BlogPost[] = [
         <li>Een economische afhankelijkheid die nauwelijks bij ondernemerschap past.</li>
       </ul>
 
-      <h2>Denk in segmenten, niet in algemene verboden</h2>
+      <h2>Waarom denk je in segmenten in plaats van een algemeen verbod?</h2>
 
       <p>
         Een werkbare aanpak is om je populatie in segmenten op te delen. Niet iedereen vraagt dezelfde oplossing. Sommige situaties kun je continueren, andere moet je aanpassen en sommige moet je stoppen als zzp-inzet.
@@ -840,7 +905,7 @@ export const blogPosts: BlogPost[] = [
         Dit voorkomt paniekbeleid en helpt je om gericht bij te sturen.
       </p>
 
-      <h2>Alternatieven als zzp niet past</h2>
+      <h2>Welke alternatieven zijn er als zzp niet past?</h2>
 
       <p>
         Als de inzet niet zuiver is, kun je denken aan detachering, midlance, tijdelijke loondienst of een resultaatgerichte constructie zoals een Statement of Work.
@@ -854,6 +919,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
+    updated: '2026-08-18',
     readTime: '5 min',
     category: 'Compliance',
     primaryServiceId: 'compliant-inhuren',
@@ -875,7 +941,7 @@ export const blogPosts: BlogPost[] = [
         Een Vendor Management Systeem wordt vaak verkocht als de oplossing voor externe inhuur. In werkelijkheid is een VMS vooral een belangrijke enabler. Het systeem helpt je sturen, maar lost een slecht proces niet vanzelf op.
       </p>
 
-      <h2>Wat een VMS wel doet</h2>
+      <h2>Wat doet een VMS wel?</h2>
 
       <p>
         De echte waarde van een VMS zit in het centraal vastleggen van data en het ondersteunen van een uniform proces.
@@ -888,7 +954,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Stuurinformatie:</strong> je kunt beter sturen op kosten, doorlooptijd en leveranciersprestatie.</li>
       </ul>
 
-      <h2>Wat een VMS niet doet</h2>
+      <h2>Wat doet een VMS niet?</h2>
 
       <p>
         Een VMS kan niet voor je beoordelen of een inzet juridisch klopt of organisatorisch verstandig is. Het systeem controleert of iets is ingevuld, niet of de inhoud ook echt deugt.
@@ -901,7 +967,7 @@ export const blogPosts: BlogPost[] = [
         <li>Een VMS voorkomt geen geautomatiseerde chaos als het proces rommelig blijft.</li>
       </ul>
 
-      <h2>Wanneer een VMS vooral waarde toevoegt</h2>
+      <h2>Wanneer voegt een VMS waarde toe?</h2>
 
       <p>
         Naarmate je inhuurvolume stijgt, wordt centrale dossiervorming en historisch inzicht belangrijker. Zeker bij ontwikkelingen in regelgeving wil je personen en inzet over tijd kunnen volgen.
@@ -911,7 +977,7 @@ export const blogPosts: BlogPost[] = [
         Dat maakt een VMS niet alleen een operationeel hulpmiddel, maar ook een fundament voor bestuurbaarheid.
       </p>
 
-      <h2>Waar je vooraf scherp op moet zijn</h2>
+      <h2>Waar moet je vooraf scherp op zijn bij een VMS?</h2>
 
       <ul>
         <li>Van wie blijft de data?</li>
@@ -928,6 +994,7 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
+    updated: '2026-08-18',
     readTime: '5 min',
     category: 'Technologie',
     primaryServiceId: 'implementatie',

@@ -7,34 +7,31 @@ export default function Privacy() {
     <>
       <Seo
         path="/privacy"
-        title="Privacy Policy"
+        title="Privacyverklaring"
         description="Privacyverklaring van Komma Consult."
         noindex
       />
-      {/* Header */}
-      <section className="relative py-16 lg:py-20 bg-white overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20" />
-        
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link 
-            to="/" 
+      <section className="py-16 lg:py-20 bg-[#fdf2f8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link
+            to="/"
             className="inline-flex items-center text-komma-navy hover:text-komma-fuchsia transition-colors mb-8"
           >
-            <ArrowLeft className="mr-2 h-4 w-4" />
+            <ArrowLeft className="mr-2 h-4 w-4" aria-hidden="true" />
             Terug naar home
           </Link>
-          
+
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-14 h-14 rounded-2xl bg-komma-fuchsia flex items-center justify-center">
-              <Shield className="h-7 w-7 text-white" />
+            <div className="w-12 h-12 rounded-xl bg-komma-fuchsia flex items-center justify-center">
+              <Shield className="h-6 w-6 text-white" aria-hidden="true" />
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight">
-              Privacy Policy
+            <h1 className="font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
+              Privacyverklaring
             </h1>
           </div>
-          
-          <p className="text-gray-500">
-            Laatst bijgewerkt: {new Date().toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' })}
+
+          <p className="text-gray-600">
+            Laatst bijgewerkt: 18 augustus 2026
           </p>
         </div>
       </section>
@@ -127,7 +124,8 @@ export default function Privacy() {
               </p>
               <ul className="text-gray-600">
                 <li><strong>Vercel Analytics</strong> - voor websitestatistieken (privacy-vriendelijk, geen cookies)</li>
-                <li><strong>Cal.com</strong> - voor het inplannen van afspraken</li>
+                <li><strong>Ahrefs Web Analytics</strong> - voor bezoekersstatistieken (cookieloos, geladen vanaf analytics.ahrefs.com)</li>
+                <li><strong>Cal.com</strong> - voor het inplannen van afspraken (alleen op de contactpagina)</li>
                 <li><strong>Supabase</strong> - voor het opslaan van chatgesprekken (servers binnen de EU)</li>
                 <li><strong>Google Gemini</strong> - voor het verwerken van vragen en het genereren van antwoorden via onze kennisassistent</li>
               </ul>
@@ -142,6 +140,8 @@ export default function Privacy() {
               </p>
               <p className="text-gray-600">
                 Vercel Analytics werkt zonder cookies en respecteert de privacy van bezoekers.
+                Ahrefs Web Analytics is eveneens cookieloos. Cal.com wordt alleen geladen
+                op de contactpagina, wanneer je een afspraak wilt plannen.
               </p>
               <p className="text-gray-600">
                 Onze kennisassistent (chatinterface) plaatst geen cookies en slaat geen 

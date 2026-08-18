@@ -10,7 +10,8 @@ import {
 } from '@/content/blogPosts'
 import { getServiceLinkById } from '@/content/serviceLinks'
 import Seo from '@/seo/Seo'
-import { SITE } from '@/seo/site'
+import FounderPhoto from '@/components/FounderPhoto'
+import { articleJsonLd, breadcrumbJsonLd } from '@/seo/jsonld'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -48,27 +49,22 @@ export default function BlogPost() {
       ? relatedPosts
       : kindPosts.filter((item) => item.slug !== post.slug).slice(0, 3)
 
-  const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.excerpt,
-    articleSection: sectionLabel,
-    author: {
-      '@type': 'Person',
-      name: post.author,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: SITE.name,
-      url: SITE.url,
-    },
-    datePublished: post.date,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${SITE.url}${path}`,
-    },
-  }
+  const structuredData = [
+    articleJsonLd({
+      headline: post.title,
+      description: post.excerpt,
+      path,
+      datePublished: post.date,
+      dateModified: post.updated ?? post.date,
+      section: sectionLabel,
+      image: post.image,
+    }),
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Kennis', path: '/kennis' },
+      { name: post.title, path },
+    ]),
+  ]
 
   const formatDate = (dateString: string) =>
     new Date(dateString).toLocaleDateString('nl-NL', {
@@ -86,23 +82,17 @@ export default function BlogPost() {
         type="article"
         image={post.image}
         publishedTime={post.date}
-        jsonLd={articleJsonLd}
+        modifiedTime={post.updated ?? post.date}
+        jsonLd={structuredData}
       />
 
-      <section className="relative pt-32 pb-16 overflow-hidden bg-white">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20" />
-          <div className="absolute top-20 right-20 text-[15rem] font-display font-black text-komma-navy/[0.03] leading-none select-none hidden xl:block">
-            ,
-          </div>
-        </div>
-
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 lg:py-20 bg-[#fdf2f8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to={backHref}
-            className="inline-flex items-center gap-2 text-gray-500 hover:text-komma-fuchsia transition-colors mb-8 group"
+            className="inline-flex items-center gap-2 text-gray-600 hover:text-komma-navy transition-colors mb-8"
           >
-            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             {backLabel}
           </Link>
 
@@ -115,16 +105,18 @@ export default function BlogPost() {
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-komma-navy tracking-tight leading-tight">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-komma-navy tracking-tight leading-tight">
             {post.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-6 mt-8 text-gray-500">
+          <div className="flex flex-wrap items-center gap-6 mt-8 text-gray-600">
             <div className="flex items-center gap-3">
-              <img
-                src="/mathijs-duisdecker.jpg"
+              <FounderPhoto
                 alt={post.author}
-                className="w-12 h-12 rounded-full object-cover border-2 border-white shadow"
+                className="w-12 h-12 rounded-full object-cover"
+                width={48}
+                height={48}
+                sizes="48px"
               />
               <div>
                 <p className="font-semibold text-komma-navy">{post.author}</p>
@@ -132,11 +124,13 @@ export default function BlogPost() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              {formatDate(post.date)}
+              <Calendar className="h-4 w-4" aria-hidden="true" />
+              {post.updated && post.updated !== post.date
+                ? `Geüpdatet ${formatDate(post.updated)}`
+                : formatDate(post.date)}
             </div>
             <div className="flex items-center gap-2">
-              <Clock className="h-4 w-4" />
+              <Clock className="h-4 w-4" aria-hidden="true" />
               {post.readTime} leestijd
             </div>
           </div>
@@ -156,10 +150,12 @@ export default function BlogPost() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
             <div className="flex flex-col sm:flex-row gap-6">
-              <img
-                src="/mathijs-duisdecker.jpg"
+              <FounderPhoto
                 alt={post.author}
                 className="w-20 h-20 rounded-2xl object-cover"
+                width={80}
+                height={80}
+                sizes="80px"
               />
               <div>
                 <h3 className="font-display text-xl font-bold text-komma-navy mb-2">
@@ -171,7 +167,7 @@ export default function BlogPost() {
                 </p>
                 <Link
                   to="/over"
-                  className="text-komma-fuchsia font-semibold hover:text-komma-fuchsia-dark transition-colors"
+                  className="text-komma-fuchsia font-semibold hover:underline"
                 >
                   Meer over Mathijs -&gt;
                 </Link>
@@ -273,29 +269,24 @@ export default function BlogPost() {
         </section>
       ) : null}
 
-      <section className="py-20 bg-komma-navy relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/10 transform skew-x-12 translate-x-1/4" />
-        <div className="absolute bottom-10 right-10 text-[10rem] font-display font-black text-white/5 leading-none select-none hidden lg:block">
-          ,
-        </div>
-
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+      <section className="py-16 lg:py-24 bg-komma-navy">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-white/80 font-semibold text-sm tracking-wide uppercase">
             Samen verkennen
-          </span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-white">
+          </p>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-white">
             Wil je dit vertalen naar jouw situatie?
           </h2>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
             Als je wilt sparren over wat dit concreet betekent voor jouw organisatie,
             denken we graag met je mee in een vrijblijvend gesprek.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 mt-8 bg-komma-fuchsia text-white font-semibold rounded-xl hover:bg-komma-fuchsia-dark transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 mt-8 bg-komma-fuchsia text-white font-semibold rounded-lg hover:bg-komma-fuchsia-dark transition-colors"
           >
             Bespreek jouw vraagstuk
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-5 w-5" aria-hidden="true" />
           </Link>
         </div>
       </section>

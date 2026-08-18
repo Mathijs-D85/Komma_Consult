@@ -18,6 +18,7 @@ const testimonials = [
 export default function TestimonialCarousel() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   const goToNext = useCallback(() => {
     setActiveIndex((current) => (current + 1) % testimonials.length)
@@ -28,14 +29,22 @@ export default function TestimonialCarousel() {
   }, [])
 
   useEffect(() => {
-    if (!isAutoPlaying) return
-    
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const update = () => setPrefersReducedMotion(media.matches)
+    update()
+    media.addEventListener('change', update)
+    return () => media.removeEventListener('change', update)
+  }, [])
+
+  useEffect(() => {
+    if (!isAutoPlaying || prefersReducedMotion) return
+
     const interval = setInterval(() => {
       goToNext()
     }, 8000)
 
     return () => clearInterval(interval)
-  }, [isAutoPlaying, goToNext])
+  }, [isAutoPlaying, prefersReducedMotion, goToNext])
 
   const handlePrevious = () => {
     setIsAutoPlaying(false)
@@ -55,83 +64,79 @@ export default function TestimonialCarousel() {
   const activeTestimonial = testimonials[activeIndex]
 
   return (
-    <section className="py-24 lg:py-32 bg-komma-navy relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-komma-fuchsia/10 transform skew-x-12 translate-x-1/4" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-      </div>
-      
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+    <section
+      className="py-16 lg:py-24 bg-komma-navy"
+      onMouseEnter={() => setIsAutoPlaying(false)}
+      onMouseLeave={() => {
+        if (!prefersReducedMotion) setIsAutoPlaying(true)
+      }}
+      onFocus={() => setIsAutoPlaying(false)}
+      aria-roledescription="carousel"
+      aria-label="Klantreferenties"
+    >
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10">
+          <p className="text-white/80 font-semibold text-sm tracking-wide uppercase">
             Wat klanten zeggen
-          </span>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          </p>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">
             Referenties
           </h2>
         </div>
 
-        {/* Quote icon */}
         <div className="flex justify-center mb-8">
-          <div className="w-16 h-16 rounded-2xl bg-komma-fuchsia flex items-center justify-center">
-            <Quote className="h-8 w-8 text-white" />
+          <div className="w-12 h-12 rounded-xl bg-komma-fuchsia flex items-center justify-center">
+            <Quote className="h-6 w-6 text-white" aria-hidden="true" />
           </div>
         </div>
 
-        {/* Testimonial Content - Single testimonial at a time */}
-        <div className="text-center">
-          <blockquote 
-            key={activeIndex}
-            className="text-xl sm:text-2xl lg:text-2xl text-white font-display font-medium leading-relaxed max-w-4xl mx-auto animate-fade-in"
-          >
-            "{activeTestimonial?.quote}"
+        <div className="text-center" aria-live="polite">
+          <blockquote className="text-lg sm:text-xl text-white font-display font-medium leading-relaxed max-w-4xl mx-auto">
+            &quot;{activeTestimonial?.quote}&quot;
           </blockquote>
-          
-          <div className="mt-10 flex flex-col items-center">
+
+          <div className="mt-8 flex flex-col items-center">
             <div className="w-12 h-1 bg-komma-fuchsia rounded-full mb-4" />
             <p className="text-white font-semibold text-lg">{activeTestimonial?.author}</p>
-            <p className="text-white/60">{activeTestimonial?.company}</p>
+            <p className="text-white/70">{activeTestimonial?.company}</p>
           </div>
         </div>
 
-        {/* Navigation */}
-        <div className="flex justify-center items-center gap-6 mt-12">
+        <div className="flex justify-center items-center gap-6 mt-10">
           <button
             onClick={handlePrevious}
-            className="w-12 h-12 rounded-full bg-white/10 hover:bg-komma-fuchsia flex items-center justify-center transition-all duration-300 hover:scale-110"
-            aria-label="Vorige testimonial"
+            className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+            aria-label="Vorige referentie"
             type="button"
           >
-            <ChevronLeft className="h-6 w-6 text-white" />
+            <ChevronLeft className="h-6 w-6 text-white" aria-hidden="true" />
           </button>
 
-          {/* Dots */}
           <div className="flex items-center gap-3">
-            {testimonials.map((_, index) => (
+            {testimonials.map((item, index) => (
               <button
-                key={index}
+                key={item.author}
                 onClick={() => handleDotClick(index)}
                 type="button"
                 className={cn(
-                  "transition-all duration-300 rounded-full",
-                  index === activeIndex 
-                    ? "w-8 h-3 bg-komma-fuchsia" 
-                    : "w-3 h-3 bg-white/30 hover:bg-white/50"
+                  'transition-all duration-300 rounded-full',
+                  index === activeIndex
+                    ? 'w-8 h-3 bg-komma-fuchsia'
+                    : 'w-3 h-3 bg-white/30 hover:bg-white/50'
                 )}
-                aria-label={`Ga naar testimonial ${index + 1}`}
+                aria-label={`Ga naar referentie ${index + 1}`}
+                aria-current={index === activeIndex ? 'true' : undefined}
               />
             ))}
           </div>
 
           <button
             onClick={handleNext}
-            className="w-12 h-12 rounded-full bg-white/10 hover:bg-komma-fuchsia flex items-center justify-center transition-all duration-300 hover:scale-110"
-            aria-label="Volgende testimonial"
+            className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+            aria-label="Volgende referentie"
             type="button"
           >
-            <ChevronRight className="h-6 w-6 text-white" />
+            <ChevronRight className="h-6 w-6 text-white" aria-hidden="true" />
           </button>
         </div>
       </div>

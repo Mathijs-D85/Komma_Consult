@@ -35,7 +35,7 @@
 .komma-chat {
   font-family: var(--kc-font-body);
   color: var(--kc-text-primary);
-  background: var(--kc-bg-page);
+  background: transparent;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,11 +53,11 @@
 
 .welcome-screen {
   position: relative;
-  min-height: 90vh;
+  min-height: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2rem 1.5rem;
+  padding: 0 0 0.5rem;
   background: transparent;
 }
 
@@ -84,19 +84,19 @@
 /* Titel - prominent, vergelijkbaar met originele hero */
 .welcome-title {
   font-family: var(--kc-font-display);
-  font-size: clamp(3rem, 8vw, 5rem);
-  font-weight: 800;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
   color: var(--kc-navy);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.03em;
-  line-height: 0.95;
+  line-height: 1.15;
 }
 
 .welcome-subtitle {
   font-family: var(--kc-font-body);
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-size: 1.05rem;
   color: var(--kc-text-secondary);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 
@@ -259,15 +259,16 @@
 .chat-view {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 8rem);
+  min-height: 22rem;
+  max-height: min(32rem, 65vh);
   overflow: hidden;
-  background: var(--kc-bg-white);
+  background: transparent;
 }
 
 .chat-view__messages {
   flex: 1;
   overflow-y: auto;
-  padding: 2rem 1.5rem;
+  padding: 1rem 0 1.5rem;
   scroll-behavior: smooth;
 }
 
@@ -295,9 +296,9 @@
 
 /* Input area onderaan */
 .chat-view__input-area {
-  padding: 1rem 1.5rem 1.5rem;
-  border-top: 1px solid var(--kc-border-light);
-  background: var(--kc-bg-white);
+  padding: 1rem 0 0;
+  border-top: none;
+  background: transparent;
 }
 
 .chat-view__input-inner {
@@ -623,12 +624,12 @@
 
 @media (max-width: 768px) {
   .welcome-screen {
-    min-height: 80vh;
-    padding: 1.5rem 1rem;
+    min-height: 0;
+    padding: 0;
   }
 
   .welcome-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .welcome-subtitle {

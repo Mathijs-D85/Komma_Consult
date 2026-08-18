@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Target, Shield, Clock, Settings } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { buttonVariants } from '@/components/ui/button-variants'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import ChatApp from '@/components/chat/ChatApp'
 import { ClientOnly } from 'vite-react-ssg'
 import Seo from '@/seo/Seo'
+import { cn } from '@/lib/utils'
+import FaqSection from '@/components/FaqSection'
+import { homeFaqs, toFaqJsonLd } from '@/content/faqs'
 
 const diensten = [
   {
@@ -56,6 +59,16 @@ const situaties = [
   },
 ]
 
+function ChatFallback() {
+  return (
+    <div className="px-2 py-10 text-center">
+      <p className="text-lg text-gray-600">
+        Stel een vraag over grip, compliance of keuzes in externe inhuur.
+      </p>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <>
@@ -63,153 +76,153 @@ export default function Home() {
         path="/"
         title="Grip op externe inhuur"
         description="Komma Consult helpt organisaties grip en regie te krijgen in externe inhuur, van strategie en compliance tot implementatie."
+        jsonLd={toFaqJsonLd(homeFaqs)}
       />
-      {/* Wrapper met doorlopende decoratieve fuchsia baan */}
-      <div className="relative overflow-hidden bg-white">
-        {/* Fuchsia accent shape - loopt door over chat + diensten */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-komma-fuchsia/5 transform skew-x-12 translate-x-20 pointer-events-none" />
-        {/* Navy accent shape */}
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-komma-navy/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
-        {/* Chat als hero - vervangt de oude hero sectie */}
-        <ClientOnly fallback={
-          <div className="min-h-[600px] flex items-center justify-center">
-            <div className="text-center max-w-2xl mx-auto px-4 py-24">
-              <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight mb-6">
-                Grip op externe inhuur
-              </h1>
-              <p className="text-xl text-gray-600">
-                Komma Consult helpt organisaties met overzicht, regie en bestuurbaarheid in externe inhuur.
-              </p>
+      <div className="relative overflow-hidden bg-[#fdf2f8]">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-komma-fuchsia/10 transform skew-x-12 translate-x-16 pointer-events-none" />
+        <div className="absolute -bottom-24 -left-10 w-[28rem] h-[28rem] rounded-full bg-komma-fuchsia/20 blur-3xl pointer-events-none" />
+        <div className="absolute top-24 right-1/4 w-72 h-72 rounded-full bg-komma-navy/5 blur-3xl pointer-events-none" />
+
+        <section className="relative pt-16 lg:pt-20">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+              Strategisch inhuuradvies
+            </p>
+            <h1 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-komma-navy tracking-tight">
+              Ontdek wat er schuilt achter
+              <br />
+              <span className="text-komma-fuchsia">de komma</span>
+            </h1>
+            <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              Komma Consult helpt organisaties met grip, regie en bestuurbaarheid
+              in externe inhuur. Stel hier je vraag, of plan een gesprek.
+            </p>
+            <div className="mt-8">
+              <Link to="/contact" className={buttonVariants({ size: 'lg' })}>
+                Plan een gesprek
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
             </div>
           </div>
-        }>
-          {() => (
-            <ChatApp config={{
-              supabaseUrl: import.meta.env.VITE_SUPABASE_URL || "https://dhuppyaqprsjaquomqtp.supabase.co",
-              supabaseFunctionsUrl: import.meta.env.VITE_SUPABASE_FUNCTIONS_URL || "https://dhuppyaqprsjaquomqtp.supabase.co/functions/v1",
-              contactUrl: "/contact",
-            }} />
-          )}
-        </ClientOnly>
-
-        {/* Services Section - Bold Cards */}
-        <section className="relative py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
-            <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
-              Dienstverlening
-            </span>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-komma-navy tracking-tight">
-              Van inzicht naar regie
-            </h2>
-            <p className="mt-6 text-xl text-gray-600">
-              Externe inhuur raakt HR, inkoop, finance, legal en de business.
-              Komma Consult helpt om daar overzicht, structuur en bestuurbaarheid in aan te brengen.
-            </p>
-          </div>
-          
-          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
-            {diensten.map((dienst, index) => (
-              <Link 
-                key={dienst.title} 
-                to={dienst.href}
-                className="group relative bg-white rounded-3xl p-8 lg:p-10 border border-gray-100 hover:border-komma-fuchsia/30 hover:shadow-2xl hover:shadow-komma-fuchsia/10 transition-all duration-500"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                {/* Number */}
-                <span className="absolute top-8 right-8 text-7xl font-display font-black text-gray-100 group-hover:text-komma-fuchsia/10 transition-colors">
-                  0{index + 1}
-                </span>
-                
-                <div className="relative">
-                  <div className="w-14 h-14 rounded-2xl bg-komma-navy flex items-center justify-center mb-6 group-hover:bg-komma-fuchsia transition-colors duration-300">
-                    <dienst.icon className="h-7 w-7 text-white" />
-                  </div>
-                  
-                  <h3 className="font-display text-2xl lg:text-3xl font-bold text-komma-navy mb-4 group-hover:text-komma-fuchsia transition-colors">
-                    {dienst.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                    {dienst.description}
-                  </p>
-                  
-                  <span className="inline-flex items-center text-komma-navy font-semibold group-hover:text-komma-fuchsia transition-colors">
-                    Meer informatie
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-2" />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
         </section>
 
-        <section className="relative pb-24 lg:pb-32">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mb-16">
-              <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
-                Wie wij helpen
-              </span>
-              <h2 className="mt-4 font-display text-4xl sm:text-5xl font-extrabold text-komma-navy tracking-tight">
-                Herkenbare situaties
-              </h2>
-              <p className="mt-6 text-xl text-gray-600">
-                Komma Consult helpt organisaties die voelen dat externe inhuur belangrijk is,
-                maar merken dat overzicht, eigenaarschap en sturing onder druk staan.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-              {situaties.map((situatie) => (
-                <div
-                  key={situatie.title}
-                  className="bg-gray-50 rounded-3xl p-8 lg:p-10 border border-gray-100"
-                >
-                  <h3 className="font-display text-2xl font-bold text-komma-navy">
-                    {situatie.title}
-                  </h3>
-                  <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-                    {situatie.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+        <section id="kennisassistent" className="relative pt-10 pb-20 lg:pb-24">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ClientOnly fallback={<ChatFallback />}>
+              {() => (
+                <ChatApp config={{
+                  supabaseUrl: import.meta.env.VITE_SUPABASE_URL || 'https://dhuppyaqprsjaquomqtp.supabase.co',
+                  supabaseFunctionsUrl: import.meta.env.VITE_SUPABASE_FUNCTIONS_URL || 'https://dhuppyaqprsjaquomqtp.supabase.co/functions/v1',
+                  contactUrl: '/contact',
+                }} />
+              )}
+            </ClientOnly>
           </div>
         </section>
       </div>
 
-      {/* Testimonial Carousel */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mb-12">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+              Dienstverlening
+            </p>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
+              Van inzicht naar regie
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Externe inhuur raakt HR, inkoop, finance, legal en de business.
+              Komma Consult helpt om daar overzicht, structuur en bestuurbaarheid in aan te brengen.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            {diensten.map((dienst, index) => (
+              <Link
+                key={dienst.title}
+                to={dienst.href}
+                className="group relative bg-white rounded-2xl p-8 border border-gray-100 hover:border-komma-fuchsia/30 transition-colors"
+              >
+                <span className="text-komma-fuchsia font-semibold text-sm">
+                  0{index + 1}
+                </span>
+
+                <div className="mt-5 w-12 h-12 rounded-xl bg-komma-navy flex items-center justify-center mb-5 group-hover:bg-komma-fuchsia transition-colors">
+                  <dienst.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                </div>
+
+                <h3 className="font-display text-2xl font-bold text-komma-navy mb-3">
+                  {dienst.title}
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  {dienst.description}
+                </p>
+
+                <span className="inline-flex items-center text-komma-navy font-semibold group-hover:text-komma-fuchsia transition-colors">
+                  Meer informatie
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-16 lg:pb-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mb-12">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+              Wie wij helpen
+            </p>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
+              Herkenbare situaties
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Komma Consult helpt organisaties die voelen dat externe inhuur belangrijk is,
+              maar merken dat overzicht, eigenaarschap en sturing onder druk staan.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-6">
+            {situaties.map((situatie) => (
+              <div
+                key={situatie.title}
+                className="bg-gray-50 rounded-2xl p-8 border border-gray-100"
+              >
+                <h3 className="font-display text-xl font-bold text-komma-navy">
+                  {situatie.title}
+                </h3>
+                <p className="mt-3 text-gray-600 leading-relaxed">
+                  {situatie.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <FaqSection items={homeFaqs} heading="Veelgestelde vragen over externe inhuur" />
+
       <TestimonialCarousel />
 
-      {/* CTA Section - Bold */}
-      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(235,8,141,0.05)_0%,transparent_50%)]" />
-        
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+      <section className="py-16 lg:py-24 bg-[#fdf2f8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
             Laten we kennismaken
-          </span>
-          
-          <h2 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-komma-navy tracking-tight">
-            Klaar voor de volgende
-            <br />
-            <span className="text-komma-fuchsia">stap?</span>
+          </p>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
+            Klaar voor de volgende stap?
           </h2>
-          
-          <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-5 text-lg text-gray-600">
             Plan een vrijblijvend gesprek en verken waar jouw organisatie meer
             grip, overzicht of bijsturing nodig heeft in externe inhuur.
           </p>
-          
-          <div className="mt-12">
-            <Link to="/contact">
-              <Button size="lg" className="text-lg px-10 py-5 bg-komma-fuchsia hover:bg-komma-fuchsia-dark shadow-xl shadow-komma-fuchsia/25 hover:shadow-2xl hover:shadow-komma-fuchsia/30 transition-all">
-                Plan een gesprek
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+          <div className="mt-8">
+            <Link to="/contact" className={cn(buttonVariants({ size: 'lg' }))}>
+              Plan een gesprek
+              <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
             </Link>
           </div>
         </div>

@@ -23,17 +23,17 @@ function getBlogRoutesFromSource(tsFileContent) {
   const withoutBlockComments = tsFileContent.replace(/\/\*[\s\S]*?\*\//g, '')
   const withoutLineComments = withoutBlockComments.replace(/^\s*\/\/.*$/gm, '')
 
-  // Match objects containing slug + kind + date.
+  // Match objects containing slug + kind + date, plus optional updated right after date.
   const matches = [
     ...withoutLineComments.matchAll(
-      /\{\s*slug:\s*'([^']+)'[\s\S]*?kind:\s*'([^']+)'[\s\S]*?date:\s*'(\d{4}-\d{2}-\d{2})'/g
+      /\{\s*slug:\s*'([^']+)'[\s\S]*?kind:\s*'([^']+)'[\s\S]*?date:\s*'(\d{4}-\d{2}-\d{2})'(?:\s*,\s*updated:\s*'(\d{4}-\d{2}-\d{2})')?/g
     ),
   ]
 
   return matches.map((m) => ({
     slug: m[1],
     kind: m[2],
-    date: m[3],
+    date: m[4] || m[3],
   }))
 }
 
@@ -92,10 +92,18 @@ const sitemapXml =
 
 fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf8')
 
-// robots.txt
 const robotsTxt =
   `User-agent: *\n` +
   `Allow: /\n\n` +
+  `User-agent: OAI-SearchBot\nAllow: /\n\n` +
+  `User-agent: ChatGPT-User\nAllow: /\n\n` +
+  `User-agent: GPTBot\nAllow: /\n\n` +
+  `User-agent: Claude-SearchBot\nAllow: /\n\n` +
+  `User-agent: Claude-User\nAllow: /\n\n` +
+  `User-agent: ClaudeBot\nAllow: /\n\n` +
+  `User-agent: PerplexityBot\nAllow: /\n\n` +
+  `User-agent: Perplexity-User\nAllow: /\n\n` +
+  `User-agent: Google-Extended\nAllow: /\n\n` +
   `Sitemap: ${BASE_URL}/sitemap.xml\n`
 
 fs.writeFileSync(path.join(distDir, 'robots.txt'), robotsTxt, 'utf8')

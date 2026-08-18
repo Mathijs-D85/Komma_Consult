@@ -2,51 +2,28 @@ import { ReactNode } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Head } from 'vite-react-ssg'
-import { SITE, absoluteUrl } from '@/seo/site'
 import ScrollToTop from './ScrollToTop'
+import { siteGraphJsonLd } from '@/seo/jsonld'
 
 interface LayoutProps {
   children: ReactNode
 }
 
 export default function Layout({ children }: LayoutProps) {
-  const organizationJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: SITE.name,
-    url: SITE.url,
-    logo: absoluteUrl('/logo-icon.svg'),
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Keurenplein 41',
-      postalCode: '1069 CD',
-      addressLocality: 'Amsterdam',
-      addressCountry: 'NL',
-    },
-    email: 'kommaconsult@outlook.com',
-    telephone: '+31627307689',
-  }
-
-  const websiteJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: SITE.name,
-    url: SITE.url,
-  }
-
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Head>
-        <script type="application/ld+json">{JSON.stringify(organizationJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(siteGraphJsonLd)}</script>
       </Head>
+      <a href="#main-content" className="skip-link">
+        Ga naar inhoud
+      </a>
       <Header />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {children}
       </main>
       <Footer />
     </div>
   )
 }
-

@@ -47,6 +47,8 @@ export default function Seo({
       <meta property="og:description" content={desc} />
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:alt" content={SITE.name} />
+      <meta name="theme-color" content="#293266" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />

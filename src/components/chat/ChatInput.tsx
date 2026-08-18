@@ -63,6 +63,7 @@ export function ChatInput({
         placeholder={placeholder}
         disabled={isLoading}
         rows={1}
+        aria-label="Vraag over externe inhuur"
       />
       <button
         className="chat-input__send"

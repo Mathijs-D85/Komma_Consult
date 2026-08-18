@@ -1,18 +1,13 @@
-interface SuggestionChipsProps {
-  onSelect: (message: string) => void;
-}
+import { chatSuggestions } from '@/content/faqs'
 
-const SUGGESTIONS = [
-  "Hoe krijg ik meer grip op externe inhuur?",
-  "Wanneer past een MSP, broker of VMS?",
-  "Hoe zorg ik dat compliant inhuren werkbaar blijft in de praktijk?",
-  "Hoe helpt duidelijk eigenaarschap bij beter beheer van inhuur?",
-];
+interface SuggestionChipsProps {
+  onSelect: (message: string) => void
+}
 
 export function SuggestionChips({ onSelect }: SuggestionChipsProps) {
   return (
     <div className="suggestion-chips">
-      {SUGGESTIONS.map((suggestion) => (
+      {chatSuggestions.map((suggestion) => (
         <button
           key={suggestion}
           className="suggestion-chip"
@@ -23,5 +18,5 @@ export function SuggestionChips({ onSelect }: SuggestionChipsProps) {
         </button>
       ))}
     </div>
-  );
+  )
 }
