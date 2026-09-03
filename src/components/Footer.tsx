@@ -11,11 +11,11 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Link to="/" className="inline-block mb-6">
               <img
-                src="/logo-komma-consult-white.png"
+                src="/logo-komma-consult-white-wordmark.png"
                 alt="Komma Consult"
-                width={360}
-                height={96}
-                className="h-20 sm:h-24 w-auto max-w-[360px] object-contain -ml-2"
+                width={443}
+                height={216}
+                className="h-14 w-auto object-contain"
               />
             </Link>
             <p className="text-white/80 text-base leading-relaxed max-w-md">

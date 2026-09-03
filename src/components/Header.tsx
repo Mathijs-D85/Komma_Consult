@@ -25,13 +25,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-komma-fuchsia/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Hoofdnavigatie">
         <div className="flex items-center justify-between h-20 sm:h-24">
-          <Link to="/" className="flex items-center shrink-0 -my-3">
+          <Link to="/" className="flex items-center shrink-0">
             <img
-              src="/logo-komma-consult.png"
+              src="/logo-komma-consult-wordmark.png"
               alt="Komma Consult"
-              width={360}
-              height={96}
-              className="h-20 sm:h-24 md:h-28 w-auto max-w-[420px] object-contain"
+              width={444}
+              height={216}
+              className="h-12 sm:h-14 w-auto object-contain"
             />
           </Link>
 
