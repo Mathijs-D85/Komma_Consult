@@ -92,4 +92,13 @@ export const dienstenFaqs: FaqItem[] = [
   },
 ]
 
-export const chatSuggestions = homeFaqs.slice(0, 4).map((item) => item.question)
+/**
+ * Voorbeeldvragen voor de kennischat op de homepage. Bewust specifieker dan de FAQ:
+ * ze laten zien dat de kennisbank verder gaat dan de definities op de website.
+ */
+export const chatSuggestions = [
+  'Onze managers huren zelf in via vaste bureaus. Waar zit dan ons grootste risico?',
+  'Wij hebben straks een MSP. Wat blijft er dan nog over voor inkoop en HR om zelf te doen?',
+  'Een zzp\'er zit al drie jaar bij ons op dezelfde plek. Hoe erg is dat onder de Wet DBA?',
+  'Moet ik onder de Wtta ook mijn detacheerders en payrollers controleren, of alleen uitzendbureaus?',
+]

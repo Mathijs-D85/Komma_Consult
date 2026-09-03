@@ -15,6 +15,19 @@ export interface BlogPost {
   relatedSlugs?: string[]
   image?: string
   featured?: boolean
+  /** Vervolgvragen voor de kennischat onder dit artikel. */
+  chatSuggestions?: string[]
+}
+
+const defaultChatSuggestions = [
+  'Wat betekent dit voor een organisatie met weinig inhuur?',
+  'Waar begin ik als ik dit wil aanpakken?',
+  'Welke fout maken organisaties hier het vaakst?',
+  'Hoe verhoudt dit zich tot MSP, broker en VMS?',
+]
+
+export function getChatSuggestions(post: BlogPost): string[] {
+  return post.chatSuggestions ?? defaultChatSuggestions
 }
 
 const postBasePaths: Record<BlogPostKind, string> = {
@@ -26,6 +39,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'wtta-waarom-2028-nu-al-op-je-agenda',
     kind: 'kennis',
+    chatSuggestions: [
+      'Geldt de Wtta ook voor detachering en zzp via een tussenpartij?',
+      'Wat moet ik als opdrachtgever vóór 2028 geregeld hebben?',
+      'Hoe controleer ik of een leverancier straks toegelaten is?',
+      'Wat is het verschil tussen de Wtta en het SNA-keurmerk?',
+    ],
     title: 'De Wtta: waarom 1 januari 2028 nú al op je agenda hoort',
     excerpt:
       'Vanaf 1 januari 2028 mag je alleen nog personeel inhuren bij uitleners met een geldige toelating. Juist daarom is de Wtta een onderwerp voor 2026, niet voor 2027.',
@@ -468,6 +487,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'wat-is-grip-op-externe-inhuur',
     kind: 'kennis',
+    chatSuggestions: [
+      'Hoe krijg ik snel overzicht van wie er allemaal wordt ingehuurd?',
+      'Wie hoort eigenaar te zijn van externe inhuur: HR of inkoop?',
+      'Welke stuurinformatie heb ik minimaal nodig?',
+      'Hoe groot moet de inhuur zijn voordat regie loont?',
+    ],
     title: 'Wat is grip op externe inhuur?',
     excerpt:
       'Grip op externe inhuur gaat niet alleen over overzicht, maar vooral over regie op kosten, risico\'s, leveranciers en besluitvorming.',
@@ -547,6 +572,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'msp-broker-master-vendor-of-decentraal-model',
     kind: 'kennis',
+    chatSuggestions: [
+      'Wie betaalt de MSP: de leverancier of de opdrachtgever?',
+      'Wat is het verschil tussen een broker en een MSP?',
+      'Wanneer is een master vendor een slecht idee?',
+      'Hoe voorkom ik dat de MSP te veel macht krijgt?',
+    ],
     title: 'MSP, broker, master vendor of decentraal model: wat past wanneer?',
     excerpt:
       'Het juiste inhuurmodel hangt af van je volume, volwassenheid en doelstelling. Niet elk probleem vraagt om een MSP.',
@@ -684,6 +715,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'wat-is-compliant-inhuren',
     kind: 'kennis',
+    chatSuggestions: [
+      'Welke wetten raken externe inhuur allemaal?',
+      'Wat is ketenaansprakelijkheid en hoe beperk ik het risico?',
+      'Waar moet ik op letten bij een G-rekening?',
+      'Hoe leg ik compliance vast zonder een papieren tijger te bouwen?',
+    ],
     title: 'Wat is compliant inhuren?',
     excerpt:
       'Compliant inhuren betekent dat contract, werkpraktijk, documentatie en verantwoordelijkheden op elkaar aansluiten en aantoonbaar kloppen.',
@@ -848,6 +885,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'wanneer-is-zzp-inhuur-verantwoord',
     kind: 'kennis',
+    chatSuggestions: [
+      'Wat is het risico van schijnzelfstandigheid voor de opdrachtgever?',
+      'Hoe beoordeel ik of een opdracht echt als zzp kan?',
+      'Wat verandert de Wet DBA-handhaving voor lopende contracten?',
+      'Is een modelovereenkomst nog voldoende?',
+    ],
     title: 'Wanneer is zzp-inhuur verantwoord?',
     excerpt:
       'Zzp-inhuur is verantwoord als opdracht, werkpraktijk en ondernemerschap op elkaar aansluiten en niet op regulier werk gaan lijken.',
@@ -933,6 +976,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'wat-doet-een-vms-wel-en-niet',
     kind: 'kennis',
+    chatSuggestions: [
+      'Heb ik een VMS nodig als ik weinig inhuur?',
+      'Wat is het verschil tussen een VMS en een MSP?',
+      'Waar gaat een VMS-implementatie meestal mis?',
+      'Welke data moet een VMS minimaal opleveren?',
+    ],
     title: 'Wat doet een VMS wel en niet?',
     excerpt:
       'Een VMS helpt je processen, data en compliance te structureren, maar het vervangt geen inhoudelijke keuzes, governance of verandermanagement.',

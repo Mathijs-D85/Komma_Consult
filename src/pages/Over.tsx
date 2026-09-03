@@ -148,23 +148,7 @@ export default function Over() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-komma-navy">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white/80 font-semibold text-sm tracking-wide uppercase">
-            Onze missie
-          </p>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">
-            Externe inhuur bestuurbaar maken
-          </h2>
-          <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Komma Consult helpt organisaties om externe inhuur terug te brengen tot
-            overzicht, eigenaarschap en werkbare keuzes. Zodat beleid, processen en
-            uitvoering weer op elkaar aansluiten.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-[#fdf2f8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
             Benieuwd wat ik voor jou kan betekenen?

@@ -2,12 +2,13 @@ import { chatSuggestions } from '@/content/faqs'
 
 interface SuggestionChipsProps {
   onSelect: (message: string) => void
+  suggestions?: string[]
 }
 
-export function SuggestionChips({ onSelect }: SuggestionChipsProps) {
+export function SuggestionChips({ onSelect, suggestions = chatSuggestions }: SuggestionChipsProps) {
   return (
     <div className="suggestion-chips">
-      {chatSuggestions.map((suggestion) => (
+      {suggestions.map((suggestion) => (
         <button
           key={suggestion}
           className="suggestion-chip"

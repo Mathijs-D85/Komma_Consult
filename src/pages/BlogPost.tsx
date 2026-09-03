@@ -7,10 +7,12 @@ import {
   getKindLabel,
   getPostsBySlugs,
   getPostsByKind,
+  getChatSuggestions,
 } from '@/content/blogPosts'
 import { getServiceLinkById } from '@/content/serviceLinks'
 import Seo from '@/seo/Seo'
 import FounderPhoto from '@/components/FounderPhoto'
+import { KennisbankChat } from '@/components/KennisbankChat'
 import { articleJsonLd, breadcrumbJsonLd } from '@/seo/jsonld'
 
 export default function BlogPost() {
@@ -142,6 +144,31 @@ export default function BlogPost() {
           <article
             className="prose prose-lg prose-komma max-w-none"
             dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+        </div>
+      </section>
+
+      {/* Vervolgvragen: het artikel is de ingang, de kennisbank gaat verder */}
+      <section className="relative overflow-hidden py-16 bg-[#fdf2f8] border-y border-komma-fuchsia/10">
+        <div className="absolute -top-24 -right-16 w-80 h-80 rounded-full bg-komma-fuchsia/15 blur-3xl pointer-events-none" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+              Nog een vraag na het lezen?
+            </p>
+            <h2 className="mt-3 font-display text-2xl sm:text-3xl font-bold text-komma-navy tracking-tight">
+              Vraag het onze kennisbank
+            </h2>
+            <p className="mt-3 text-gray-600 leading-relaxed">
+              Dit artikel is een samenvatting. De kennisbank van Komma Consult bevat de
+              onderliggende notities en antwoordt op de vraag die voor jouw situatie geldt.
+            </p>
+          </div>
+
+          <KennisbankChat
+            className="mt-6"
+            suggestions={getChatSuggestions(post)}
+            placeholder="Stel je vervolgvraag over dit onderwerp..."
           />
         </div>
       </section>

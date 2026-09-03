@@ -135,6 +135,8 @@ export default function ChatApp({ config }: ChatAppProps) {
         <WelcomeScreen
           onSendMessage={handleSendMessage}
           isLoading={isLoading}
+          suggestions={config.suggestions}
+          placeholder={config.placeholder}
         />
       )}
     </div>

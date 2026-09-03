@@ -112,7 +112,7 @@
 /* Invoerveld wrapper op welkomstscherm */
 .welcome-input-wrapper {
   max-width: 640px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 1.25rem;
 }
 
 /* ─── Suggestion Chips ───────────────────────────────────── */
@@ -493,6 +493,20 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* Bronnen uit de kennisbank */
+.message__sources {
+  margin: 0.75rem 0 0;
+  font-family: var(--kc-font-body);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--kc-text-secondary);
+}
+
+.message__sources-label {
+  font-weight: 600;
+  color: var(--kc-navy);
 }
 
 /* CTA knop */

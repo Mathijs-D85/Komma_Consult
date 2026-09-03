@@ -13,81 +13,61 @@ const diensten = [
     id: 'strategisch-inhuuradvies',
     icon: Target,
     title: 'Strategisch inhuuradvies',
-    description: `Externe inhuur wordt vaak pas een thema als kosten oplopen, verantwoordelijkheden versnipperd raken of niemand precies weet waar de grootste risico's zitten. Strategisch inhuuradvies helpt om eerst scherp te krijgen wat er speelt, waar het wringt en welke keuzes nodig zijn om weer regie te krijgen.`,
-    details: `Dat kan gaan over governance, leveranciers, procesinrichting, de verhouding tussen vast en flex of de vraag of een MSP, broker of VMS past bij jouw organisatie. Geen advies om het advies, maar richting waarmee je verder kunt.`,
-    when: `Dit is relevant als je meer grip wilt op externe inhuur, een verandering overweegt of eerst goed wilt begrijpen welk probleem je eigenlijk oplost.`,
+    short: 'Overzicht, keuzes en regie',
+    description: `Externe inhuur wordt vaak pas een thema als kosten oplopen, verantwoordelijkheden versnipperd raken of niemand weet waar de grootste risico's zitten. Strategisch inhuuradvies maakt eerst scherp wat er speelt en welke keuzes nodig zijn om weer regie te krijgen: governance, leveranciers, de verhouding vast-flex, of de vraag of een MSP, broker of VMS past.`,
+    when: `Je wilt meer grip op externe inhuur, overweegt een verandering of wilt eerst begrijpen welk probleem je eigenlijk oplost.`,
     benefits: [
-      'Meer overzicht in rollen, processen en verantwoordelijkheden',
+      'Overzicht in rollen, processen en verantwoordelijkheden',
       'Heldere keuzes over inrichting, sturing en governance',
-      'Betere onderbouwing voor beleid, verandering of aanbesteding',
-      'Een aanpak die inhoud en uitvoering met elkaar verbindt',
+      'Onderbouwing voor beleid, verandering of aanbesteding',
     ],
   },
   {
     id: 'compliant-inhuren',
     icon: Shield,
     title: 'Compliant inhuren',
-    description: `Compliant inhuren vraagt om meer dan een checklist of modelovereenkomst. Wet- en regelgeving raakt processen, rollen, gedrag op de werkvloer en de manier waarop je met leveranciers samenwerkt.`,
-    details: `Komma Consult helpt om compliance praktisch te maken: zonder ad-hoc maatregelen, maar ook zonder onderschatting van de risico's. We kijken naar wat er op papier staat en vooral naar wat er in de praktijk gebeurt.`,
-    when: `Dit is relevant als regelgeving druk zet op je organisatie, als je risico's beter wilt beheersen of als je wilt voorkomen dat compliance een los project naast de business wordt.`,
+    short: 'Risico\'s, rollen en regelgeving',
+    description: `Compliant inhuren vraagt meer dan een checklist of modelovereenkomst. Wet- en regelgeving raakt processen, rollen, gedrag op de werkvloer en de samenwerking met leveranciers. Komma Consult maakt compliance praktisch: geen ad-hoc maatregelen, geen onderschatting van risico's, en vooral aandacht voor wat er in de praktijk gebeurt.`,
+    when: `Regelgeving zet druk op je organisatie, je wilt risico's beter beheersen, of je wilt voorkomen dat compliance een los project naast de business wordt.`,
     benefits: [
-      'Meer grip op risico\'s en verantwoordelijkheden',
-      'Een werkbare aanpak die past bij de dagelijkse praktijk',
-      'Minder afhankelijkheid van aannames of schijnzekerheid op papier',
-      'Beter inzicht in waar bijsturing echt nodig is',
+      'Grip op risico\'s en verantwoordelijkheden',
+      'Een aanpak die werkt in de dagelijkse praktijk',
+      'Minder schijnzekerheid op papier',
     ],
   },
   {
     id: 'interim-ondersteuning',
     icon: Clock,
     title: 'Interim ondersteuning',
-    description: `Soms is het vraagstuk helder, maar ontbreekt tijd, capaciteit of specifieke expertise om het goed op te pakken. Dan is tijdelijke ondersteuning nodig van iemand die snel overzicht heeft en direct waarde toevoegt.`,
-    details: `Komma Consult kan tijdelijk regie, inhoudelijke scherpte of extra slagkracht brengen in lopende trajecten. Bijvoorbeeld bij implementaties, governancevraagstukken, leveranciersmanagement of dossiers die blijven liggen.`,
-    when: `Dit is relevant als er intern te weinig capaciteit is, als een belangrijk traject niet kan wachten of als je tijdelijk een ervaren sparringpartner en uitvoerder nodig hebt.`,
+    short: 'Tijdelijke regie en slagkracht',
+    description: `Soms is het vraagstuk helder, maar ontbreekt tijd, capaciteit of specifieke expertise. Komma Consult brengt dan tijdelijk regie, inhoudelijke scherpte of extra slagkracht in lopende trajecten: implementaties, governancevraagstukken, leveranciersmanagement of dossiers die blijven liggen.`,
+    when: `Er is intern te weinig capaciteit, een belangrijk traject kan niet wachten, of je hebt tijdelijk een ervaren sparringpartner en uitvoerder nodig.`,
     benefits: [
       'Snel extra regie en voortgang in complexe dossiers',
-      'Direct inzetbare expertise zonder lange inwerktijd',
-      'Flexibele ondersteuning waar de druk het hoogst is',
-      'Tijdelijke versterking die inhoud en uitvoering verbindt',
+      'Direct inzetbare expertise zonder inwerktijd',
+      'Versterking die inhoud en uitvoering verbindt',
     ],
   },
   {
     id: 'implementatie',
     icon: Settings,
-    title: 'Implementeren van een inhuuroplossing',
-    description: `Een MSP, broker, VMS of nieuwe werkwijze implementeren is niet alleen een systeem- of inkoopvraagstuk. Het raakt processen, stakeholders, leveranciers en de dagelijkse praktijk van managers en recruiters.`,
-    details: `Komma Consult helpt om implementaties bestuurbaar te maken. Van het aanscherpen van de uitgangspunten tot begeleiding tijdens inrichting, besluitvorming en adoptie. Zodat de oplossing niet alleen live gaat, maar ook echt gaat werken.`,
-    when: `Dit is relevant als je een nieuwe inhuuroplossing invoert, een bestaand model wilt verbeteren of meer samenhang wilt tussen beleid, proces en uitvoering.`,
+    title: 'Implementatie',
+    short: 'MSP, broker of VMS werkend maken',
+    description: `Een MSP, broker, VMS of nieuwe werkwijze invoeren is niet alleen een systeem- of inkoopvraagstuk. Het raakt processen, stakeholders, leveranciers en de dagelijkse praktijk van managers en recruiters. Komma Consult begeleidt uitgangspunten, inrichting, besluitvorming en adoptie, zodat de oplossing niet alleen live gaat maar ook echt gaat werken.`,
+    when: `Je voert een nieuwe inhuuroplossing in, wilt een bestaand model verbeteren of zoekt meer samenhang tussen beleid, proces en uitvoering.`,
     benefits: [
-      'Meer samenhang tussen ontwerp, besluitvorming en uitvoering',
+      'Samenhang tussen ontwerp, besluitvorming en uitvoering',
       'Minder ruis tussen business, leveranciers en projectteam',
-      'Betere adoptie doordat de praktijk vanaf het begin wordt meegenomen',
-      'Een implementatie die niet alleen technisch, maar ook organisatorisch klopt',
+      'Betere adoptie doordat de praktijk vanaf dag één meedoet',
     ],
   },
 ]
 
 const aanpak = [
-  {
-    title: 'Verkennen',
-    description:
-      'We brengen scherp in kaart wat er speelt, waar het wringt en welke aanleiding er is om nu in beweging te komen.',
-  },
-  {
-    title: 'Analyseren',
-    description:
-      'We kijken naar processen, rollen, risico\'s, leveranciers, data en sturing, zodat duidelijk wordt wat er echt aan de hand is.',
-  },
-  {
-    title: 'Realiseren',
-    description:
-      'Afhankelijk van de vraag vertalen we dit naar advies, een plan van aanpak, begeleiding bij keuzes of directe ondersteuning in de uitvoering.',
-  },
-  {
-    title: 'Bijsturen',
-    description:
-      'Tijdens het traject blijven we volgen, aanscherpen en verbeteren op basis van wat er in de praktijk gebeurt.',
-  },
+  { title: 'Verkennen', description: 'Wat speelt er, waar wringt het en waarom nu?' },
+  { title: 'Analyseren', description: 'Processen, rollen, risico\'s, leveranciers, data en sturing.' },
+  { title: 'Realiseren', description: 'Advies, plan van aanpak, begeleiding of directe uitvoering.' },
+  { title: 'Bijsturen', description: 'Volgen, aanscherpen en verbeteren op basis van de praktijk.' },
 ]
 
 export default function Diensten() {
@@ -110,59 +90,43 @@ export default function Diensten() {
         }
       >
         <p>
-          Externe inhuur wordt al snel een vraagstuk van HR, inkoop, finance,
-          legal en de business tegelijk. Komma Consult helpt organisaties om
-          daar overzicht, richting en bestuurbaarheid in aan te brengen.
+          Externe inhuur raakt HR, inkoop, finance, legal en de business tegelijk.
+          Komma Consult brengt daar overzicht, richting en bestuurbaarheid in.
         </p>
+        <nav aria-label="Diensten" className="mt-8 flex flex-wrap gap-3">
+          {diensten.map((dienst) => (
+            <a
+              key={dienst.id}
+              href={`#${dienst.id}`}
+              className="inline-flex items-center gap-2 rounded-full bg-white/80 border border-komma-fuchsia/20 px-4 py-2 text-sm font-semibold text-komma-navy hover:border-komma-fuchsia hover:text-komma-fuchsia transition-colors"
+            >
+              <dienst.icon className="h-4 w-4 text-komma-fuchsia" aria-hidden="true" />
+              {dienst.title}
+            </a>
+          ))}
+        </nav>
       </PageHero>
 
+      {/* Diensten */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
-            <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
-              Onze aanpak
-            </p>
-            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
-              Van vraagstuk naar werkbare oplossing
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Geen zwaar adviestraject, maar een aanpak die helpt om snel
-              scherpte te krijgen en onderweg bij te sturen waar nodig.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {aanpak.map((stap, index) => (
-              <div key={stap.title} className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-                <span className="text-komma-fuchsia font-semibold text-sm">0{index + 1}</span>
-                <h3 className="mt-3 font-display text-xl font-bold text-komma-navy">
-                  {stap.title}
-                </h3>
-                <p className="mt-3 text-gray-600 leading-relaxed">
-                  {stap.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16 lg:space-y-20">
             {diensten.map((dienst, index) => {
               const serviceLink = getServiceLinkById(dienst.id)
+              const artikelen = (serviceLink?.knowledgeSlugs ?? [])
+                .map((slug) => getBlogPostBySlug(slug))
+                .filter(Boolean)
+                .slice(0, 2)
 
               return (
-                <div
+                <article
                   key={dienst.id}
                   id={dienst.id}
-                  className="scroll-mt-24 border-t border-gray-200 pt-16 first:border-t-0 first:pt-0"
+                  className="scroll-mt-28 border-t border-gray-100 pt-16 first:border-t-0 first:pt-0"
                 >
                   <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
                     <div className="lg:col-span-7">
-                      <div className="flex items-start gap-5 mb-8">
+                      <div className="flex items-start gap-5">
                         <div className="w-12 h-12 rounded-xl bg-komma-fuchsia flex items-center justify-center flex-shrink-0">
                           <dienst.icon className="h-6 w-6 text-white" aria-hidden="true" />
                         </div>
@@ -171,77 +135,51 @@ export default function Diensten() {
                           <h2 className="mt-1 font-display text-2xl sm:text-3xl font-bold text-komma-navy tracking-tight">
                             {dienst.title}
                           </h2>
+                          <p className="mt-1 text-gray-500 font-medium">{dienst.short}</p>
                         </div>
                       </div>
 
-                      <div className="max-w-2xl space-y-5">
-                        <p className="text-gray-700 text-lg leading-relaxed max-w-[42rem]">
-                          {dienst.description}
-                        </p>
+                      <p className="mt-8 text-gray-700 text-lg leading-relaxed max-w-[42rem]">
+                        {dienst.description}
+                      </p>
 
-                        <p className="text-gray-600 leading-relaxed max-w-[40rem]">
-                          {dienst.details}
-                        </p>
-                      </div>
-
-                      <div className="mt-8 border-l-2 border-komma-fuchsia/20 pl-5 max-w-[40rem]">
+                      <div className="mt-8 border-l-2 border-komma-fuchsia/30 pl-5 max-w-[40rem]">
                         <span className="text-komma-fuchsia font-semibold text-xs tracking-wide uppercase">
                           Relevant als
                         </span>
-                        <p className="mt-3 text-gray-600 leading-relaxed">
-                          {dienst.when}
-                        </p>
+                        <p className="mt-2 text-gray-600 leading-relaxed">{dienst.when}</p>
                       </div>
 
-                      {serviceLink ? (
-                        <div className="mt-10 pt-6 border-t border-gray-200 max-w-[40rem]">
-                          <h3 className="font-semibold text-komma-navy">
-                            Verdiep je verder
-                          </h3>
-                          <div className="mt-4 flex flex-col gap-2.5">
-                            {serviceLink.knowledgeSlugs
-                              .map((slug) => getBlogPostBySlug(slug))
-                              .filter(Boolean)
-                              .map((post) => (
-                                <Link
-                                  key={post!.slug}
-                                  to={getBlogPostUrl(post!)}
-                                  className="group inline-flex items-center gap-3 text-sm text-gray-500 hover:text-komma-fuchsia transition-colors"
-                                >
-                                  <span className="h-1 w-1 rounded-full bg-komma-fuchsia/70 flex-shrink-0" />
-                                  <span className="font-medium">{post!.title}</span>
-                                  <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-komma-fuchsia transition-colors" />
-                                </Link>
-                              ))}
-                          </div>
-                        </div>
-                      ) : null}
-
-                      <div className="mt-10">
+                      <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3">
                         <Link
                           to="/contact"
                           className="inline-flex items-center gap-2 text-komma-navy font-semibold hover:text-komma-fuchsia transition-colors"
                         >
                           Bespreek dit vraagstuk
-                          <ArrowRight className="h-4 w-4" />
+                          <ArrowRight className="h-4 w-4" aria-hidden="true" />
                         </Link>
+                        {artikelen.map((post) => (
+                          <Link
+                            key={post!.slug}
+                            to={getBlogPostUrl(post!)}
+                            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-komma-fuchsia transition-colors"
+                          >
+                            <span className="h-1 w-1 rounded-full bg-komma-fuchsia/70" aria-hidden="true" />
+                            {post!.title}
+                          </Link>
+                        ))}
                       </div>
                     </div>
 
                     <div className="lg:col-span-5">
-                      <div className="rounded-2xl bg-white border border-gray-100 p-7 lg:p-9 lg:sticky lg:top-28">
-                        <span className="text-komma-fuchsia font-semibold text-xs tracking-wide uppercase">
-                          Opbrengst
-                        </span>
-                        <h3 className="mt-3 font-display text-xl font-bold text-komma-navy mb-6">
+                      <div className="rounded-2xl bg-gray-50 border border-gray-100 p-7 lg:p-8">
+                        <h3 className="font-display text-lg font-bold text-komma-navy">
                           Wat levert dit op?
                         </h3>
-                        <ul className="space-y-4">
+                        <ul className="mt-5 space-y-4">
                           {dienst.benefits.map((benefit) => (
-                            <li key={benefit} className="flex items-start gap-4">
-                              <div className="w-6 h-6 rounded-full bg-komma-fuchsia/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <CheckCircle className="h-4 w-4 text-komma-fuchsia" />
-                              </div>
+                            <li key={benefit} className="flex items-start gap-3">
+                              <CheckCircle className="h-5 w-5 text-komma-fuchsia flex-shrink-0 mt-0.5" aria-hidden="true" />
                               <span className="text-gray-700 leading-relaxed">{benefit}</span>
                             </li>
                           ))}
@@ -249,23 +187,58 @@ export default function Diensten() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </article>
               )
             })}
           </div>
         </div>
       </section>
 
-      <FaqSection items={dienstenFaqs} heading="Veelgestelde vragen over onze diensten" />
+      {/* Aanpak */}
+      <section className="py-16 lg:py-24 bg-komma-navy text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mb-12">
+            <p className="text-komma-fuchsia-light font-semibold text-sm tracking-wide uppercase">
+              Onze aanpak
+            </p>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold tracking-tight">
+              Van vraagstuk naar werkbare oplossing
+            </h2>
+            <p className="mt-4 text-lg text-white/75">
+              Geen zwaar adviestraject, maar snel scherpte en onderweg bijsturen.
+            </p>
+          </div>
 
-      <section className="py-16 lg:py-24 bg-komma-navy">
+          <ol className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {aanpak.map((stap, index) => (
+              <li key={stap.title} className="rounded-2xl bg-white/5 border border-white/10 p-7">
+                <span className="text-komma-fuchsia-light font-semibold text-sm">0{index + 1}</span>
+                <h3 className="mt-3 font-display text-xl font-bold">{stap.title}</h3>
+                <p className="mt-2 text-white/75 leading-relaxed">{stap.description}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <FaqSection
+        items={dienstenFaqs}
+        heading="Veelgestelde vragen over onze diensten"
+        variant="accordion"
+        className="bg-white"
+      />
+
+      <section className="py-16 lg:py-24 bg-[#fdf2f8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          <p className="text-komma-fuchsia font-semibold text-sm tracking-wide uppercase">
+            Laten we kennismaken
+          </p>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-komma-navy tracking-tight">
             Welke uitdaging mogen wij oplossen?
           </h2>
-          <p className="mt-5 text-lg text-white/80 max-w-2xl mx-auto">
-            Plan een vrijblijvend adviesgesprek en ontdek samen met ons hoe we jouw
-            organisatie het beste kunnen ondersteunen.
+          <p className="mt-5 text-lg text-gray-600">
+            Plan een vrijblijvend gesprek en ontdek hoe Komma Consult jouw organisatie
+            het beste kan ondersteunen.
           </p>
           <div className="mt-8">
             <Link to="/contact" className={buttonVariants({ size: 'lg' })}>
