@@ -47,6 +47,17 @@ export function ChatView({
 
   const contactUrl = config.contactUrl || "/contact";
 
+  // De uitnodiging voor een gesprek verschijnt pas als het antwoord erom vraagt:
+  // vanaf het tweede antwoord, of als het antwoord zelf naar de eigen situatie verwijst.
+  const situationHint = /hangt\b[^.]{0,20}\baf van|afhankelijk van|jouw (situatie|organisatie)|per organisatie|maatwerk/i;
+  let assistantCount = 0;
+  const ctaFor = new Set<string>();
+  for (const m of messages) {
+    if (m.role !== "assistant" || m.isStreaming || !m.content) continue;
+    assistantCount += 1;
+    if (assistantCount >= 2 || situationHint.test(m.content)) ctaFor.add(m.id);
+  }
+
   return (
     <div className="chat-view">
       {/* Berichten */}
@@ -57,6 +68,7 @@ export function ChatView({
               key={message.id}
               message={message}
               contactUrl={contactUrl}
+              showCta={ctaFor.has(message.id)}
             />
           ))}
 

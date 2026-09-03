@@ -67,9 +67,9 @@ export default function Kennis() {
         }
       >
         <p>
-          Verdiepende artikelen over grip, compliance, MSP, broker en VMS, geschreven
-          door Mathijs Duisdecker. Geen samenvattingen van de wet, maar wat het
-          betekent voor jouw inhuurpraktijk.
+          Verdiepende artikelen over grip, compliance, MSP, broker en VMS, vanuit de
+          adviespraktijk van Komma Consult. Geen samenvattingen van de wet, maar wat
+          het betekent voor jouw inhuurpraktijk.
         </p>
       </PageHero>
 

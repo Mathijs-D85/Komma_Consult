@@ -24,4 +24,8 @@ export interface ChatConfig {
   supabaseFunctionsUrl?: string;
   theme?: "dark" | "light";
   contactUrl?: string;
+  /** Voorgestelde vragen op het startscherm; standaard de homepage-suggesties. */
+  suggestions?: string[];
+  /** Placeholder van het invoerveld op het startscherm. */
+  placeholder?: string;
 }

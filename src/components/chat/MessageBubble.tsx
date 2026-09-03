@@ -13,9 +13,17 @@ marked.setOptions({
 interface MessageBubbleProps {
   message: Message;
   contactUrl: string;
+  /** Toon de uitnodiging voor een gesprek onder dit antwoord. */
+  showCta?: boolean;
 }
 
-export function MessageBubble({ message, contactUrl }: MessageBubbleProps) {
+/** Maak een bronverwijzing leesbaar: pad en extensie weg, streepjes naar spaties. */
+function formatSource(source: string) {
+  const name = source.split(/[\\/]/).pop() ?? source;
+  return name.replace(/\.md$/i, "").replace(/[-_]+/g, " ").trim();
+}
+
+export function MessageBubble({ message, contactUrl, showCta = false }: MessageBubbleProps) {
   const isUser = message.role === "user";
 
   // Render markdown naar HTML voor assistant berichten
@@ -24,9 +32,12 @@ export function MessageBubble({ message, contactUrl }: MessageBubbleProps) {
     return marked.parse(message.content) as string;
   }, [message.content, isUser]);
 
-  // Check of het antwoord een CTA bevat
-  const showCTA =
-    !isUser && !message.isStreaming && message.content.length > 50;
+  const sources = useMemo(() => {
+    if (isUser || !message.sources?.length) return [];
+    return [...new Set(message.sources.map(formatSource).filter(Boolean))].slice(0, 4);
+  }, [isUser, message.sources]);
+
+  const isFinished = !isUser && !message.isStreaming && message.content.length > 0;
 
   return (
     <div className={`message ${isUser ? "message--user" : "message--assistant"}`}>
@@ -44,7 +55,7 @@ export function MessageBubble({ message, contactUrl }: MessageBubbleProps) {
       <div className="message__body">
         {/* Label */}
         <div className="message__label">
-          {isUser ? "Jij" : "Komma Consult"}
+          {isUser ? "Jij" : "Kennisbank Komma Consult"}
         </div>
 
         {/* Content */}
@@ -70,13 +81,21 @@ export function MessageBubble({ message, contactUrl }: MessageBubbleProps) {
           )}
         </div>
 
-        {/* CTA knop */}
-        {showCTA && (
+        {/* Bronnen uit de kennisbank */}
+        {isFinished && sources.length > 0 && (
+          <p className="message__sources">
+            <span className="message__sources-label">Uit de kennisbank:</span>{" "}
+            {sources.join(" · ")}
+          </p>
+        )}
+
+        {/* Uitnodiging, alleen als het antwoord erom vraagt */}
+        {isFinished && showCta && (
           <Link
             to={contactUrl}
             className="message__cta"
           >
-            Plan een vrijblijvend adviesgesprek
+            Bespreek dit voor jouw organisatie
           </Link>
         )}
       </div>

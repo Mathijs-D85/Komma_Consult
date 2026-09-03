@@ -4,8 +4,7 @@ import { buttonVariants } from '@/components/ui/button-variants'
 import Testimonials from '@/components/Testimonials'
 import FounderPhoto from '@/components/FounderPhoto'
 import FaqSection from '@/components/FaqSection'
-import ChatApp from '@/components/chat/ChatApp'
-import { ClientOnly } from 'vite-react-ssg'
+import { KennisbankChat, KennisbankExample } from '@/components/KennisbankChat'
 import Seo from '@/seo/Seo'
 import { cn } from '@/lib/utils'
 import { homeFaqs, toFaqJsonLd } from '@/content/faqs'
@@ -44,16 +43,6 @@ const uitgelichteArtikelen = getPostsBySlugs([
   'wanneer-is-zzp-inhuur-verantwoord',
 ])
 
-function ChatFallback() {
-  return (
-    <div className="px-2 py-10 text-center">
-      <p className="text-lg text-gray-600">
-        Stel een vraag over grip, compliance of keuzes in externe inhuur.
-      </p>
-    </div>
-  )
-}
-
 export default function Home() {
   return (
     <>
@@ -81,8 +70,9 @@ export default function Home() {
               <span className="text-komma-fuchsia">de komma</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Grip, regie en bestuurbaarheid in externe inhuur. Stel je vraag aan
-              de kennisbank van Komma Consult, of{' '}
+              Komma Consult helpt organisaties aan grip, regie en bestuurbaarheid in
+              externe inhuur. Wil je weten hoe wij over jouw vraagstuk denken? Vraag het
+              onze kennisbank, of{' '}
               <Link
                 to="/contact"
                 className="font-semibold text-komma-navy underline decoration-komma-fuchsia decoration-2 underline-offset-4 hover:text-komma-fuchsia transition-colors"
@@ -94,17 +84,26 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="kennisassistent" className="relative pt-10 pb-20 lg:pb-24">
+        {/* De kennisbank: één echt voorbeeld, daarna zelf vragen */}
+        <section id="kennisassistent" className="relative pt-12 pb-20 lg:pb-24">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ClientOnly fallback={<ChatFallback />}>
-              {() => (
-                <ChatApp config={{
-                  supabaseUrl: import.meta.env.VITE_SUPABASE_URL || 'https://dhuppyaqprsjaquomqtp.supabase.co',
-                  supabaseFunctionsUrl: import.meta.env.VITE_SUPABASE_FUNCTIONS_URL || 'https://dhuppyaqprsjaquomqtp.supabase.co/functions/v1',
-                  contactUrl: '/contact',
-                }} />
-              )}
-            </ClientOnly>
+            <div className="text-center max-w-2xl mx-auto">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-komma-navy tracking-tight">
+                Vraag het onze kennisbank
+              </h2>
+              <p className="mt-3 text-gray-600 leading-relaxed">
+                Geen chatbot van de plank. Deze assistent antwoordt uit de kennisbank die
+                Komma Consult zelf bijhoudt over Wtta, Wet DBA, MSP, broker en VMS:
+                dezelfde notities waar onze adviezen op rusten.
+              </p>
+            </div>
+
+            <KennisbankExample className="mt-8" />
+
+            <KennisbankChat
+              className="mt-6"
+              placeholder="Stel je eigen vraag over inhuur, compliance of MSP/VMS..."
+            />
           </div>
         </section>
       </div>
@@ -200,9 +199,9 @@ export default function Home() {
                 </p>
                 <p>
                   Hij bouwde mee aan MSP- en vendormanagementprogramma&apos;s bij onder meer
-                  Driessen Groep en Hays, en schrijft in de kennisbank over Wtta, Wet DBA,
-                  MSP, broker en VMS. Geen adviseur op afstand: dicht op de inhoud en
-                  dicht op de praktijk.
+                  Driessen Groep en Hays, en bouwt de kennisbank van Komma Consult over
+                  Wtta, Wet DBA, MSP, broker en VMS. Geen adviseur op afstand: dicht op
+                  de inhoud en dicht op de praktijk.
                 </p>
               </div>
 
