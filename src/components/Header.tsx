@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, BarChart3, ArrowUpRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button-variants'
+
+const INHUURPEIL_URL = 'https://inhuurpeil.kommaconsult.nl/dashboard'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -54,9 +56,19 @@ export default function Header() {
                 </Link>
               )
             })}
+            <a
+              href={INHUURPEIL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 inline-flex items-center gap-1.5 px-3 py-2 text-sm font-semibold rounded-lg border border-komma-fuchsia/25 bg-komma-fuchsia/5 text-komma-navy hover:bg-komma-fuchsia/10 hover:border-komma-fuchsia/40 transition-colors"
+            >
+              <BarChart3 className="h-4 w-4 text-komma-fuchsia" aria-hidden="true" />
+              <span>InhuurPeil</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-komma-fuchsia/70" aria-hidden="true" />
+            </a>
             <Link
               to="/contact"
-              className={cn(buttonVariants({ size: 'sm' }), 'ml-3')}
+              className={cn(buttonVariants({ size: 'sm' }), 'ml-2')}
             >
               Plan een gesprek
             </Link>
@@ -100,6 +112,19 @@ export default function Header() {
                   </Link>
                 )
               })}
+              <a
+                href={INHUURPEIL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-1 px-4 py-3 text-base font-semibold rounded-lg border border-komma-fuchsia/25 bg-komma-fuchsia/5 text-komma-navy hover:bg-komma-fuchsia/10 transition-colors flex items-center justify-between"
+              >
+                <span className="inline-flex items-center gap-2">
+                  <BarChart3 className="h-4 w-4 text-komma-fuchsia" aria-hidden="true" />
+                  <span>InhuurPeil (Tariefbenchmark)</span>
+                </span>
+                <ArrowUpRight className="h-4 w-4 text-komma-fuchsia" aria-hidden="true" />
+              </a>
               <Link
                 to="/contact"
                 onClick={() => setMobileMenuOpen(false)}

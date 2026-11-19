@@ -3,6 +3,8 @@ import Header from './Header'
 import Footer from './Footer'
 import { Head } from 'vite-react-ssg'
 import ScrollToTop from './ScrollToTop'
+import { ClientOnly } from './ClientOnly'
+import InhuurPeilLaunchPopup from './InhuurPeilLaunchPopup'
 import { siteGraphJsonLd } from '@/seo/jsonld'
 
 interface LayoutProps {
@@ -24,6 +26,9 @@ export default function Layout({ children }: LayoutProps) {
         {children}
       </main>
       <Footer />
+      <ClientOnly>
+        <InhuurPeilLaunchPopup />
+      </ClientOnly>
     </div>
   )
 }

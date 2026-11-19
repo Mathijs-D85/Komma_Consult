@@ -69,6 +69,17 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://inhuurpeil.kommaconsult.nl/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-pink-300 hover:text-white transition-colors font-semibold"
+                >
+                  <span>InhuurPeil (Tariefbenchmark)</span>
+                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                </a>
+              </li>
             </ul>
           </div>
 
