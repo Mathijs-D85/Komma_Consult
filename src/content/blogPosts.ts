@@ -580,64 +580,77 @@ export const blogPosts: BlogPost[] = [
     ],
     title: 'MSP, broker, master vendor of decentraal model: wat past wanneer?',
     excerpt:
-      'Het juiste inhuurmodel hangt af van je volume, volwassenheid en doelstelling. Niet elk probleem vraagt om een MSP.',
+      'Het juiste inhuurmodel hangt af van je volume, volwassenheid en doelstelling. En minstens zo belangrijk is inzicht in wie er in de keten aan je tarief verdient.',
     content: `
       <p class="lead">
-        Veel organisaties zoeken naar het beste inhuurmodel, maar die vraag is eigenlijk te algemeen. De betere vraag is: welk model past bij jouw fase, volume en ambitie?
+        "Grip op inhuur" staat in vrijwel elk jaarplan. Toch betekent het in iedere organisatie iets anders. Voor de een gaat het om overzicht: wie werkt er, waar en tegen welk tarief? Voor de ander gaat het om regie: actief sturen op kosten, risico's en toegang tot de markt.
       </p>
 
       <p>
-        Waar de ene organisatie vooral snelheid en eenvoud nodig heeft, zoekt de andere juist centrale regie, marktwerking of risicobeheersing. Het model moet daarop aansluiten.
+        Welke betekenis past, hangt sterk af van het volume en de volwassenheid van je inhuur. Een organisatie die af en toe een externe inhuurt, heeft iets anders nodig dan een organisatie met honderden externen aan boord. Er is dus geen beste model. Er is wel een model dat het beste past bij de fase waarin je organisatie nu zit.
       </p>
 
-      <h2>Wanneer past een decentraal inhuurmodel?</h2>
+      <div class="callout">
+        <p class="callout-title">In één zin</p>
+        <p>
+          Grip op inhuur begint bij een bewuste keuze voor het inhuurmodel dat past bij je volume, je risico's en je ambitie, en bij inzicht in wie er in de keten aan je tarief verdient.
+        </p>
+      </div>
+
+      <h2>Wat de inhuurketen met je tarief doet</h2>
 
       <p>
-        In een decentraal model huren managers zelf in via een beperkt netwerk van bekende leveranciers. Dit werkt vaak prima bij lage volumes of wanneer snelheid belangrijker is dan centrale sturing.
+        Wie tarieven van vergelijkbare professionals naast elkaar legt, ziet al snel flinke verschillen. Dat ligt lang niet altijd aan de kandidaat. Vaak zit het verschil in de keten. Iedere partij tussen jou en de professional neemt iets over, zoals werving, administratie, risico of contractbeheer. En iedere partij rekent daar een vergoeding voor.
       </p>
 
-      <ul>
-        <li><strong>Voordeel:</strong> korte lijnen en veel invloed voor de manager.</li>
-        <li><strong>Nadeel:</strong> weinig centraal overzicht en beperkte grip op risico's en kosten.</li>
-      </ul>
-
-      <h2>Wanneer past een broker?</h2>
-
       <p>
-        De broker neemt vooral de administratieve en contractuele afhandeling over. Je organisatie blijft zelf vaak verantwoordelijk voor het vinden of selecteren van kandidaten.
+        Dat is op zich niet verkeerd. Je moet alleen weten waarvoor je betaalt. Zolang dat niet duidelijk is, vergelijk je tarieven die eigenlijk niet met elkaar te vergelijken zijn.
       </p>
 
-      <ul>
-        <li><strong>Voordeel:</strong> minder administratieve last en beter compliance-dossier.</li>
-        <li><strong>Nadeel:</strong> het lost je sourcing- of selectieprobleem niet op.</li>
-      </ul>
-
-      <h2>Wanneer past een master vendor?</h2>
+      <h2>Vier modellen</h2>
 
       <p>
-        Een master vendor werkt goed in omgevingen met grote volumes en repeterende profielen. Een hoofdleverancier vult aanvragen zelf in of schakelt andere bureaus onder zich in.
+        In de Nederlandse markt kom ik grofweg vier inhuurmodellen tegen. Veel organisaties doorlopen ze in de loop der jaren min of meer op volgorde.
       </p>
 
-      <ul>
-        <li><strong>Voordeel:</strong> efficiency en een duidelijk aanspreekpunt.</li>
-        <li><strong>Nadeel:</strong> afhankelijkheid en mogelijke beperking van markttoegang.</li>
-      </ul>
-
-      <h2>Wanneer past een MSP?</h2>
+      <h3>1. Decentraal, met preferred suppliers</h3>
 
       <p>
-        Een MSP is de meest volwassen vorm van centrale regie. In het zuivere model draait het niet om zelf leveren, maar om het managen van proces, leveranciers, data, compliance en marktwerking.
+        Dit is vaak waar het begint. Een manager heeft capaciteit nodig, belt een leverancier waar hij goede ervaringen mee heeft en regelt het. HR of Inkoop stelt meestal een lijst met voorkeursleveranciers op om wildgroei te beperken.
       </p>
 
-      <ul>
-        <li><strong>Voordeel:</strong> regie op de hele keten, transparantie en strategisch inzicht.</li>
-        <li><strong>Nadeel:</strong> vraagt investering, veranderkracht en voldoende schaal.</li>
-      </ul>
+      <p>
+        Bij lage volumes werkt dit prima. De lijnen zijn kort en de manager is nauw betrokken. Het nadeel merk je pas als de inhuur groeit. Er is geen centraal overzicht van kosten en risico's, processen raken versnipperd en afdelingen betalen voor dezelfde rol verschillende tarieven.
+      </p>
 
-      <h2>Hoe kies je het juiste model?</h2>
+      <h3>2. De broker</h3>
 
       <p>
-        Kijk niet alleen naar volume, maar ook naar de vraag die je probeert op te lossen:
+        Nemen de administratieve last en de compliance-risico's toe, dan is een broker een logische volgende stap. Je werft en selecteert zelf, maar de broker wordt contractpartij. Die verzorgt de screening, de contracten en de facturatie.
+      </p>
+
+      <p>
+        Dat geeft rust: één proces, één factuur en een compleet dossier. Een broker lost alleen je wervingsvraag niet op. Je moet nog steeds zelf de markt op. Leveranciers ervaren de broker bovendien soms als een extra schakel waarvan het nut voor hen niet direct duidelijk is.
+      </p>
+
+      <h3>3. Master vendor</h3>
+
+      <p>
+        Dit model zie ik vooral bij organisaties met veel generieke functies, zoals klantenservice, logistiek of productie. Eén grote leverancier vult alle aanvragen in. Lukt dat niet, dan schakelt die onder eigen verantwoordelijkheid andere bureaus in.
+      </p>
+
+      <p>
+        Bij grote volumes in steeds terugkerende profielen is dat efficiënt. Je hebt één aanspreekpunt dat verantwoordelijk is voor de levering. De keerzijde is afhankelijkheid. Kan de master vendor niet leveren, dan heb je een probleem. Ook heeft een master vendor weinig belang bij het toelaten van concurrenten, wat je toegang tot de markt beperkt. Voor schaarse specialisten is dit model daarom minder geschikt.
+      </p>
+
+      <h3>4. Managed Service Provider (MSP)</h3>
+
+      <p>
+        Bij een MSP draait het niet om leveren, maar om regisseren. Ik vergelijk het graag met de luchtverkeersleiding. Zij vliegen zelf niet, maar zorgen dat alle vluchten veilig en volgens de regels landen. De MSP beheert het hele proces van aanvraag tot factuur, meestal ondersteund door een <a href="/kennis/artikelen/wat-doet-een-vms-wel-en-niet">Vendor Management Systeem (VMS)</a>, en ontsluit de markt via een breed netwerk van leveranciers, brokers en zzp'ers.
+      </p>
+
+      <p>
+        Een MSP biedt de meeste marktwerking, inzicht en compliance. Het vraagt wel om een serieuze investering, verandermanagement bij de implementatie en voldoende volume om rendabel te zijn.
       </p>
 
       <table>
@@ -654,19 +667,19 @@ export const blogPosts: BlogPost[] = [
             <td>Decentraal</td>
             <td>Laag volume, snelheid belangrijker dan centrale sturing</td>
             <td>Korte lijnen, veel invloed voor de manager</td>
-            <td>Weinig overzicht, beperkte grip op risico's en kosten</td>
+            <td>Weinig overzicht, versnipperde tarieven en risico's</td>
           </tr>
           <tr>
             <td>Broker</td>
             <td>Administratieve ontzorging en dossiervorming</td>
-            <td>Minder administratieve last, beter compliance-dossier</td>
-            <td>Lost sourcing of selectie niet op</td>
+            <td>Eén proces, één factuur, compleet compliance-dossier</td>
+            <td>Lost werving of selectie niet op</td>
           </tr>
           <tr>
             <td>Master vendor</td>
             <td>Grote volumes en repeterende, generieke profielen</td>
             <td>Leverzekerheid en één aanspreekpunt</td>
-            <td>Afhankelijkheid en mogelijke beperking van markttoegang</td>
+            <td>Afhankelijkheid en beperkte toegang tot niche-specialisten</td>
           </tr>
           <tr>
             <td>MSP</td>
@@ -683,14 +696,45 @@ export const blogPosts: BlogPost[] = [
         </tbody>
       </table>
 
-      <ul>
-        <li>Zoek je vooral administratieve ontzorging? Dan kan een broker logisch zijn.</li>
-        <li>Wil je leverzekerheid in generieke profielen? Dan past een master vendor vaak beter.</li>
-        <li>Wil je marktwerking, compliance en stuurinformatie combineren? Dan kom je sneller bij een MSP uit.</li>
-      </ul>
+      <h2>Wie betaalt de regie?</h2>
 
       <p>
-        De essentie is dat het model je organisatie moet helpen om verder te komen, niet dat je een modeterm kopieert die bij een ander werkt.
+        Kies je voor een broker of MSP, kijk dan goed naar het financieringsmodel. Dat bepaalt meer van de samenwerking dan vaak wordt gedacht.
+      </p>
+
+      <p>
+        Bij <strong>supplier funded</strong> brengt de broker of MSP een fee in rekening bij de leveranciers, meestal een percentage van het uurtarief. Voor de opdrachtgever lijkt de dienstverlening daardoor kosteloos. In de praktijk verwerken leveranciers die fee echter gewoon in hun tarief. Daarnaast verdient de regiepartij meer naarmate er meer wordt ingehuurd. Dat staat op gespannen voet met de wens om inhuur juist terug te dringen.
+      </p>
+
+      <p>
+        Bij <strong>client funded</strong> betaalt de opdrachtgever zelf een vergoeding voor de dienstverlening. Die staat los van de leveranciersmarges en is daardoor transparant. Voor organisaties die echt willen sturen op kwaliteit en <a href="/kennis/artikelen/kostenmanagement-bij-externe-inhuur">kostenmanagement</a>, vind ik dit de zuiverste verhouding. De regiepartij heeft dan geen enkel belang bij hogere tarieven.
+      </p>
+
+      <h2>En als je het zelf wilt doen?</h2>
+
+      <p>
+        Niet iedere organisatie hoeft een MSP in te schakelen. Een eigen inhuurdesk kan ook goed werken. Het kantelpunt ligt daarbij niet alleen in het volume, maar vooral in het draagvlak bij de directie. Zonder stevig mandaat wordt een interne inhuurdesk al snel gepasseerd door managers die liever hun eigen weg gaan.
+      </p>
+
+      <p>
+        Een interessante tussenvorm is Build-Operate-Transfer. GVB Amsterdam besteedde de inhuur uit aan een MSP met de opdracht om het proces in te richten en de organisatie mee te nemen, zodat GVB het op termijn zelf kan overnemen. Dat laat goed zien dat inhuur een vak is dat specifieke kennis vraagt.
+      </p>
+
+      <h2>Waar begin je?</h2>
+
+      <p>
+        Wil je weten of je huidige model nog past, ga dan met HR, Inkoop en Finance om tafel en bespreek de volgende vragen:
+      </p>
+
+      <ol>
+        <li>Waar zit vandaag de grootste pijn? Bij administratie en compliance, bij de levering van grote aantallen mensen, of bij het gebrek aan overzicht en regie?</li>
+        <li>Hoeveel partijen zitten er tussen jou en de professional, en weet je wat elke partij toevoegt?</li>
+        <li>Hoe wordt je broker of MSP betaald, en beloont dat model volume of resultaat?</li>
+        <li>Waarop baseer je of een tarief marktconform is? Op het oordeel van de leverancier of op onafhankelijke marktinformatie?</li>
+      </ol>
+
+      <p>
+        De keuze voor een model ligt niet voor altijd vast. Veel organisaties beginnen decentraal, voegen een broker toe voor de zekerheid en groeien door naar een MSP of eigen inhuurdesk wanneer ze echt regie willen voeren. Het belangrijkste is dat je die keuze bewust maakt, in plaats van er ongemerkt in terecht te komen.
       </p>
 
       <hr />
@@ -701,14 +745,14 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
-    updated: '2026-08-18',
-    readTime: '6 min',
+    updated: '2026-10-06',
+    readTime: '7 min',
     category: 'Inhuurstrategie',
     primaryServiceId: 'strategisch-inhuuradvies',
     relatedSlugs: [
       'wat-is-grip-op-externe-inhuur',
       'kostenmanagement-bij-externe-inhuur',
-      'wat-doet-een-vms-wel-en-niet',
+      'verdienmodel-msp-deugt-waarschijnlijk-niet',
     ],
     featured: false,
   },
@@ -796,67 +840,191 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'wet-dba-deliveroo-en-zelfstandigenwet',
     kind: 'kennis',
-    title: 'Wet DBA, Deliveroo en Zelfstandigenwet: wat betekenen ze voor opdrachtgevers?',
+    chatSuggestions: [
+      'Wat betekent de eis van drie opdrachtgevers in de Zelfstandigenwet?',
+      'Wat is het verschil tussen bemiddeling en tussenkomst bij zzp-inhuur?',
+      'Hoe pas ik het stoplichtmodel toe op onze zzp-populatie?',
+      'Wanneer is het uurtarief een risicosignaal onder de Wet DBA?',
+    ],
+    title: 'Wet DBA, Deliveroo en Zelfstandigenwet: van paniek naar regie',
     excerpt:
-      'De beoordeling van zzp-inhuur draait steeds minder om papieren zekerheid en steeds meer om het totaalplaatje van de feitelijke arbeidsrelatie.',
+      'Het inhuren van zzp\'ers is niet verboden, maar vraagt om een kritische blik op de praktijk én op de uitkomsten van de consultatie rond de Zelfstandigenwet.',
     content: `
       <p class="lead">
-        Voor opdrachtgevers is het speelveld rond zzp-inhuur de afgelopen jaren ingrijpend veranderd. Niet omdat de basisregels volledig nieuw zijn, maar omdat de interpretatie en handhaving scherper zijn geworden.
+        Wie verantwoordelijk is voor externe inhuur, kan niet om de juridische kaders heen. Rond de inzet van zelfstandigen spelen op dit moment drie zaken tegelijk: de handhaving door de Belastingdienst, de jurisprudentie van de Hoge Raad en nieuwe wetgeving vanuit Den Haag. Dat zorgt voor onrust in de markt. Sommige organisaties kondigen zelfs een algehele zzp-stop af.
       </p>
 
       <p>
-        De combinatie van de Wet DBA, het Deliveroo-arrest en de ontwikkeling richting Zelfstandigenwet maakt een zuivere beoordeling belangrijker dan ooit.
+        Laat ik direct duidelijk zijn: dat vind ik een overtrokken reactie. Het inhuren van zelfstandigen blijft goed mogelijk, mits je bereid bent kritisch naar de feiten te kijken en te sturen op echt ondernemerschap. Dat vraagt wel om een eerlijke afweging tussen vast en flex.
       </p>
 
-      <h2>Waarom is papier onder de Wet DBA niet genoeg?</h2>
+      <div class="callout">
+        <p class="callout-title">In één zin</p>
+        <p>
+          Het inhuren van zzp'ers is niet verboden, maar vraagt om een kritische blik op hoe er in de praktijk wordt gewerkt en om een bewuste keuze tussen vast, detachering en zelfstandig ondernemerschap.
+        </p>
+      </div>
+
+      <h2>Bemiddeling of tussenkomst</h2>
 
       <p>
-        Onder de <a href="https://wetten.overheid.nl/BWBR0037602" target="_blank" rel="noopener noreferrer">Wet deregulering beoordeling arbeidsrelaties (Wet DBA)</a> werd lang veel waarde gehecht aan modelovereenkomsten. Inmiddels is duidelijk dat die maar beperkt beschermen. De praktijk is leidend.
+        Veel verwarring ontstaat doordat bemiddeling en tussenkomst door elkaar worden gebruikt. Toch bepaalt juist dit onderscheid wie het fiscale risico loopt.
       </p>
 
       <p>
-        Als een zelfstandige op de werkvloer wordt aangestuurd als werknemer, biedt een goed contract geen echte veiligheid.
+        Bij <strong>bemiddeling</strong> brengt een intermediair vraag en aanbod bij elkaar, maar sluit de opdrachtgever het contract rechtstreeks met de zzp'er. Oordeelt de Belastingdienst dat er sprake is van schijnzelfstandigheid, dan meldt de fiscus zich direct bij de opdrachtgever.
       </p>
 
-      <h2>Waarom is het Deliveroo-arrest doorslaggevend?</h2>
+      <p>
+        Bij <strong>tussenkomst</strong> sluit de intermediair, broker of MSP het contract met de zzp'er en leent deze door aan de opdrachtgever. Het primaire fiscale risico ligt dan bij de intermediair. Dat is geen vrijbrief. Oefent de opdrachtgever op de werkvloer zoveel gezag uit dat hij feitelijk als werkgever optreedt, dan kan de Belastingdienst alsnog door de constructie heen kijken. Daarnaast blijft de inlenersaansprakelijkheid van kracht.
+      </p>
 
       <p>
-        Het <a href="https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:HR:2023:443" target="_blank" rel="noopener noreferrer">Deliveroo-arrest van de Hoge Raad (ECLI:NL:HR:2023:443)</a> heeft nog eens bevestigd dat er niet naar een enkel criterium wordt gekeken. Rechters en toezichthouders wegen alle omstandigheden samen.
+        Ook de modelovereenkomst onder de <a href="https://wetten.overheid.nl/BWBR0037602" target="_blank" rel="noopener noreferrer">Wet DBA</a> biedt minder zekerheid dan vaak wordt gedacht. De Belastingdienst en de rechter kijken niet naar wat er op papier staat, maar naar hoe er in de praktijk wordt gewerkt. De Belastingdienst keurt om die reden nog nauwelijks nieuwe modelovereenkomsten goed.
+      </p>
+
+      <h2>De negen gezichtspunten uit het Deliveroo-arrest</h2>
+
+      <p>
+        De spelregels zelf zijn niet wezenlijk veranderd, de uitleg wel. Met het <a href="https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:HR:2023:443" target="_blank" rel="noopener noreferrer">Deliveroo-arrest van de Hoge Raad (ECLI:NL:HR:2023:443)</a> zijn negen gezichtspunten benoemd die in samenhang moeten worden gewogen:
+      </p>
+
+      <ol>
+        <li>De aard en duur van de werkzaamheden.</li>
+        <li>De manier waarop werkzaamheden en werktijden worden bepaald.</li>
+        <li>De inbedding van het werk en de werkende in de organisatie.</li>
+        <li>De verplichting om het werk persoonlijk uit te voeren.</li>
+        <li>De manier waarop de contractuele verhouding tot stand is gekomen.</li>
+        <li>De manier waarop de beloning wordt bepaald.</li>
+        <li>De hoogte van de beloning.</li>
+        <li>Of de werkende commercieel risico loopt.</li>
+        <li>Of de werkende zich in het economisch verkeer als ondernemer gedraagt.</li>
+      </ol>
+
+      <p>
+        Er zit geen rangorde in deze punten. Het gaat om het totaalbeeld. Wel wil ik punt 7 even uitlichten. Ligt het uurtarief nauwelijks boven de loonkosten van een vergelijkbare medewerker in vaste dienst, dan is het lastig te verdedigen dat de werkende zelf de risico's van ondernemerschap draagt, zoals pensioen, arbeidsongeschiktheid en periodes zonder opdracht.
+      </p>
+
+      <h2>De stand van zaken</h2>
+
+      <p>
+        Waar de focus eerst lag op de beperkende criteria uit de Wet VBAR, is de politieke wind inmiddels gedraaid. Het onderdeel "verduidelijking" uit de VBAR, met de criteria rond organisatorische inbedding, is begin 2026 ingetrokken. Alleen het <strong>rechtsvermoeden</strong> blijft over. Werkenden met een uurtarief onder de &euro; 38 (peildatum 2026) kunnen dan via de rechter eenvoudiger een dienstverband claimen, waarbij de bewijslast bij de opdrachtgever ligt. De beoogde invoering is 1 januari 2027.
+      </p>
+
+      <p>
+        Daarnaast heeft het kabinet een voorstel voor een <strong>Zelfstandigenwet</strong> in consultatie gebracht. Daarover verderop meer.
+      </p>
+
+      <p>
+        De Belastingdienst handhaaft sinds 1 januari 2025 weer. Voor 2026 is de zachte landing gedeeltelijk verlengd: er worden geen verzuimboetes opgelegd voor administratieve fouten. Vergrijpboetes bij opzet of grove schuld zijn wel weer mogelijk. Vanaf 1 januari 2027 vervallen de verzachtende maatregelen. Met zo'n 80 fte aan handhavingscapaciteit is de kans op controle beperkt, maar wordt schijnzelfstandigheid vastgesteld, dan zijn de gevolgen fors.
+      </p>
+
+      <div class="callout callout-warning">
+        <p class="callout-title">Een rekenvoorbeeld</p>
+        <p>
+          Een zzp'er werkt vijf maanden voor je organisatie voor &euro; 5.000 per maand, in totaal &euro; 25.000 exclusief btw. Bij een naheffing betaal je ongeveer:
+        </p>
+        <ul>
+          <li>Loonbelasting (circa &euro; 1.400 per maand): <strong>&euro; 7.000</strong></li>
+          <li>Premies werknemersverzekeringen (circa 20%): <strong>&euro; 5.000</strong></li>
+          <li>Een vergrijpboete van bijvoorbeeld 25%: <strong>&euro; 3.000</strong></li>
+        </ul>
+        <p>
+          Samen ruim <strong>&euro; 15.000</strong>, bovenop het tarief dat al is betaald. Pensioenfondsen kunnen daarnaast tot vijf jaar terug premies vorderen.
+        </p>
+      </div>
+
+      <h2>De Zelfstandigenwet: steun voor het doel, kritiek op de uitwerking</h2>
+
+      <p>
+        Van 1 tot en met 29 oktober 2026 lag het conceptwetsvoorstel voor de Zelfstandigenwet in internetconsultatie. Het kabinet wil met deze wet de opvolger van de VBAR neerzetten en mikt op inwerkingtreding per 1 januari 2028.
+      </p>
+
+      <p>
+        De kern van het voorstel is een zogenoemde veilige haven. Wie daarbinnen valt, werkt aantoonbaar als zelfstandige. Daarvoor moet aan twee toetsen worden voldaan. De zelfstandigentoets kijkt naar de ondernemer zelf: minimaal drie verschillende opdrachtgevers in het lopende en het voorgaande kalenderjaar samen, een minimale besteding aan voorzieningen tegen risico's zoals arbeidsongeschiktheid en pensioen, en de basiskenmerken van een onderneming. De werkrelatietoets kijkt naar de opdracht. Beide partijen willen geen arbeidsovereenkomst, de zelfstandige bepaalt zelf hoe het werk wordt uitgevoerd en in beginsel ook waar en wanneer, en het werk gebeurt voor eigen rekening en risico.
+      </p>
+
+      <p>
+        Belangrijk om te weten: wie niet in de veilige haven valt, is niet automatisch werknemer. Dan wordt de arbeidsrelatie beoordeeld zoals nu, aan de hand van de wet en de gezichtspunten uit het Deliveroo-arrest.
+      </p>
+
+      <h3>Ruim 1.100 reacties</h3>
+
+      <p>
+        De consultatie leverde ruim 1.100 reacties op. Volgens een analyse van ZiPconomy was zo'n 85% daarvan kritisch. Het doel, meer duidelijkheid en rechtszekerheid, wordt breed gesteund. De uitwerking een stuk minder.
+      </p>
+
+      <p>
+        Het grootste struikelblok is de eis van drie opdrachtgevers. Zzp-organisaties, werkgeversorganisaties als VNO-NCW en MKB-Nederland en veel individuele zelfstandigen wijzen erop dat juist interim-managers, ICT-specialisten, consultants en projectleiders vaak langere tijd voor één opdrachtgever werken. Dat zegt weinig over afhankelijkheid, maar alles over het soort werk dat zij doen. De vrees is dat deze groep buiten de veilige haven valt, of kleine opdrachten gaat aannemen alleen om aan het aantal te komen.
+      </p>
+
+      <p>
+        Het tweede punt is de administratieve last. Om zekerheid te ontlenen aan de veilige haven, moeten zelfstandigen en opdrachtgevers kunnen laten zien dat aan alle criteria is voldaan. Dat betekent bijhouden, vastleggen en controleren, ook van zaken die buiten de opdracht zelf liggen, zoals het aantal andere opdrachtgevers en de gedane reserveringen. Critici waarschuwen dat de wet zo een afvinklijst wordt in plaats van een toets op echt ondernemerschap. Daarnaast bevat het voorstel nog open normen, wat de beloofde duidelijkheid deels weer tenietdoet.
+      </p>
+
+      <p>
+        Vakbonden zijn ook kritisch, maar vanuit de andere kant. Zij vrezen dat de wet juist te veel ruimte laat voor schijnzelfstandigheid.
+      </p>
+
+      <h3>Mijn kijk</h3>
+
+      <p>
+        Ik vind het een goede ontwikkeling dat ondernemerschap centraal komt te staan, in plaats van de vraag hoe iemand in de organisatie is ingebed. Bij de eis van drie opdrachtgevers heb ik wel mijn twijfels. Zelf kijk ik bij ondernemerschap liever naar de verdeling van de omzet dan naar het aantal opdrachtgevers. Iemand die een groot deel van het jaar aan een afgebakend project bij één klant werkt, kan prima een zelfstandig ondernemer zijn.
+      </p>
+
+      <p>
+        Voor opdrachtgevers is mijn advies: wacht niet af, maar raak ook niet in paniek. Na deze kritiek wordt het voorstel naar verwachting nog aangepast voordat het naar de Tweede Kamer gaat. Tot die tijd blijven de huidige regels en de Deliveroo-gezichtspunten leidend. Het loont wel om nu al te weten welke zelfstandigen in je organisatie waarschijnlijk binnen de veilige haven zouden vallen en welke niet. Richt daarnaast je onboarding zo in dat je ondernemerskenmerken eenvoudig vastlegt, zonder er een papieren werkelijkheid van te maken. Dan ben je voorbereid, welke vorm de wet uiteindelijk ook krijgt.
+      </p>
+
+      <h2>Gezag op de werkvloer</h2>
+
+      <p>
+        De kern van de discussie is gezag. Managers zeggen vaak: "Ik vertel hem niet hoe hij moet programmeren, dus er is geen gezag." Dat is te kort door de bocht. Ik gebruik hier graag de eend-test: als het eruitziet als een eend, zwemt als een eend en kwaakt als een eend, dan is het waarschijnlijk een eend.
+      </p>
+
+      <p>
+        Doet een zzp'er hetzelfde werk als vaste collega's, op vaste tijden en volledig opgenomen in het team, dan is het ongeacht het contract waarschijnlijk gewoon een werknemer.
+      </p>
+
+      <p>
+        Er zijn een paar signalen waarbij ik direct zou ingrijpen. Denk aan functioneringsgesprekken met een zzp'er, het gebruik van een auto van de zaak of andere secundaire arbeidsvoorwaarden, en verplichte aanwezigheid bij overleggen die niets met de opdracht te maken hebben.
+      </p>
+
+      <p>
+        Dat betekent niet dat een zzp'er geen koffie meer mag halen of niet mee mag naar een teamuitje. Is de basis goed, met een duidelijke opdracht en echt ondernemerschap, dan is daar niets mis mee. Is de inzet al een twijfelgeval, dan kunnen dit wel de druppels zijn die de emmer doen overlopen.
+      </p>
+
+      <p>
+        Kijk bij ondernemerschap ook naar de verdeling van de omzet en niet alleen naar het aantal opdrachtgevers. Komt het grootste deel van het inkomen bij één opdrachtgever vandaan, dan is er sprake van economische afhankelijkheid. Zelf hanteer ik een grens van 70%.
+      </p>
+
+      <h2>Van onrust naar actie</h2>
+
+      <p>
+        Ik adviseer om de huidige periode te gebruiken om je zzp-populatie door te lichten. Breng in kaart wie er werkt en wat die persoon precies doet. Bepaal welke rollen je in vaste dienst wilt hebben en hoe je het overige werk zzp-geschikt inricht. Ga het gesprek aan met je zzp'ers en blijf daarna sturen op de praktijk in plaats van op het contract.
+      </p>
+
+      <p>
+        Een stoplichtmodel helpt om de populatie te ordenen:
       </p>
 
       <ul>
-        <li>Hoe vrij is iemand echt in de uitvoering?</li>
-        <li>Is het werk organisatorisch ingebed?</li>
-        <li>Gedraagt iemand zich aantoonbaar als ondernemer?</li>
-        <li>Hoe afhankelijk is iemand economisch van de opdrachtgever?</li>
+        <li><strong>Groen:</strong> duidelijke expertise, projectmatig werk en een resultaatverplichting, bij voorkeur vastgelegd in een Statement of Work. Deze inzet kun je voortzetten.</li>
+        <li><strong>Oranje:</strong> twijfelgevallen. Regulier werk, maar wel met specifieke kennis. Pas de werkwijze en contractvorm aan of beperk de looptijd.</li>
+        <li><strong>Rood:</strong> structureel werk, volledig ingebed in het team en een lange inzetduur. Stop de inzet als zzp'er en kijk naar alternatieven zoals werving in vaste dienst of detachering.</li>
       </ul>
 
-      <h2>Wat verandert er van VBAR naar Zelfstandigenwet?</h2>
-
       <p>
-        De politieke lijn is verschoven. Waar eerder sterk werd gekeken naar inbedding en aansturing, komt in het nieuwe denken ondernemerschap prominenter naar voren.
+        Er zijn partijen in de markt, zoals Uniforce/DUBV, die speciale constructies als oplossing aanbieden. Die adviseer ik niet. In mijn ogen zijn ze vooral bedoeld om de wet te omzeilen in plaats van eraan te voldoen. Kies voor zuivere en transparante oplossingen.
       </p>
 
-      <p>
-        Tegelijk blijft het rechtsvermoeden relevant voor lagere tarieven en blijft de praktijktoets doorslaggevend. Dat betekent dat opdrachtgevers niet achterover kunnen leunen.
-      </p>
-
-      <h2>Wat betekent dit concreet voor opdrachtgevers?</h2>
-
-      <ul>
-        <li>Je moet beter onderbouwen waarom iemand als zelfstandige wordt ingezet.</li>
-        <li>Je moet managers helpen om binnen de juiste kaders te handelen.</li>
-        <li>Je moet populaties segmenteren in laag, midden en hoog risico.</li>
-        <li>Je moet kunnen aantonen dat je actief stuurt op herstel en verbetering.</li>
-      </ul>
-
-      <h2>Welke fout wil je als opdrachtgever vermijden?</h2>
+      <h2>De afweging tussen vast en flex</h2>
 
       <p>
-        De grootste fout is wachten op volledige politieke duidelijkheid. Handhaving vindt plaats op basis van bestaande wetgeving en jurisprudentie. Afwachten is dus geen strategie.
+        Uiteindelijk gaat goed DBA-beleid niet over vinkjes zetten voor de fiscus. Het gaat om een eerlijke afweging tussen vast en flex. Reken de werkelijke kosten van een medewerker in vaste dienst door, inclusief werkgeverslasten en productieve uren, en leg die naast het externe tarief. Zet zzp'ers vervolgens bewust in waar hun ondernemerschap en specialistische kennis echt het verschil maken.
       </p>
 
-      <h2>Welke bronnen kun je zelf raadplegen?</h2>
+      <h2>Bronnen</h2>
 
       <ul>
         <li><a href="https://wetten.overheid.nl/BWBR0037602" target="_blank" rel="noopener noreferrer">Wet DBA op wetten.overheid.nl</a></li>
@@ -871,14 +1039,14 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
-    updated: '2026-08-18',
-    readTime: '6 min',
+    updated: '2026-11-22',
+    readTime: '9 min',
     category: 'Compliance',
     primaryServiceId: 'compliant-inhuren',
     relatedSlugs: [
       'wat-is-compliant-inhuren',
       'wanneer-is-zzp-inhuur-verantwoord',
-      'wat-doet-een-vms-wel-en-niet',
+      'wtta-waarom-2028-nu-al-op-je-agenda',
     ],
     featured: false,
   },
@@ -1057,62 +1225,143 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'leveranciersmanagement-bij-externe-inhuur',
     kind: 'kennis',
-    title: 'Leveranciersmanagement bij externe inhuur: waar stuur je echt op?',
+    chatSuggestions: [
+      'Op welke KPI\'s stuur je leveranciers bij externe inhuur?',
+      'Hoe voer je het gesprek als een manager vasthoudt aan een dure leverancier?',
+      'Hoe werkt segmentatie in S1, S2 en S3 leveranciers?',
+      'Wanneer neem je afscheid van een leverancier?',
+    ],
+    title: 'Leveranciersmanagement bij externe inhuur: sturen op feiten zonder de relatie te verliezen',
     excerpt:
-      'Goed leveranciersmanagement draait om prestaties, transparantie en een leveranciersbestand dat past bij je strategie.',
+      'Goed leveranciersmanagement combineert objectieve informatie over prestaties en tarieven met een goede relatie, zodat leveranciers graag voor je werken.',
     content: `
       <p class="lead">
-        Leveranciersmanagement wordt nog vaak verward met contractmanagement. Maar een getekend contract is geen garantie op goede levering, marktwerking of toegang tot de beste kandidaten.
+        Leveranciersmanagement wordt vaak verward met contractmanagement. Het contract is getekend, de tarieven staan vast, dus het werk is gedaan. In een krappe arbeidsmarkt werkt dat niet. Een getekend contract is geen garantie dat je de juiste kandidaat tegen een passend tarief krijgt.
       </p>
 
       <p>
-        In een krappe markt moet je als opdrachtgever actief werken aan de vraag waarom leveranciers juist voor jou willen lopen.
+        De vraag die er volgens mij echt toe doet, is deze: waarom zou een leverancier zijn beste kandidaat naar jou sturen en niet naar een andere opdrachtgever? In dit artikel kijk ik naar hoe je een aantrekkelijke opdrachtgever wordt, hoe je objectief stuurt op prestaties en tarieven, en hoe je omgaat met de voorkeuren van inhurende managers.
       </p>
 
-      <h2>Customer of choice worden</h2>
+      <div class="callout">
+        <p class="callout-title">In één zin</p>
+        <p>
+          Goed leveranciersmanagement combineert objectieve informatie over prestaties en tarieven met een goede relatie, zodat leveranciers graag voor je werken en je keuzes kunt onderbouwen.
+        </p>
+      </div>
+
+      <h2>Een aantrekkelijke opdrachtgever zijn</h2>
 
       <p>
-        Leveranciers sturen hun beste kandidaten niet automatisch naar de hoogste bieder. Ze kiezen eerder voor organisaties waar de intake helder is, de terugkoppeling snel komt en het proces voorspelbaar voelt.
-      </p>
-
-      <ul>
-        <li>Duidelijkheid over project en opdracht.</li>
-        <li>Snelle feedback op voorstellen.</li>
-        <li>Een realistische distributie van aanvragen.</li>
-        <li>Menselijk contact naast technologie.</li>
-      </ul>
-
-      <h2>Sturen op data, niet op onderbuik</h2>
-
-      <p>
-        Persoonlijke relaties zijn belangrijk, maar leverancierssturing hoort objectief te blijven. Daarom wil je meten op onder meer:
-      </p>
-
-      <ul>
-        <li>snelheid tot eerste voorstel</li>
-        <li>kwaliteit van voorgestelde kandidaten</li>
-        <li>conversie naar gesprek of plaatsing</li>
-        <li>marktconformiteit van tarieven</li>
-      </ul>
-
-      <p>
-        Data maakt het gesprek zuiverder. Niet om relaties weg te drukken, maar om betere keuzes te maken.
-      </p>
-
-      <h2>Segmentatie houdt je leveranciersbestand gezond</h2>
-
-      <p>
-        Niet elke leverancier vraagt dezelfde aandacht. Strategische partners, preferred suppliers en incidentele leveranciers vragen ieder om een andere ritmiek in overleg, evaluatie en ontwikkeling.
+        De machtsbalans is in een schaarse markt verschoven. Je kunt als opdrachtgever niet meer afwachten tot de cv's binnenkomen. Leveranciers, en de professionals die zij vertegenwoordigen, hebben de keuze.
       </p>
 
       <p>
-        Ook offboarding hoort daarbij. Een leveranciersbestand dat te groot of te passief wordt, verliest focus en marktwerking.
+        Wat maakt dat een leverancier extra moeite voor je doet? In mijn ervaring vooral persoonlijk contact en transparantie. Leveranciers willen weten waar ze aan toe zijn. Aan welk project gaat de kandidaat werken? Waarom is iemand afgewezen? Wanneer vinden de gesprekken plaats?
       </p>
 
-      <h2>Feedbackloops maken het verschil</h2>
+      <p>
+        Technologie zoals een <a href="/kennis/artikelen/wat-doet-een-vms-wel-en-niet">Vendor Management Systeem (VMS)</a> moet dat ondersteunen, maar kan het contact niet vervangen. Een leverancier moet ook gewoon de inhuurdesk kunnen bellen om even te sparren. Daarnaast speelt eerlijke concurrentie een rol. Geen leverancier gaat zijn best doen als hij weet dat hij tegen tientallen andere bureaus concurreert. Houd de verdeellijst daarom beperkt.
+      </p>
+
+      <h2>Feedback werkt twee kanten op</h2>
 
       <p>
-        Leveranciersmanagement is tweerichtingsverkeer. Goede programma's organiseren ook feedback op het gedrag van de interne organisatie. Reageert een manager te laat? Dan raakt dat direct de kwaliteit van je instroom.
+        Wat leveranciers het meest frustreert, is een kandidaat voorstellen en daarna niets meer horen. Reageert een manager pas na drie weken, dan is de kandidaat vaak al ergens anders aan de slag.
+      </p>
+
+      <p>
+        Het is daarom waardevol om leveranciers ook naar jouw proces te laten kijken. Hoe snel reageren managers? Is de intake duidelijk? Worden facturen op tijd betaald? Een programmamanager of inhuurdesk kan die feedback intern terugkoppelen. Bijvoorbeeld door managers erop te wijzen dat de beste leveranciers afhaken als er niet binnen 48 uur wordt gereageerd.
+      </p>
+
+      <h2>Meten wat er gebeurt</h2>
+
+      <p>
+        Om objectief te kunnen sturen, meet je de prestaties van leveranciers. Ik kijk daarbij naar vier criteria:
+      </p>
+
+      <ol>
+        <li><strong>Snelheid:</strong> de tijd tussen het uitzetten van een aanvraag en het eerste voorstel.</li>
+        <li><strong>Kwaliteit:</strong> de mate waarin voorgestelde kandidaten voldoen aan de gestelde eisen.</li>
+        <li><strong>Conversie:</strong> het percentage voorgestelde kandidaten dat op gesprek komt of wordt geplaatst.</li>
+        <li><strong>Marktconformiteit:</strong> hoe het aangeboden tarief zich verhoudt tot de gangbare marktprijs voor die rol.</li>
+      </ol>
+
+      <p>
+        Je kunt per criterium een score van 0 tot 4 geven en die vermenigvuldigen met een weging die past bij wat je organisatie op dat moment belangrijk vindt. Zo ontstaat een eindscore die je kwartaal op kwartaal kunt volgen.
+      </p>
+
+      <p>
+        Kijk vooral naar de combinatie van de criteria. Een leverancier die iets duurder is maar in één keer de juiste persoon levert, kan meer waarde bieden dan een leverancier die goedkoper is maar veel voorstellen nodig heeft voordat er een match is.
+      </p>
+
+      <h2>Wanneer cijfers en ervaring niet hetzelfde zeggen</h2>
+
+      <p>
+        Toch ontstaat er regelmatig discussie. De cijfers laten zien dat een leverancier achterblijft, terwijl de inhurende manager juist tevreden is. Vaak is er een vaste contactpersoon die het team goed kent en snel schakelt. Dat is waardevol, en het is begrijpelijk dat een manager zo'n samenwerking niet zomaar wil opgeven.
+      </p>
+
+      <p>
+        Ik zou dat gesprek daarom nooit aangaan om gelijk te krijgen. Begin met het erkennen van de waarde van die relatie. Leg daarna de cijfers ernaast. Bijvoorbeeld dat deze leverancier structureel boven de gangbare tariefbandbreedte zit, of dat er beduidend meer voorstellen nodig zijn voor één plaatsing. Vraag vervolgens wat de manager het belangrijkst vindt en kijk samen of het om een incident gaat of om een patroon.
+      </p>
+
+      <p>
+        Door het gesprek te voeren op basis van feiten en trends, wordt het minder persoonlijk. Daarna kun je samen besluiten om met de leverancier aan verbetering te werken of om afscheid te nemen.
+      </p>
+
+      <h2>Niet elke leverancier vraagt dezelfde aandacht</h2>
+
+      <p>
+        Het helpt om leveranciers in te delen op basis van prestaties en volume. Ik werk zelf met drie segmenten:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Segment</th>
+            <th>Type</th>
+            <th>Kenmerken</th>
+            <th>Overlegfrequentie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>S1</strong></td>
+            <td>Strategische partners</td>
+            <td>Hoge kwaliteit, leveren over meerdere domeinen</td>
+            <td>Wekelijks operationeel, per kwartaal strategisch</td>
+          </tr>
+          <tr>
+            <td><strong>S2</strong></td>
+            <td>Preferred suppliers</td>
+            <td>Goede prestaties, vaak nichespecialisten</td>
+            <td>Maandelijks operationeel, halfjaarlijks strategisch</td>
+          </tr>
+          <tr>
+            <td><strong>S3</strong></td>
+            <td>Incidentele leveranciers</td>
+            <td>Nieuwe of incidentele leveranciers, zo'n 75 tot 80% van het bestand</td>
+            <td>Ad hoc, zoveel mogelijk geautomatiseerd</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Dit systeem is niet statisch. Leveranciers bewegen tussen de segmenten op basis van hun prestaties. Een leverancier in S3 die twee kwartalen achter elkaar goed presteert, verdient een gesprek over doorgroei naar S2.
+      </p>
+
+      <p>
+        Het opschonen van het bestand hoort er ook bij. Is een leverancier zes maanden niet actief geweest, of presteert hij drie kwartalen achter elkaar onvoldoende, dan is het tijd om afscheid te nemen. Ik hanteer daarbij het principe: hard op de inhoud, zacht op de relatie. De markt is klein en je komt elkaar vaak later weer tegen.
+      </p>
+
+      <h2>Waar begin je?</h2>
+
+      <p>
+        Je hebt geen uitgebreid systeem nodig om vandaag al gerichter te sturen. Toets nieuwe offertes tegen onafhankelijke marktinformatie voordat je het gesprek met de leverancier voert. Houd per leverancier bij hoe vaak een voorstel leidt tot een plaatsing en hoe hun tarieven zich verhouden tot de markt. En spreek met je managers een vaste reactietermijn af.
+      </p>
+
+      <p>
+        Goed leveranciersmanagement maakt van je flexibele schil geen kostenpost, maar een flexibele en strategische kracht.
       </p>
 
       <hr />
@@ -1123,13 +1372,14 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-04-07',
-    readTime: '6 min',
+    updated: '2026-09-15',
+    readTime: '7 min',
     category: 'Leveranciersmanagement',
     primaryServiceId: 'strategisch-inhuuradvies',
     relatedSlugs: [
       'wat-is-grip-op-externe-inhuur',
       'msp-broker-master-vendor-of-decentraal-model',
-      'wat-doet-een-vms-wel-en-niet',
+      'kostenmanagement-bij-externe-inhuur',
     ],
     featured: false,
   },
@@ -1315,39 +1565,118 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'verdienmodel-msp-deugt-waarschijnlijk-niet',
     kind: 'actueel',
-    title: 'Waarom het verdienmodel van je MSP waarschijnlijk niet deugt',
+    chatSuggestions: [
+      'Wat zijn alternatieven voor een percentage-fee bij een MSP?',
+      'Waarom stagneert een MSP-programma vaak na twee jaar?',
+      'Hoe richt je prestatiebeloning of gainsharing bij een MSP in?',
+      'Waarom is een nulmeting belangrijk bij een nieuw MSP-contract?',
+    ],
+    title: 'Het verdienmodel van je MSP: waarom het vaak niet deugt',
     excerpt:
-      'Veel MSP-modellen belonen volume in plaats van waarde. Daardoor kan de prikkel om echt op kosten en innovatie te sturen onder druk komen te staan.',
+      'Zolang de vergoeding van je MSP meebeweegt met je inhuurvolume, wordt besparen niet beloond. Zo richt je het verdienmodel in op resultaat.',
     content: `
       <p class="lead">
-        Veel organisaties halen een MSP in huis om grip te krijgen op externe inhuur en om kosten te besparen. Tegelijkertijd is het dominante verdienmodel in de markt vaak nog gekoppeld aan volume. En precies daar ontstaat spanning.
-      </p>
-
-      <h2>De perverse prikkel</h2>
-
-      <p>
-        Als een MSP verdient op basis van een percentage van de spend, daalt de fee zodra jouw organisatie minder uitgeeft. Besparing voor de klant betekent dan automatisch minder omzet voor de dienstverlener.
+        De meeste organisaties in Nederland halen een Managed Service Provider (MSP) in huis om grip te krijgen op externe inhuur en om kosten te besparen. Tegelijkertijd is het standaard verdienmodel in de markt zo ingericht dat de MSP minder verdient naarmate jij als organisatie minder uitgeeft.
       </p>
 
       <p>
-        Dat maakt het lastig om belangen echt gelijk te trekken.
+        Dat roept een voor de hand liggende vraag op. Waarom zou een MSP actief op zoek gaan naar besparingen als daarmee de eigen omzet daalt?
       </p>
 
-      <h2>Waarom dit verder gaat dan geld</h2>
+      <div class="callout">
+        <p class="callout-title">In één zin</p>
+        <p>
+          Zolang de vergoeding van je MSP meebeweegt met je inhuurvolume, wordt besparen niet beloond; wie echt wil sturen op resultaat, moet het verdienmodel daarop inrichten.
+        </p>
+      </div>
 
-      <ul>
-        <li>innovatie wordt minder aantrekkelijk als die volume verlaagt</li>
-        <li>kostenreductie botst met het eigen inkomstenmodel</li>
-        <li>strategisch partnerschap blijft al snel hangen in operationeel beheer</li>
-      </ul>
+      <h2>Het standaardmodel</h2>
 
-      <h2>Welke vragen je wel wilt stellen</h2>
+      <p>
+        De meeste MSP's in Nederland werken op basis van een percentage van de beheerde inhuurwaarde. Is je inhuurprogramma &euro; 50 miljoen, dan ontvangt de MSP daar bijvoorbeeld 1 of 2% van.
+      </p>
+
+      <p>
+        In aanbestedingen ziet dat er overzichtelijk uit. Inkoop waardeert dat de kosten meebewegen met het volume. Finance waardeert dat het eenvoudig te berekenen is. En voor de MSP geldt: hoe groter het programma, hoe groter de omzet.
+      </p>
+
+      <p>
+        Het probleem is dat dit model kostenreductie niet beloont. Het werkt eerder andersom. Stel dat je MSP lagere tarieven afspreekt met leveranciers en de totale inhuurkosten met 15% dalen. Dat is winst voor je organisatie. Voor de MSP betekent het dat de eigen fee ook met 15% daalt.
+      </p>
+
+      <p>
+        Zou je een besparingsadviseur inhuren van wie het tarief daalt bij iedere euro die hij voor je bespaart?
+      </p>
+
+      <h2>Waarom programma's een plafond bereiken</h2>
+
+      <p>
+        Dit verklaart volgens mij waarom veel MSP-programma's na een aantal jaar stilvallen. In het eerste jaar worden de eerste besparingen gerealiseerd door tariefharmonisatie en betere procescontrole. In het tweede jaar volgen nog wat aanpassingen en misschien een rationalisatie van het leveranciersbestand. Vanaf het derde jaar vlakken de besparingen af en blijft vernieuwing uit.
+      </p>
+
+      <p>
+        Dat ligt niet aan de wil van de MSP. Het ligt aan het commerciële model, dat beide partijen vasthoudt. De organisatie wil besparen, de MSP heeft volume nodig.
+      </p>
+
+      <h2>Neutraliteit maakt het niet eenvoudiger</h2>
+
+      <p>
+        Veel Nederlandse opdrachtgevers eisen bovendien dat de MSP zelf geen kandidaten levert, om belangenverstrengeling te voorkomen. Dat is begrijpelijk, en als rechtmatigheid het belangrijkste doel is, ook verdedigbaar.
+      </p>
+
+      <p>
+        Het gevolg is wel dat je de MSP een van de weinige mogelijkheden ontneemt om het model rendabel te houden. Je beloont besparingen niet en je haalt margekansen weg. Wat overblijft, is een programma dat draait maar niet vooruitkomt. Een beheerpartij in plaats van een strategische partner.
+      </p>
+
+      <h2>Meer dan alleen geld</h2>
+
+      <p>
+        Deze weeffout raakt meer dan de kosten alleen. Waarom zou een MSP investeren in nieuwe technologie of in direct sourcing als dat het inhuurvolume, en daarmee de eigen fee, verlaagt? Een model dat vooral stuurt op tariefreductie kan bovendien richting goedkope capaciteit duwen in plaats van naar de beste specialisten. En zonder prikkel om nieuwe, soms aanvankelijk duurdere partners aan te sluiten, blijft de leveranciersmix vaak hetzelfde.
+      </p>
+
+      <h2>Hoe het anders kan</h2>
+
+      <p>
+        Er zijn modellen die de belangen van opdrachtgever en MSP beter op één lijn brengen.
+      </p>
+
+      <p>
+        Bij een <strong>vaste prijs</strong> betaal je voor het programma zoals je voor software of advies betaalt: op basis van de scope van de dienstverlening, niet op basis van hoeveel je toevallig inhuurt.
+      </p>
+
+      <p>
+        Bij een <strong>resultaatgerichte vergoeding</strong> koppel je een deel van de fee aan meetbare resultaten, zoals time-to-fill, tevredenheid van inhurende managers, compliance of daadwerkelijke kostenbesparing.
+      </p>
+
+      <p>
+        Bij <strong>prestatiebeloning</strong> ontvangt de MSP een percentage van de daadwerkelijk gerealiseerde besparing. Bespaart de MSP &euro; 1 miljoen, dan ontvangt hij daar een deel van. Wordt er niets bespaard, dan is er ook geen extra vergoeding.
+      </p>
+
+      <p>
+        Voor de laatste twee modellen is één ding essentieel: spreek vooraf af hoe je besparingen berekent en voer een nulmeting uit. Zonder vastgelegde uitgangssituatie ontstaat later onvermijdelijk discussie. In mijn artikel over <a href="/kennis/artikelen/kostenmanagement-bij-externe-inhuur">kostenmanagement bij externe inhuur</a> ga ik daar verder op in.
+      </p>
+
+      <h2>De blik van de directie</h2>
+
+      <p>
+        Voor directies is dit geen detail voor Inkoop. De uitgaven aan externe inhuur blijven de komende jaren stijgen. Wie vasthoudt aan het percentagemodel, betaalt meer, bespaart minder en ziet de omzet van de MSP meegroeien terwijl de vernieuwing achterblijft. Als je MSP geen prikkel heeft om kosten te verlagen, heb je eerder een procesbewaker dan een partner.
+      </p>
+
+      <h2>Tijd voor een ander gesprek</h2>
+
+      <p>
+        MSP's vervullen een steeds belangrijkere rol en dat hoeft niet te veranderen. Maar je hoeft de commerciële status quo ook niet zomaar te accepteren. Stel bij de volgende contractherziening eens deze vragen:
+      </p>
 
       <ol>
-        <li>Welke prikkel heeft mijn MSP om mijn kosten echt te verlagen?</li>
-        <li>Hoe wordt innovatie beloond als die het volume verlaagt?</li>
-        <li>Past een vaste fee of resultaatcomponent beter bij onze doelstelling?</li>
+        <li>Welke prikkel heeft onze MSP om onze kosten te verlagen?</li>
+        <li>Hoeveel vernieuwing brengt de MSP als dat ten koste gaat van de eigen marge?</li>
+        <li>Wat zou er veranderen als we de MSP belonen voor resultaat in plaats van voor volume?</li>
       </ol>
+
+      <p>
+        Als je MSP beloond zou worden voor besparen in plaats van ervoor te worden afgestraft, hoeveel meer zou je programma dan opleveren?
+      </p>
 
       <hr />
 
@@ -1357,7 +1686,8 @@ export const blogPosts: BlogPost[] = [
     `,
     author: 'Mathijs Duisdecker',
     date: '2026-02-08',
-    readTime: '5 min',
+    updated: '2026-11-10',
+    readTime: '6 min',
     category: 'MSP',
     primaryServiceId: 'strategisch-inhuuradvies',
     relatedSlugs: [
